@@ -1,0 +1,19 @@
+{
+  "prefix": "*",
+  "botName": "[*]Arukami",
+  "color": "#7B2FBE",
+  "colorSuccess": "#2ECC71",
+  "colorError": "#E74C3C",
+  "colorWarn": "#F39C12",
+  "economy": {
+    "dailyAmount": 200,
+    "workMin": 50,
+    "workMax": 200,
+    "workCooldown": 3600000,
+    "dailyCooldown": 86400000
+  },
+  "leveling": {
+    "xpPerMessage": [15, 25],
+    "xpCooldown": 60000
+  }
+}
