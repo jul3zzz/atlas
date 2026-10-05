@@ -1,0 +1,5 @@
+# Cache d'import Godot (regénéré automatiquement)
+.godot/
+# Exports locaux
+build/
+*.tmp

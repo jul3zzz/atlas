@@ -1,0 +1,11 @@
+Polices utilisées dans EPO (toutes téléchargées depuis Google Fonts) :
+- Black Ops One (titres)
+- Oswald Regular / Bold (interface)
+- Lora Regular / Bold / Italic (textes d'histoire)
+
+Ces trois familles sont distribuées sous SIL Open Font License 1.1 (texte complet
+dans OFL.txt). Les mentions de copyright de chaque police sont incluses dans les
+fichiers .ttf eux-mêmes (table "name").
+
+- DejaVu Sans (police de secours pour les symboles ★ ◀ ⚔ …) : licence libre
+  Bitstream Vera / domaine public, texte complet dans DejaVu-LICENCE.txt.

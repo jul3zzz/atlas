@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="18" fill="#2b3320"/>
+  <path d="M64 14 L76 50 L114 50 L83 72 L95 110 L64 87 L33 110 L45 72 L14 50 L52 50 Z" fill="#c9a227" stroke="#1a1f13" stroke-width="4"/>
+  <text x="64" y="80" font-family="Arial Black, sans-serif" font-size="26" text-anchor="middle" fill="#1a1f13">EPO</text>
+</svg>
