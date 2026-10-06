@@ -1,0 +1,54 @@
+{
+	"chapters": [
+		{
+			"title": "Le temps des châteaux",
+			"text": "Après la chute de Rome, l'Europe se morcelle. Il n'y a plus d'État assez riche pour payer une armée permanente. La guerre devient l'affaire des [b]seigneurs[/b], liés entre eux par des serments de fidélité : c'est la féodalité. Le vassal doit à son seigneur le service armé (souvent 40 jours par an) en échange d'une terre, le fief.\n\nPour se protéger des raids (Vikings, Sarrasins, Hongrois) puis des guerres entre seigneurs, on construit des [b]châteaux[/b] : d'abord des mottes de terre surmontées d'une tour en bois, puis, à partir du XIe siècle, de puissants donjons de pierre.\n\nLa guerre médiévale est avant tout une guerre de [b]sièges[/b] et de raids. Les grandes batailles rangées sont rares, car trop risquées : on peut tout perdre en une journée.",
+			"fact": "Les Vikings assiègent Paris en 885-886. Le comte Eudes défend la ville pendant de longs mois ; ce succès aide sa famille, les Robertiens, ancêtres des Capétiens, à prendre le pouvoir."
+		},
+		{
+			"title": "Le chevalier",
+			"text": "Le [b]chevalier[/b] est un guerrier à cheval, lourdement équipé : cotte de mailles, puis armure de plaques, heaume, lance et épée. Un cheval de guerre (le destrier) et l'équipement coûtent une fortune : seuls les nobles et leurs hommes peuvent se l'offrir.\n\nSa grande arme est la [b]charge à la lance couchée[/b] : la lance est tenue sous le bras, et toute la masse du cheval et du cavalier est transmise à la pointe. Les étriers et la selle à haut dossier rendent cette technique possible.\n\nLa chevalerie a aussi son code d'honneur (courage, loyauté, protection des faibles, du moins en théorie) et ses rituels : l'adoubement, les tournois. Mais sur le champ de bataille, l'indiscipline et la recherche de la gloire personnelle coûtent souvent très cher.",
+			"fact": "Une armure complète du XVe siècle pèse en général 20 à 25 kg. Répartie sur tout le corps, elle permet de courir, de monter à cheval et de se relever seul : l'image du chevalier hissé sur son cheval par une grue est une légende."
+		},
+		{
+			"title": "L'arc long et la guerre de Cent Ans",
+			"text": "De 1337 à 1453, la France et l'Angleterre s'affrontent dans la [b]guerre de Cent Ans[/b]. Les Anglais disposent d'une arme redoutable : l'[b]arc long[/b] gallois, haut comme un homme, qui tire 10 à 12 flèches par minute à plus de 200 mètres.\n\nÀ [b]Crécy[/b] (1346), à [b]Poitiers[/b] (1356) puis à [b]Azincourt[/b] (1415), des archers bien placés, protégés par des pieux et soutenus par des hommes d'armes à pied, déciment la chevalerie française qui charge en désordre.\n\nLa leçon est claire : le terrain, la discipline et la coordination entre les armes comptent plus que le prestige. Les Français finissent par la retenir : Charles V et Du Guesclin évitent les grandes batailles et reprennent le terrain par des sièges et des embuscades.",
+			"fact": "Le légendaire « doigt d'honneur » des archers anglais (qui auraient montré aux Français les doigts servant à tirer) est une histoire sans aucune source d'époque : c'est un mythe moderne."
+		},
+		{
+			"title": "Jeanne d'Arc et l'armée du roi",
+			"text": "En 1429, Orléans est assiégée par les Anglais. Une jeune paysanne de Domrémy, [b]Jeanne d'Arc[/b], convainc le roi Charles VII de lui confier une armée. Orléans est délivrée en mai 1429 et le roi est sacré à Reims en juillet. Capturée en 1430, Jeanne est jugée et brûlée à Rouen en 1431.\n\nCharles VII poursuit la reconquête et réforme son armée : en 1439, une taille permanente (un impôt) est acceptée pour payer les troupes ; en 1445, il crée les [b]compagnies d'ordonnance[/b], la première [b]armée permanente[/b] de France, puis les francs-archers en 1448.\n\nC'est une révolution : une armée payée par l'État remplace les mercenaires pillards. L'État moderne et l'armée moderne naissent ensemble.",
+			"fact": "Jeanne d'Arc n'a sans doute jamais tué personne : selon son propre témoignage lors de son procès, elle préférait porter son étendard plutôt que son épée."
+		},
+		{
+			"title": "Les canons ouvrent une nouvelle ère",
+			"text": "La [b]poudre[/b], inventée en Chine, arrive en Europe au XIIIe siècle. Les premiers canons, les bombardes, apparaissent au début du XIVe siècle. Ils sont lents, imprécis et dangereux… mais ils changent tout pour les sièges.\n\nLes frères [b]Jean et Gaspard Bureau[/b] organisent l'artillerie de Charles VII. Leurs canons reprennent une à une les places fortes de Normandie, puis, à [b]Castillon[/b] (1453), ils écrasent l'armée anglaise : c'est la fin de la guerre de Cent Ans.\n\nLa même année, le sultan ottoman Mehmed II prend [b]Constantinople[/b] après un siège où d'énormes bombardes, fondues par l'ingénieur Orban, pilonnent les murailles réputées imprenables. Les murs hauts et minces des châteaux médiévaux deviennent obsolètes : une nouvelle époque commence.",
+			"fact": "La plus grande bombarde d'Orban, d'après les chroniqueurs, lançait des boulets de pierre de plus de 500 kg et devait être tirée par des dizaines de bœufs."
+		}
+	],
+	"book": {
+		"title": "Le Livre des faits d'armes et de chevalerie",
+		"author": "Christine de Pizan",
+		"year": "vers 1410",
+		"summary": "Christine de Pizan, l'une des premières femmes de lettres à vivre de sa plume, écrit un traité militaire complet : comment préparer une guerre juste, organiser et nourrir une armée, mener un siège, choisir le terrain. Elle s'inspire des auteurs antiques (Végèce) et l'adapte à son époque. Le livre est si apprécié qu'il est traduit en anglais et imprimé par William Caxton en 1489, sur demande du roi Henri VII.",
+		"why": "Un traité de stratégie écrit par une femme au Moyen Âge : une preuve que la réflexion militaire n'a jamais été réservée aux seuls soldats."
+	},
+	"more_books": [
+		{"title": "Chroniques", "author": "Jean Froissart", "note": "Le grand récit, vivant et romanesque, de la guerre de Cent Ans (Crécy, Poitiers…)."},
+		{"title": "Procès de condamnation de Jeanne d'Arc", "author": "Collectif", "note": "Les réponses de Jeanne à ses juges, conservées mot pour mot."},
+		{"title": "Les Rois maudits", "author": "Maurice Druon", "note": "Une saga romanesque sur les origines de la guerre de Cent Ans."}
+	],
+	"quiz": [
+		{"q": "Qu'est-ce qu'un fief ?", "a": ["Une arme de siège", "Une terre donnée par un seigneur à son vassal", "Un impôt sur le sel", "Un cheval de guerre"], "ok": 1, "why": "En échange du fief, le vassal doit fidélité et service armé à son seigneur."},
+		{"q": "Pourquoi les batailles rangées sont-elles rares au Moyen Âge ?", "a": ["Elles sont interdites par l'Église", "On peut tout perdre en une journée", "Il n'y a pas d'armes", "Les chevaliers refusent de combattre"], "ok": 1, "why": "Une défaite en bataille peut tout ruiner : on préfère les sièges et les raids."},
+		{"q": "Qu'est-ce qui rend possible la charge à la lance couchée ?", "a": ["La poudre", "Les étriers et la selle haute", "Le bouclier rond", "Les éperons en or"], "ok": 1, "why": "Étriers et selle à haut dossier permettent de transmettre toute la masse du cheval à la lance."},
+		{"q": "Combien pèse environ une armure complète du XVe siècle ?", "a": ["5 kg", "20 à 25 kg", "80 kg", "150 kg"], "ok": 1, "why": "20 à 25 kg répartis sur le corps : on peut courir et se relever seul."},
+		{"q": "Quelle arme anglaise est décisive à Crécy et Azincourt ?", "a": ["L'arbalète", "Le canon", "L'arc long", "La pique"], "ok": 2, "why": "L'arc long gallois tire 10 à 12 flèches par minute."},
+		{"q": "Combien de temps dure la guerre de Cent Ans ?", "a": ["Exactement 100 ans", "116 ans (1337-1453)", "30 ans", "200 ans"], "ok": 1, "why": "De 1337 à 1453, avec de longues trêves."},
+		{"q": "Quelle ville Jeanne d'Arc délivre-t-elle en 1429 ?", "a": ["Paris", "Reims", "Orléans", "Rouen"], "ok": 2, "why": "Orléans est délivrée en mai 1429, puis Charles VII est sacré à Reims."},
+		{"q": "Que crée Charles VII en 1445 ?", "a": ["La première armée permanente de France", "La marine royale", "La Légion étrangère", "L'Académie française"], "ok": 0, "why": "Les compagnies d'ordonnance, payées par un impôt permanent."},
+		{"q": "Quelle bataille met fin à la guerre de Cent Ans en 1453 ?", "a": ["Azincourt", "Castillon", "Crécy", "Formigny"], "ok": 1, "why": "À Castillon, l'artillerie des frères Bureau écrase l'armée anglaise."},
+		{"q": "Quelle grande ville tombe en 1453 sous les coups des bombardes ottomanes ?", "a": ["Rome", "Venise", "Constantinople", "Jérusalem"], "ok": 2, "why": "Mehmed II prend Constantinople ; ses énormes canons ont battu les murailles."},
+		{"q": "Qui a écrit « Le Livre des faits d'armes et de chevalerie » ?", "a": ["Bertrand du Guesclin", "Christine de Pizan", "Jeanne d'Arc", "Charlemagne"], "ok": 1, "why": "Christine de Pizan, vers 1410 : un traité militaire écrit par une femme."}
+	]
+}

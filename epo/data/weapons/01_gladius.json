@@ -1,0 +1,42 @@
+{
+	"id": "gladius",
+	"era": "e01",
+	"name": "Glaive romain",
+	"full_name": "Gladius hispaniensis",
+	"type": "Épée courte",
+	"country": "République puis Empire romain",
+	"year": "IIIe siècle av. J.-C. – IIIe siècle",
+	"designer": "Inspiré d'épées ibériques",
+	"camera": {"size": 0.85, "center": [0.25, -0.05, 0]},
+	"story": "[b]Une arme empruntée à l'ennemi.[/b] Les Romains auraient adopté le glaive après avoir affronté des guerriers ibériques pendant les guerres puniques, d'où son nom de « gladius hispaniensis » (glaive espagnol).\n\n[b]Une arme d'estoc.[/b] Court (environ 60 cm), il se manie très près de l'adversaire. Le légionnaire, protégé par son grand bouclier, frappe surtout de la pointe, par-dessous ou par le côté du bouclier. Il faut moins de place qu'avec une longue épée : les légionnaires peuvent combattre en rangs serrés.\n\n[b]Une arme de masse.[/b] Des ateliers (fabricae) produisent armes et armures en série pour équiper des centaines de milliers de soldats. Le glaive se porte à droite, ce qui permet de le dégainer sans gêner le bouclier tenu à gauche.\n\nAu IIIe siècle, il est peu à peu remplacé par la spatha, une épée plus longue venue de la cavalerie.",
+	"facts": [
+		"Le mot « gladiateur » vient de « gladius » : celui qui combat avec le glaive.",
+		"Le légionnaire portait le glaive à droite, sauf les centurions qui le portaient à gauche."
+	],
+	"specs": [["Longueur totale", "60 à 85 cm selon les modèles"], ["Lame", "45 à 65 cm, à double tranchant"], ["Masse", "environ 1 kg"], ["Matériaux", "acier, bois, os ou ivoire"]],
+	"parts": [
+		{"id": "lame", "name": "Lame", "desc": "Lame d'acier à double tranchant, terminée par une longue pointe pour frapper d'estoc.", "pos": [0.3, 0, 0], "explode": [0.06, 0.12, 0], "shapes": [
+			{"t": "box", "s": [0.5, 0.05, 0.008], "p": [0, 0, 0], "m": "steel"},
+			{"t": "prism", "s": [0.05, 0.1, 0.008], "p": [0.3, 0, 0], "r": [0, 0, -90], "m": "steel"},
+			{"t": "box", "s": [0.5, 0.008, 0.01], "p": [0.02, 0, 0], "m": "steel"}
+		]},
+		{"id": "garde", "name": "Garde", "desc": "Pièce de bois ou d'os qui protège la main de la lame adverse et l'empêche de glisser sur sa propre lame.", "pos": [0.035, 0, 0], "explode": [0.0, 0.12, 0], "shapes": [
+			{"t": "box", "s": [0.03, 0.085, 0.045], "p": [0, 0, 0], "m": "light_wood", "c": "#d9c9a0"}
+		]},
+		{"id": "poignee", "name": "Poignée", "desc": "Souvent en os ou en bois, sculptée pour que les doigts trouvent leur place.", "pos": [-0.03, 0, 0], "explode": [-0.03, 0.12, 0], "shapes": [
+			{"t": "cyl", "rad": 0.016, "h": 0.085, "p": [0, 0, 0], "r": [0, 0, 90], "m": "light_wood", "c": "#e8dcc4"},
+			{"t": "torus", "rad": 0.014, "rad2": 0.019, "p": [-0.02, 0, 0], "r": [0, 0, 90], "m": "light_wood", "c": "#e8dcc4"},
+			{"t": "torus", "rad": 0.014, "rad2": 0.019, "p": [0.02, 0, 0], "r": [0, 0, 90], "m": "light_wood", "c": "#e8dcc4"}
+		]},
+		{"id": "pommeau", "name": "Pommeau", "desc": "Boule qui équilibre l'arme et empêche la main de glisser vers l'arrière.", "pos": [-0.095, 0, 0], "explode": [-0.07, 0.12, 0], "shapes": [
+			{"t": "sphere", "rad": 0.03, "s": [1, 0.85, 0.9], "p": [0, 0, 0], "m": "light_wood", "c": "#d9c9a0"},
+			{"t": "sphere", "rad": 0.008, "p": [-0.03, 0, 0], "m": "bronze"}
+		]},
+		{"id": "fourreau", "name": "Fourreau", "desc": "Étui de bois et de cuir renforcé de bronze, suspendu au baudrier. Les fourreaux d'officiers étaient richement décorés.", "pos": [0.32, -0.13, 0], "explode": [0, -0.08, 0], "shapes": [
+			{"t": "box", "s": [0.58, 0.075, 0.024], "p": [0, 0, 0], "m": "leather"},
+			{"t": "box", "s": [0.02, 0.08, 0.026], "p": [-0.24, 0, 0], "m": "bronze"},
+			{"t": "box", "s": [0.02, 0.08, 0.026], "p": [-0.12, 0, 0], "m": "bronze"},
+			{"t": "box", "s": [0.06, 0.08, 0.026], "p": [0.27, 0, 0], "m": "bronze"}
+		]}
+	]
+}

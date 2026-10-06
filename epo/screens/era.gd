@@ -6,7 +6,7 @@ var era: Dictionary
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e01"))
 	era = Content.era(era_id)
@@ -17,7 +17,7 @@ func _ready() -> void:
 
 	var root := UI.hbox(26)
 	var m := UI.margin(root, 40, 86, 40, 26)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	# Colonne gauche : présentation + soldat 3D
@@ -98,7 +98,7 @@ func _tile(tile: Array, col: Color) -> Control:
 	var v := UI.vbox(6)
 	v.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var mm := UI.margin(v, 18, 14, 18, 14)
-	mm.set_anchors_preset(Control.PRESET_FULL_RECT)
+	mm.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	mm.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	b.add_child(mm)
 	var icon := UI.label(String(tile[1]), 44, col.lightened(0.3))

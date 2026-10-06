@@ -3,18 +3,18 @@ extends Control
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	Sfx.music("march")
 	add_child(UI.map_background())
 
 	# Diorama 3D : un soldat de chaque époque qui défile.
 	var diorama := preload("res://screens/title_diorama.gd").new()
-	diorama.set_anchors_preset(Control.PRESET_FULL_RECT)
+	diorama.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(diorama)
 
 	var root := UI.margin(UI.vbox(0), 70, 50, 70, 40)
-	root.set_anchors_preset(Control.PRESET_FULL_RECT)
+	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(root)
 	var col: VBoxContainer = root.get_child(0)
 

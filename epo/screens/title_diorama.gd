@@ -13,7 +13,7 @@ func _ready() -> void:
 	mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var svc := SubViewportContainer.new()
 	svc.stretch = true
-	svc.set_anchors_preset(Control.PRESET_FULL_RECT)
+	svc.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	svc.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	add_child(svc)
 	var vp := SubViewport.new()
@@ -55,7 +55,7 @@ func _ready() -> void:
 		var m := UnitFactory.build_model(Content.units[id], UI.GOLD)
 		var ang := lerpf(-1.25, 1.25, float(i) / float(n - 1))
 		m.position = Vector3(sin(ang) * 5.2, 0, cos(ang) * 5.2 - 2.0)
-		m.rotation.y = ang
+		m.rotation.y = ang + PI
 		_pivot.add_child(m)
 		_soldiers.append(m)
 		# Petit socle avec le numéro d'époque.

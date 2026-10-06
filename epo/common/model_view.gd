@@ -28,13 +28,13 @@ func _ready() -> void:
 	e.background_mode = Environment.BG_CLEAR_COLOR
 	e.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
 	e.ambient_light_color = Color(0.8, 0.78, 0.7)
-	e.ambient_light_energy = 0.55
+	e.ambient_light_energy = 0.4
 	e.tonemap_mode = Environment.TONE_MAPPER_FILMIC
 	env.environment = e
 	vp.add_child(env)
 	var sun := DirectionalLight3D.new()
 	sun.rotation_degrees = Vector3(-35, -40, 0)
-	sun.light_energy = 1.15
+	sun.light_energy = 0.95
 	sun.shadow_enabled = true
 	vp.add_child(sun)
 	var rim := DirectionalLight3D.new()
@@ -43,6 +43,7 @@ func _ready() -> void:
 	rim.light_color = Color(1.0, 0.85, 0.6)
 	vp.add_child(rim)
 	pivot = Node3D.new()
+	pivot.rotation.y = PI + 0.5
 	vp.add_child(pivot)
 	var base := Models.cyl(1.1, 1.15, 0.08, Models.mat(Color("1a1f13"), 0.9), Vector3(0, -0.04, 0), Vector3.ZERO, 32)
 	vp.add_child(base)

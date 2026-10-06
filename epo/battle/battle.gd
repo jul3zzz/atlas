@@ -839,7 +839,7 @@ func _build_ui() -> void:
 
 	# Interface de combat
 	fight_panel = Control.new()
-	fight_panel.set_anchors_preset(Control.PRESET_FULL_RECT)
+	fight_panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	fight_panel.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	fight_panel.visible = false
 	ui.add_child(fight_panel)
@@ -920,9 +920,9 @@ func _unit_card(u: Dictionary) -> Control:
 	var types := {"infantry": "Infanterie", "cavalry": "Cavalerie", "artillery": "Artillerie", "vehicle": "Véhicule", "air": "Aérien"}
 	var a: Dictionary = u.attack
 	var role := "corps à corps" if a.kind == "melee" else ("kamikaze" if a.kind == "kamikaze" else "portée %d m" % int(a.get("range", 0)))
-	b.tooltip_text = "%s\n%s · PV %d · vitesse %.1f m/s · %s\n\n%s" % [u.name, types.get(u.type, ""), int(u.hp), float(u.speed), role, u.get("desc", "")]
+	b.tooltip_text = "%s\n%s · PV %d · vitesse %s m/s · %s\n\n%s" % [u.name, types.get(u.type, ""), int(u.hp), UI.dec(float(u.speed)), role, u.get("desc", "")]
 	var row := UI.hbox(8)
-	row.set_anchors_preset(Control.PRESET_FULL_RECT)
+	row.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	row.offset_left = 10
 	row.offset_right = -10
 	row.mouse_filter = Control.MOUSE_FILTER_IGNORE

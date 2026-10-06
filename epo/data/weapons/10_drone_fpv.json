@@ -1,0 +1,121 @@
+{
+	"id": "drone_fpv",
+	"era": "e10",
+	"name": "Drone FPV",
+	"full_name": "Quadrirotor FPV (modèle civil de course)",
+	"type": "Drone quadrirotor",
+	"country": "International",
+	"year": "années 2010",
+	"designer": "Clubs de modélisme et pilotes de course du monde entier",
+	"camera": {"size": 0.32, "center": [0, 0.03, 0]},
+	"story": "[b]Né dans les clubs de modélisme.[/b] Au début des années 2010, des passionnés assemblent de petits quadrirotors avec des pièces de modélisme : moteurs sans balais, batteries au lithium, minuscules capteurs venus des smartphones. Ils y ajoutent une caméra et des lunettes vidéo : c'est le vol [b]FPV[/b] (« First Person View », vue à la première personne). Des courses de drones apparaissent, avec leurs championnats du monde.\n\n[b]Un vol 100 % électronique.[/b] Un quadrirotor n'a ni gouvernail ni ailes mobiles : il se dirige uniquement en changeant la vitesse de ses quatre moteurs. C'est le [b]contrôleur de vol[/b], un petit ordinateur bourré de capteurs, qui rend ce vol possible en corrigeant l'équilibre des milliers de fois par seconde.\n\n[b]Un bouleversement militaire.[/b] Dans les conflits des années 2020, ces drones bon marché, détournés de leur usage civil, sont utilisés en très grand nombre pour observer et frapper. Une machine de quelques centaines d'euros peut menacer un blindé de plusieurs millions. Les armées cherchent comment s'en protéger (brouillage, filets, détection) et réapprennent l'importance de produire en masse.",
+	"facts": [
+		"Un drone de course peut dépasser 150 km/h et passer de 0 à 100 km/h en environ une seconde, plus vite qu'une Formule 1.",
+		"La batterie d'un drone de course ne dure souvent que 3 à 5 minutes de vol à pleine vitesse : les pilotes en emportent toujours plusieurs.",
+		"Les pilotes FPV s'entraînent d'abord sur des simulateurs, comme des jeux vidéo : c'est la meilleure façon d'apprendre sans casser de matériel."
+	],
+	"specs": [["Taille", "environ 25 cm d'un moteur à l'autre (hélices de 5 pouces)"], ["Masse", "environ 600 g avec la batterie"], ["Vitesse", "plus de 150 km/h pour les modèles de course"], ["Autonomie", "3 à 8 minutes"], ["Vidéo", "transmission en direct vers des lunettes, jusqu'à quelques kilomètres"]],
+	"parts": [
+		{"id": "chassis", "name": "Cadre en carbone", "desc": "Deux bras en fibre de carbone en forme de X : très léger et très rigide, il encaisse les chocs des chutes.", "pos": [0, 0, 0], "shapes": [
+			{"t": "box", "s": [0.27, 0.006, 0.026], "p": [0, 0, 0], "r": [0, 45, 0], "m": "black", "c": "1c1c1c"},
+			{"t": "box", "s": [0.27, 0.006, 0.026], "p": [0, 0, 0], "r": [0, -45, 0], "m": "black", "c": "1c1c1c"},
+			{"t": "box", "s": [0.1, 0.004, 0.06], "p": [0, 0.003, 0], "m": "black", "c": "1c1c1c"},
+			{"t": "box", "s": [0.1, 0.003, 0.06], "p": [0, 0.036, 0], "m": "black", "c": "1c1c1c"},
+			{"t": "cyl", "rad": 0.0028, "h": 0.032, "p": [0.04, 0.02, 0.024], "m": "metal", "c": "7d4fb8"},
+			{"t": "cyl", "rad": 0.0028, "h": 0.032, "p": [0.04, 0.02, -0.024], "m": "metal", "c": "7d4fb8"},
+			{"t": "cyl", "rad": 0.0028, "h": 0.032, "p": [-0.04, 0.02, 0.024], "m": "metal", "c": "7d4fb8"},
+			{"t": "cyl", "rad": 0.0028, "h": 0.032, "p": [-0.04, 0.02, -0.024], "m": "metal", "c": "7d4fb8"}
+		]},
+		{"id": "moteurs", "name": "Moteurs sans balais", "desc": "Quatre moteurs électriques « brushless » : sans frottement de balais, ils tournent à plus de 20 000 tours par minute et s'usent très peu.", "pos": [0, 0, 0], "explode": [0, -0.06, 0], "shapes": [
+			{"t": "cyl", "rad": 0.014, "h": 0.016, "p": [0.095, 0.012, 0.095], "m": "metal"},
+			{"t": "cyl", "rad": 0.0145, "h": 0.004, "p": [0.095, 0.021, 0.095], "m": "metal", "c": "d04a2a"},
+			{"t": "cyl", "rad": 0.014, "h": 0.016, "p": [0.095, 0.012, -0.095], "m": "metal"},
+			{"t": "cyl", "rad": 0.0145, "h": 0.004, "p": [0.095, 0.021, -0.095], "m": "metal", "c": "d04a2a"},
+			{"t": "cyl", "rad": 0.014, "h": 0.016, "p": [-0.095, 0.012, 0.095], "m": "metal"},
+			{"t": "cyl", "rad": 0.0145, "h": 0.004, "p": [-0.095, 0.021, 0.095], "m": "metal", "c": "d04a2a"},
+			{"t": "cyl", "rad": 0.014, "h": 0.016, "p": [-0.095, 0.012, -0.095], "m": "metal"},
+			{"t": "cyl", "rad": 0.0145, "h": 0.004, "p": [-0.095, 0.021, -0.095], "m": "metal", "c": "d04a2a"}
+		]},
+		{"id": "helice_av_g", "name": "Hélice avant gauche", "desc": "Les hélices avant sont souvent d'une autre couleur : le pilote voit ainsi de loin dans quel sens le drone est tourné.", "pos": [0.095, 0.027, -0.095], "explode": [0.035, 0.07, -0.035], "shapes": [
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [0.032, 0, 0], "r": [12, 0, 0], "m": "polymer", "c": "d03030"},
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [-0.032, 0, 0], "r": [-12, 0, 0], "m": "polymer", "c": "d03030"},
+			{"t": "cyl", "rad": 0.005, "h": 0.008, "p": [0, 0, 0], "m": "metal"}
+		]},
+		{"id": "helice_av_d", "name": "Hélice avant droite", "desc": "Elle tourne dans le sens inverse de sa voisine : les hélices en diagonale tournent dans le même sens.", "pos": [0.095, 0.027, 0.095], "explode": [0.035, 0.07, 0.035], "shapes": [
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [0.032, 0, 0], "r": [-12, 0, 0], "m": "polymer", "c": "d03030"},
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [-0.032, 0, 0], "r": [12, 0, 0], "m": "polymer", "c": "d03030"},
+			{"t": "cyl", "rad": 0.005, "h": 0.008, "p": [0, 0, 0], "m": "metal"}
+		]},
+		{"id": "helice_ar_g", "name": "Hélice arrière gauche", "desc": "Une hélice de 5 pouces (12,7 cm) en plastique : légère et bon marché, on la remplace après chaque chute un peu violente.", "pos": [-0.095, 0.027, -0.095], "explode": [-0.035, 0.07, -0.035], "shapes": [
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [0.032, 0, 0], "r": [-12, 0, 0], "m": "polymer", "c": "6a6a6a"},
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [-0.032, 0, 0], "r": [12, 0, 0], "m": "polymer", "c": "6a6a6a"},
+			{"t": "cyl", "rad": 0.005, "h": 0.008, "p": [0, 0, 0], "m": "metal"}
+		]},
+		{"id": "helice_ar_d", "name": "Hélice arrière droite", "desc": "Les pales sont inclinées : en tournant, elles poussent l'air vers le bas, et l'air pousse le drone vers le haut.", "pos": [-0.095, 0.027, 0.095], "explode": [-0.035, 0.07, 0.035], "shapes": [
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [0.032, 0, 0], "r": [12, 0, 0], "m": "polymer", "c": "6a6a6a"},
+			{"t": "box", "s": [0.0635, 0.002, 0.014], "p": [-0.032, 0, 0], "r": [-12, 0, 0], "m": "polymer", "c": "6a6a6a"},
+			{"t": "cyl", "rad": 0.005, "h": 0.008, "p": [0, 0, 0], "m": "metal"}
+		]},
+		{"id": "esc", "name": "Variateurs (ESC)", "desc": "La carte « ESC » transforme le courant de la batterie pour alimenter chaque moteur et règle sa vitesse selon les ordres du contrôleur de vol.", "pos": [0, 0.012, 0], "explode": [0, -0.02, 0.1], "shapes": [
+			{"t": "box", "s": [0.036, 0.004, 0.036], "p": [0, 0, 0], "m": "green_pcb"},
+			{"t": "box", "s": [0.006, 0.002, 0.006], "p": [0.012, 0.003, 0.012], "m": "black"},
+			{"t": "box", "s": [0.006, 0.002, 0.006], "p": [0.012, 0.003, -0.012], "m": "black"},
+			{"t": "box", "s": [0.006, 0.002, 0.006], "p": [-0.012, 0.003, 0.012], "m": "black"},
+			{"t": "box", "s": [0.006, 0.002, 0.006], "p": [-0.012, 0.003, -0.012], "m": "black"},
+			{"t": "cyl", "rad": 0.005, "h": 0.02, "p": [-0.03, 0, 0], "r": [0, 0, 90], "m": "black"}
+		]},
+		{"id": "controleur", "name": "Contrôleur de vol", "desc": "Le cerveau du drone : un petit ordinateur avec un gyroscope et un accéléromètre. Il mesure les mouvements et corrige la vitesse des moteurs des milliers de fois par seconde.", "pos": [0, 0.022, 0], "explode": [0, 0.03, -0.1], "shapes": [
+			{"t": "box", "s": [0.036, 0.003, 0.036], "p": [0, 0, 0], "m": "green_pcb"},
+			{"t": "box", "s": [0.009, 0.002, 0.009], "p": [0, 0.0025, 0], "m": "black"},
+			{"t": "box", "s": [0.004, 0.0015, 0.004], "p": [0.01, 0.0025, 0.008], "m": "black"}
+		]},
+		{"id": "batterie", "name": "Batterie LiPo", "desc": "Une batterie lithium-polymère : beaucoup d'énergie pour peu de poids. Elle se recharge entre chaque vol et doit être manipulée avec précaution.", "pos": [0, 0.055, 0], "explode": [0, 0.09, 0], "shapes": [
+			{"t": "box", "s": [0.075, 0.032, 0.036], "p": [0, 0, 0], "m": "polymer", "c": "2f5fa0"},
+			{"t": "box", "s": [0.04, 0.02, 0.002], "p": [0, 0, 0.0185], "m": "paint", "c": "f0c020"},
+			{"t": "box", "s": [0.012, 0.036, 0.04], "p": [0, 0, 0], "m": "black"},
+			{"t": "cyl", "rad": 0.002, "h": 0.04, "p": [-0.055, -0.01, 0.005], "r": [0, 0, 90], "m": "red"},
+			{"t": "cyl", "rad": 0.002, "h": 0.04, "p": [-0.055, -0.01, -0.005], "r": [0, 0, 90], "m": "black"}
+		]},
+		{"id": "camera", "name": "Caméra FPV", "desc": "Une petite caméra inclinée vers le haut, car le drone vole penché vers l'avant. Son image arrive presque sans délai dans les lunettes du pilote.", "pos": [0.05, 0.02, 0], "rot": [0, 0, 25], "explode": [0.09, 0.02, 0], "shapes": [
+			{"t": "box", "s": [0.019, 0.019, 0.019], "p": [0, 0, 0], "m": "black"},
+			{"t": "cyl", "rad": 0.007, "h": 0.01, "p": [0.012, 0, 0], "r": [0, 0, -90], "m": "black"},
+			{"t": "sphere", "rad": 0.0055, "p": [0.017, 0, 0], "m": "glass"},
+			{"t": "box", "s": [0.03, 0.025, 0.003], "p": [0, 0, 0.012], "m": "metal", "c": "7d4fb8"},
+			{"t": "box", "s": [0.03, 0.025, 0.003], "p": [0, 0, -0.012], "m": "metal", "c": "7d4fb8"}
+		]},
+		{"id": "vtx", "name": "Émetteur vidéo et antenne", "desc": "Le « VTX » envoie en direct l'image de la caméra vers les lunettes du pilote, par ondes radio, comme une petite chaîne de télévision.", "pos": [-0.042, 0.02, 0], "explode": [-0.09, 0.03, 0], "shapes": [
+			{"t": "box", "s": [0.02, 0.004, 0.02], "p": [0, 0, 0], "m": "green_pcb"},
+			{"t": "box", "s": [0.016, 0.003, 0.016], "p": [0, 0.0035, 0], "m": "metal"},
+			{"t": "cyl", "rad": 0.0025, "h": 0.05, "p": [-0.0177, 0.0217, 0], "r": [0, 0, 45], "m": "black"},
+			{"t": "sphere", "rad": 0.006, "s": [1, 1.4, 1], "p": [-0.037, 0.041, 0], "r": [0, 0, 45], "m": "polymer", "c": "d03030"}
+		]},
+		{"id": "recepteur", "name": "Récepteur radio", "desc": "Il reçoit les ordres de la radiocommande du pilote : gaz, tangage, roulis et lacet, des centaines de fois par seconde.", "pos": [-0.025, 0.03, 0.015], "explode": [-0.03, 0.05, 0.08], "shapes": [
+			{"t": "box", "s": [0.012, 0.003, 0.01], "p": [0, 0, 0], "m": "green_pcb"},
+			{"t": "cyl", "rad": 0.0012, "h": 0.045, "p": [-0.02, 0.008, 0.008], "r": [0, 0, 70], "m": "black"},
+			{"t": "cyl", "rad": 0.0012, "h": 0.045, "p": [-0.02, 0.008, -0.008], "r": [0, 0, 70], "m": "black"}
+		]}
+	],
+	"cycle": {
+		"note": "La rotation des hélices est très ralentie : en vrai, elles tournent si vite qu'on ne les voit plus.",
+		"duration": 10.0,
+		"sound": "engine",
+		"hide": [],
+		"spins": {
+			"helice_av_g": [0, 7200, 0],
+			"helice_ar_d": [0, 7200, 0],
+			"helice_av_d": [0, -7200, 0],
+			"helice_ar_g": [0, -7200, 0]
+		},
+		"body": [[0, 0, 0, 0], [0.12, 0, 0, 0], [0.28, 0, 0.1, 0], [0.45, 0.09, 0.11, 0], [0.55, 0.11, 0.11, 0], [0.72, 0.11, 0.12, 0], [0.88, 0.03, 0.04, 0], [1, 0, 0, 0]],
+		"body_rot": [[0, 0, 0, 0], [0.28, 0, 0, 0], [0.32, 0, 0, -20], [0.42, 0, 0, -20], [0.47, 0, 0, 0], [0.55, 0, 0, 0], [0.7, 0, 150, 0], [0.75, 0, 150, 0], [0.92, 0, 0, 0], [1, 0, 0, 0]],
+		"objects": [],
+		"steps": [
+			[0.0, "1. Armement : les quatre hélices tournent. Deux tournent dans un sens, deux dans l'autre : leurs effets de rotation s'annulent et le drone ne tourne pas sur lui-même."],
+			[0.12, "2. Montée : les quatre moteurs accélèrent ensemble. Quand la poussée dépasse le poids, le drone décolle."],
+			[0.28, "3. Avancer : les moteurs arrière tournent un peu plus vite que ceux de l'avant. Le drone s'incline vers l'avant et part dans cette direction."],
+			[0.55, "4. Tourner : on accélère les hélices qui tournent dans un sens et on ralentit les autres. Les effets de rotation ne s'équilibrent plus : le drone pivote sur lui-même."],
+			[0.75, "5. Stabilisation : le contrôleur de vol mesure les moindres mouvements et corrige la vitesse de chaque moteur des milliers de fois par seconde. Sans lui, impossible de rester en l'air !"],
+			[0.88, "6. Atterrissage : le pilote réduit les gaz. Avec ses lunettes vidéo, il a vu tout le vol à travers la caméra, comme s'il était à bord."]
+		]
+	}
+}

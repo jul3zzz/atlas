@@ -8,7 +8,7 @@ var _filter: OptionButton
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_filter = String(Nav.params.get("era", ""))
 	Sfx.music("ambient")
@@ -17,13 +17,16 @@ func _ready() -> void:
 	add_child(UI.top_bar("Vidéothèque", back))
 	var v := UI.vbox(12)
 	var m := UI.margin(v, 50, 90, 50, 24)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 	var head := UI.hbox(12)
 	v.add_child(head)
-	head.add_child(UI.wrap_label("Une sélection de vidéos de chaînes d'histoire reconnues. Elles s'ouvrent dans ton navigateur.", 18, UI.MUTED))
-	head.add_child(UI.expander())
+	var intro := UI.wrap_label("Une sélection de vidéos de chaînes d'histoire reconnues. Elles s'ouvrent dans ton navigateur.", 18, UI.MUTED)
+	intro.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	head.add_child(intro)
 	_filter = OptionButton.new()
+	_filter.custom_minimum_size.x = 320
+	_filter.size_flags_vertical = Control.SIZE_SHRINK_CENTER
 	_filter.add_item("Toutes les époques")
 	for e in Content.eras:
 		_filter.add_item("%d. %s" % [e.num, e.name])
@@ -63,7 +66,7 @@ func _card(vd: Dictionary) -> Control:
 	bg.color = Color("0d0f09")
 	bg.custom_minimum_size = Vector2(320, 180)
 	bg.add_child(thumb)
-	thumb.set_anchors_preset(Control.PRESET_FULL_RECT)
+	thumb.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var play := UI.label("▶", 54, Color(1, 1, 1, 0.85))
 	play.set_anchors_preset(Control.PRESET_CENTER)
 	play.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
@@ -79,6 +82,7 @@ func _card(vd: Dictionary) -> Control:
 	v.add_child(UI.label(String(vd.get("channel", "")), 16, UI.MUTED))
 	if vd.has("why"):
 		v.add_child(UI.wrap_label(String(vd.why), 15, UI.MUTED))
+	v.add_child(UI.expander())
 	v.add_child(UI.button("Regarder sur YouTube", func(): OS.shell_open("https://www.youtube.com/watch?v=" + String(vd.id)), 18))
 	return p
 

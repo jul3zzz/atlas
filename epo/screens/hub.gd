@@ -3,7 +3,7 @@ extends Control
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	Sfx.music("march")
 	add_child(UI.map_background())
@@ -11,7 +11,7 @@ func _ready() -> void:
 
 	var row := UI.hbox(24)
 	var m := UI.margin(row, 40, 90, 40, 30)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var left := UI.vbox(14)
@@ -63,7 +63,7 @@ func _era_card(e: Dictionary) -> Control:
 	b.add_theme_stylebox_override("pressed", sbh)
 	b.tooltip_text = String(e.tagline)
 	var v := UI.vbox(4)
-	v.set_anchors_preset(Control.PRESET_FULL_RECT)
+	v.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	v.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	b.add_child(v)
 	var band := ColorRect.new()

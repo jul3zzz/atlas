@@ -1,0 +1,122 @@
+[
+	{
+		"id": "e01",
+		"num": 1,
+		"name": "Antiquité",
+		"subtitle": "Phalanges, légions et chars",
+		"period": "3000 av. J.-C. – 476",
+		"color": "#b5763a",
+		"terrain": "dry",
+		"tagline": "Discipline, formation et logistique : les premières armées professionnelles.",
+		"intro": "Des chars égyptiens de Qadesh aux légions de César, l'Antiquité invente presque tout : l'entraînement, la formation serrée, les routes militaires, la solde, l'intendance… et les premiers traités de stratégie, comme celui de Sun Tzu.",
+		"hero": "legionnaire"
+	},
+	{
+		"id": "e02",
+		"num": 2,
+		"name": "Moyen Âge",
+		"subtitle": "Châteaux, chevaliers et archers",
+		"period": "476 – 1453",
+		"color": "#7d5aa6",
+		"terrain": "grass",
+		"tagline": "Le chevalier domine… jusqu'à ce que l'arc et la pique le fassent tomber.",
+		"intro": "Mille ans de guerre féodale : forteresses, sièges, chevalerie lourde. Mais à Crécy et Azincourt, des archers bien placés écrasent la fine fleur de la noblesse française. À la fin de l'époque, les canons d'Orban ouvrent une brèche dans les murailles de Constantinople.",
+		"hero": "knight"
+	},
+	{
+		"id": "e03",
+		"num": 3,
+		"name": "Poudre et Renaissance",
+		"subtitle": "Arquebuses, piques et forteresses",
+		"period": "1453 – 1715",
+		"color": "#3f7d6e",
+		"terrain": "grass",
+		"tagline": "La « révolution militaire » : la poudre change les armées et les États.",
+		"intro": "Arquebuses, canons de bronze et carrés de piquiers : les champs de bataille se transforment. Pour payer ces armées de plus en plus grandes, les États créent impôts, arsenaux et administrations. Machiavel écrit Le Prince, Vauban fortifie la France.",
+		"hero": "musketeer"
+	},
+	{
+		"id": "e04",
+		"num": 4,
+		"name": "Révolution et Empire",
+		"subtitle": "Levée en masse et génie napoléonien",
+		"period": "1789 – 1815",
+		"color": "#2f5aa8",
+		"terrain": "grass",
+		"tagline": "La nation en armes : des armées de centaines de milliers d'hommes.",
+		"intro": "La Révolution invente la levée en masse ; Napoléon l'organise en corps d'armée autonomes capables de marcher vite et de se réunir pour frapper. Austerlitz devient un modèle étudié dans toutes les écoles militaires, et Clausewitz en tire sa théorie de la guerre.",
+		"hero": "grenadier"
+	},
+	{
+		"id": "e05",
+		"num": 5,
+		"name": "Ère industrielle",
+		"subtitle": "Rails, télégraphe et fusils rayés",
+		"period": "1815 – 1914",
+		"color": "#6b6b6b",
+		"terrain": "grass",
+		"tagline": "L'usine et le chemin de fer deviennent des armes.",
+		"intro": "Le chemin de fer transporte les armées, le télégraphe les commande, les usines les équipent. Fusils rayés, chargement par la culasse, poudre sans fumée et mitrailleuses rendent les charges frontales suicidaires, comme le montrent la guerre de Sécession et la guerre de 1870.",
+		"hero": "chassepot_inf"
+	},
+	{
+		"id": "e06",
+		"num": 6,
+		"name": "Première Guerre mondiale",
+		"subtitle": "Tranchées, artillerie et premiers chars",
+		"period": "1914 – 1918",
+		"color": "#7a6a3a",
+		"terrain": "mud",
+		"tagline": "La guerre industrielle totale : tenir, ravitailler, innover.",
+		"intro": "Après la Marne, le front se fige dans les tranchées. Pour percer, chaque camp invente : artillerie lourde, aviation, chars, nouvelles tactiques d'infanterie. À Verdun, la France tient grâce à la Voie sacrée et à la rotation des unités. Barbusse, Genevoix et Remarque racontent la vie des soldats.",
+		"hero": "poilu"
+	},
+	{
+		"id": "e07",
+		"num": 7,
+		"name": "Seconde Guerre mondiale",
+		"subtitle": "Blitzkrieg, radar et Débarquement",
+		"period": "1939 – 1945",
+		"color": "#4f6b3a",
+		"terrain": "grass",
+		"tagline": "Chars, avions, radio, codes secrets : la guerre de la vitesse et des usines.",
+		"intro": "En 1940, la percée de Sedan surprend la France. Puis la guerre devient mondiale : bataille d'Angleterre gagnée grâce au radar, Stalingrad, production industrielle américaine, Enigma décryptée et, en 1944, le plus grand débarquement de l'histoire. De Gaulle racontera tout cela dans ses Mémoires de guerre.",
+		"hero": "kieffer_commando"
+	},
+	{
+		"id": "e08",
+		"num": 8,
+		"name": "Guerre froide",
+		"subtitle": "AK-47, dissuasion et espions",
+		"period": "1947 – 1991",
+		"color": "#a83a32",
+		"terrain": "snow",
+		"tagline": "Deux blocs, la bombe, et des guerres « par procuration ».",
+		"intro": "Les États-Unis et l'URSS ne s'affrontent jamais directement : la dissuasion nucléaire l'interdit. La guerre se joue ailleurs : pont aérien de Berlin, Corée, crise de Cuba, course à l'espace, espionnage. Et une arme simple et robuste, l'AK-47 de Mikhaïl Kalachnikov, se répand sur toute la planète.",
+		"hero": "soviet_ak"
+	},
+	{
+		"id": "e09",
+		"num": 9,
+		"name": "Guérillas et décolonisation",
+		"subtitle": "Jungle, hélicoptères et guerre révolutionnaire",
+		"period": "1945 – 1975",
+		"color": "#3a7a4a",
+		"terrain": "jungle",
+		"tagline": "Quand le plus faible refuse la bataille rangée.",
+		"intro": "Indochine, Algérie, Vietnam : des armées modernes affrontent des combattants qui misent sur le temps, le terrain et le soutien de la population. À Diên Biên Phu, le général Giáp hisse son artillerie sur les collines à force de bras et de vélos. Les théoriciens, comme David Galula, repensent la stratégie.",
+		"hero": "french_para"
+	},
+	{
+		"id": "e10",
+		"num": 10,
+		"name": "Guerre moderne",
+		"subtitle": "GPS, drones et cyber",
+		"period": "1991 – aujourd'hui",
+		"color": "#2f7a9a",
+		"terrain": "desert",
+		"tagline": "Précision, information et drones bon marché redessinent le champ de bataille.",
+		"intro": "La guerre du Golfe de 1991 montre la puissance du GPS, de la furtivité et des munitions guidées. Puis viennent le cyber, les satellites, les drones de reconnaissance et les petits drones FPV. Mais la logistique, le moral et la politique restent décisifs, comme à toutes les époques.",
+		"hero": "modern_inf"
+	}
+]

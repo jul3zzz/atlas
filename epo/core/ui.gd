@@ -209,7 +209,7 @@ func _line(c: Color) -> StyleBoxLine:
 ## Racine d'interface plein écran (à utiliser dans un CanvasLayer pour les écrans 3D).
 func root_control() -> Control:
 	var c := Control.new()
-	c.set_anchors_preset(Control.PRESET_FULL_RECT)
+	c.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	c.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	c.theme = theme
 	return c
@@ -218,7 +218,7 @@ func root_control() -> Control:
 ## Fond animé « carte d'état-major » (courbes de niveau).
 func map_background(tint := Color("14170f")) -> ColorRect:
 	var r := ColorRect.new()
-	r.set_anchors_preset(Control.PRESET_FULL_RECT)
+	r.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	r.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var m := ShaderMaterial.new()
 	m.shader = bg_shader
@@ -343,6 +343,11 @@ func margin(child: Control, l := 24, t := 24, r := 24, b := 24) -> MarginContain
 	return m
 
 
+## Nombre décimal à la française : 1,5 au lieu de 1.5.
+func dec(x: float, digits := 1) -> String:
+	return (("%." + str(digits) + "f") % x).replace(".", ",")
+
+
 ## Texte riche (BBCode). reading=true : police de lecture (Lora) façon livre.
 ## Espaces insécables dans les nombres (« 80 000 ») et avant « : ; ! ? » à la française.
 func nbsp(t: String) -> String:
@@ -447,10 +452,10 @@ func top_bar(screen_title: String, back: Callable = Callable()) -> PanelContaine
 func modal(parent: Node, content: Control, width := 640) -> Control:
 	var shade := ColorRect.new()
 	shade.color = Color(0, 0, 0, 0.65)
-	shade.set_anchors_preset(Control.PRESET_FULL_RECT)
+	shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	shade.mouse_filter = Control.MOUSE_FILTER_STOP
 	var center := CenterContainer.new()
-	center.set_anchors_preset(Control.PRESET_FULL_RECT)
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	shade.add_child(center)
 	var p := panel(24, Color(PANEL, 0.98), GOLD_DARK)
 	p.custom_minimum_size.x = width
@@ -518,7 +523,7 @@ func _on_rank_up(rank: String) -> void:
 	var root := root_control()
 	_toast_layer.add_child(root)
 	var center := CenterContainer.new()
-	center.set_anchors_preset(Control.PRESET_FULL_RECT)
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	center.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	root.add_child(center)
 	var p := panel(28, Color("0f120b", 0.95), GOLD)

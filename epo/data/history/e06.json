@@ -1,0 +1,55 @@
+{
+	"chapters": [
+		{
+			"title": "1914 : la guerre de mouvement",
+			"text": "En août 1914, l'Europe bascule dans la guerre. Grâce aux plans de mobilisation, des millions d'hommes rejoignent leurs régiments en quelques jours : environ 3,7 millions en France.\n\nL'Allemagne applique le [b]plan Schlieffen[/b] : contourner l'armée française par la Belgique neutre pour prendre Paris en six semaines. Les soldats français, en pantalon rouge, subissent des pertes terribles lors des premières batailles : le 22 août 1914 est la journée la plus meurtrière de l'histoire de l'armée française (environ 27 000 morts).\n\nEn septembre, le général [b]Joffre[/b] arrête l'invasion sur la [b]Marne[/b]. Les deux armées tentent alors de se déborder vers le nord : c'est la « course à la mer ». Fin 1914, un front continu de tranchées s'étend de la mer du Nord à la Suisse.",
+			"fact": "Pendant la bataille de la Marne, le général Gallieni réquisitionne des taxis parisiens pour transporter des renforts : quelques milliers d'hommes seulement, mais un symbole immense."
+		},
+		{
+			"title": "La guerre des tranchées",
+			"text": "De 1915 à 1917, le front ne bouge presque plus. Les soldats vivent dans des [b]tranchées[/b] creusées en lignes successives, protégées par des barbelés. Entre les deux camps s'étend le « no man's land ».\n\nPourquoi est-il si difficile d'avancer ? Parce que la défense est devenue plus forte que l'attaque : les [b]mitrailleuses[/b] et l'[b]artillerie[/b] fauchent les assaillants, et les défenseurs peuvent amener des renforts par chemin de fer plus vite que l'attaquant ne progresse à pied.\n\nLes états-majors essaient tout : bombardements de plusieurs jours, gaz de combat (à partir de 1915), mines creusées sous les lignes ennemies. Le quotidien du soldat, c'est la boue, le froid, les rats, les poux, l'attente et la peur.",
+			"fact": "Le surnom « poilu » ne vient pas de la barbe : dans l'argot de l'époque, être « poilu » signifiait être courageux, viril."
+		},
+		{
+			"title": "Verdun, 1916",
+			"text": "Le 21 février 1916, l'armée allemande attaque [b]Verdun[/b] après un bombardement d'une violence inouïe. Son but : forcer la France à sacrifier son armée pour défendre la ville.\n\nLe général [b]Pétain[/b] organise la défense. Une seule route relie Verdun à l'arrière : la [b]Voie sacrée[/b], où passent jour et nuit des milliers de camions. Il met en place la « noria » : les divisions se relaient pour ne pas s'épuiser. Environ 70 % des soldats français passent par Verdun.\n\nLa bataille dure 300 jours. Elle fait plus de 300 000 morts, Français et Allemands confondus, pour un front qui a très peu bougé. Verdun devient le symbole de la résistance française… et de l'horreur de la guerre industrielle.",
+			"fact": "Le fort de Douaumont, le plus puissant de Verdun, est pris par les Allemands dès le 25 février 1916 par un petit groupe de soldats… sans combat : il n'était presque plus gardé."
+		},
+		{
+			"title": "Inventer pour percer le front",
+			"text": "Pour sortir de l'impasse, chaque camp innove. L'[b]aviation[/b] passe en quatre ans de quelques appareils de reconnaissance à des milliers de chasseurs et de bombardiers. Les « as » comme Georges Guynemer ou René Fonck deviennent des héros.\n\nLes Britanniques engagent les premiers [b]chars[/b] en 1916 sur la Somme. En France, le colonel Estienne pousse la création de l'arme blindée, et le [b]Renault FT[/b] (1917), petit char à tourelle tournante, est un immense succès.\n\nL'infanterie change aussi : grenades, fusils-mitrailleurs, mortiers, petits groupes de combat qui s'infiltrent. Les Allemands créent des troupes d'assaut (Stoßtruppen). En 1918, la guerre redevient une guerre de mouvement grâce à la coordination de l'artillerie, de l'infanterie, des chars et des avions.",
+			"fact": "Le Renault FT a tellement de succès qu'il est exporté dans une vingtaine de pays et que certains exemplaires combattent encore… en 1940."
+		},
+		{
+			"title": "La guerre totale et la victoire",
+			"text": "La Grande Guerre est une [b]guerre totale[/b] : toute la société est mobilisée. Les femmes remplacent les hommes dans les champs et les usines (les « munitionnettes »). L'État contrôle l'économie, les transports, la presse (censure) et lance de grands emprunts.\n\nL'empire colonial fournit aussi des hommes : plus d'un demi-million de soldats viennent d'Afrique du Nord, d'Afrique de l'Ouest (les tirailleurs dits « sénégalais »), de Madagascar ou d'Indochine.\n\nEn 1917, la Russie sort de la guerre après la révolution, mais les [b]États-Unis[/b] entrent dans le conflit. En 1918, sous le commandement unique du maréchal [b]Foch[/b], les Alliés repoussent les dernières offensives allemandes puis contre-attaquent. L'[b]armistice[/b] est signé le 11 novembre 1918 à Rethondes. La France compte environ 1,4 million de morts.",
+			"fact": "Le 11 novembre 1918, l'armistice entre en vigueur à 11 heures. Les clairons sonnent le « cessez-le-feu » sur tout le front."
+		}
+	],
+	"book": {
+		"title": "Le Feu (Journal d'une escouade)",
+		"author": "Henri Barbusse",
+		"year": "1916",
+		"summary": "Engagé volontaire à 41 ans, Henri Barbusse raconte la vie d'une escouade de poilus : la boue, l'attente, la soupe froide, le langage des tranchées, les assauts. Publié en pleine guerre malgré la censure, le livre reçoit le prix Goncourt en 1916 et bouleverse les lecteurs, qui découvrent enfin la réalité du front loin du « bourrage de crâne » des journaux.",
+		"why": "Écrit au cœur de la guerre par un soldat, c'est l'un des premiers grands témoignages de 14-18. Il montre le quotidien et la fraternité des simples soldats."
+	},
+	"more_books": [
+		{"title": "Ceux de 14", "author": "Maurice Genevoix", "note": "Les souvenirs d'un jeune lieutenant de 1914-1915, précis et humains. Genevoix est entré au Panthéon en 2020."},
+		{"title": "À l'Ouest rien de nouveau", "author": "Erich Maria Remarque", "note": "La guerre vue par un jeune soldat allemand (1929) : le même enfer de l'autre côté du no man's land."},
+		{"title": "Orages d'acier", "author": "Ernst Jünger", "note": "Le journal de guerre d'un officier allemand des troupes d'assaut, très différent de Remarque par son ton."},
+		{"title": "Paroles de poilus", "author": "Collectif", "note": "Des lettres de soldats à leurs familles : le meilleur moyen d'entendre leur voix."}
+	],
+	"quiz": [
+		{"q": "Quel plan allemand prévoit de passer par la Belgique en 1914 ?", "a": ["Le plan XVII", "Le plan Schlieffen", "Le plan Marshall", "Le plan Overlord"], "ok": 1, "why": "Contourner l'armée française par le nord pour prendre Paris en six semaines."},
+		{"q": "Quelle bataille arrête l'invasion allemande en septembre 1914 ?", "a": ["La Marne", "Verdun", "La Somme", "Le Chemin des Dames"], "ok": 0, "why": "La contre-offensive de la Marne sauve Paris."},
+		{"q": "Pourquoi la défense est-elle plus forte que l'attaque en 1915-1917 ?", "a": ["À cause des mitrailleuses, de l'artillerie et des barbelés", "Parce que les soldats refusent d'attaquer", "À cause de la neige", "Parce qu'il n'y a pas de munitions"], "ok": 0, "why": "Et les défenseurs reçoivent des renforts par rail plus vite que l'attaquant n'avance."},
+		{"q": "Que veut dire « poilu » dans l'argot de l'époque ?", "a": ["Barbu", "Courageux, viril", "Sale", "Fatigué"], "ok": 1, "why": "Le surnom ne vient pas de la barbe mais du courage."},
+		{"q": "Comment s'appelle la route qui ravitaille Verdun ?", "a": ["La Route Napoléon", "La Voie sacrée", "La Voie romaine", "Le Chemin des Dames"], "ok": 1, "why": "Des milliers de camions y passent jour et nuit."},
+		{"q": "Qu'est-ce que la « noria » de Pétain ?", "a": ["Un canon géant", "La rotation régulière des divisions", "Un type de tranchée", "Une décoration"], "ok": 1, "why": "Les unités se relaient pour ne pas être épuisées : environ 70 % des poilus passent par Verdun."},
+		{"q": "Combien de jours dure la bataille de Verdun ?", "a": ["3", "30", "300", "3 000"], "ok": 2, "why": "Du 21 février au 18 décembre 1916."},
+		{"q": "Quel char français de 1917 a une tourelle tournante ?", "a": ["Le Tigre", "Le Renault FT", "Le Sherman", "Le Leclerc"], "ok": 1, "why": "Le premier char moderne : moteur à l'arrière, tourelle tournante."},
+		{"q": "Qui sont les « munitionnettes » ?", "a": ["Des infirmières", "Des ouvrières des usines d'armement", "Des pilotes", "Des espionnes"], "ok": 1, "why": "Des centaines de milliers de femmes fabriquent obus et munitions."},
+		{"q": "Quand et où est signé l'armistice de 1918 ?", "a": ["11 novembre 1918, Rethondes", "14 juillet 1918, Paris", "8 mai 1918, Reims", "28 juin 1919, Versailles"], "ok": 0, "why": "Dans un wagon, en forêt de Compiègne, à Rethondes. (Versailles est le traité de paix de 1919.)"},
+		{"q": "Quel livre d'Henri Barbusse reçoit le prix Goncourt en 1916 ?", "a": ["Le Feu", "La Débâcle", "Les Croix de bois", "Ceux de 14"], "ok": 0, "why": "Le Feu, « Journal d'une escouade », publié en pleine guerre."}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"id": "lebel",
+	"era": "e05",
+	"name": "Fusil Lebel",
+	"full_name": "Fusil d'infanterie modèle 1886 modifié 1893",
+	"type": "Fusil à répétition",
+	"country": "France",
+	"year": "1886",
+	"designer": "Commission dirigée par le général Tramond ; nom du colonel Nicolas Lebel",
+	"camera": {"size": 1.5, "center": [0.1, 0, 0]},
+	"story": "[b]Une révolution chimique.[/b] En 1884, le chimiste Paul Vieille invente la « poudre B », une poudre sans fumée trois fois plus puissante que la poudre noire. La France crée en urgence un fusil pour l'utiliser : le Lebel, adopté en 1886. C'est le premier fusil réglementaire au monde à poudre sans fumée.\n\n[b]Plus de nuage blanc.[/b] Le tireur ne se trahit plus par un nuage de fumée, et le champ de bataille reste visible. La balle, plus petite (8 mm), va plus vite et plus loin. Toutes les armées du monde devront copier cette innovation.\n\n[b]Un magasin tubulaire.[/b] Huit cartouches sont rangées bout à bout dans un tube sous le canon. Le tireur manœuvre la culasse à verrou pour éjecter l'étui et introduire une nouvelle cartouche. Le Lebel sera le fusil des poilus de 1914-1918, avec sa longue baïonnette « Rosalie ».",
+	"facts": [
+		"La baïonnette du Lebel, longue de 52 cm, à section en croix, était surnommée « Rosalie » par les soldats, d'après une chanson de Théodore Botrel.",
+		"Le magasin tubulaire est lent à recharger cartouche par cartouche, un défaut face aux fusils à chargeurs de lame (Mauser) adoptés ensuite par les autres armées."
+	],
+	"specs": [["Calibre", "8 mm (8 × 50 R Lebel)"], ["Longueur", "1,30 m (sans baïonnette)"], ["Masse", "environ 4,4 kg"], ["Magasin", "8 cartouches + 1 dans l'auget + 1 dans la chambre"], ["Portée pratique", "environ 400 m (réglable jusqu'à 2 000 m)"]],
+	"parts": [
+		{"id": "crosse", "name": "Crosse et fût", "desc": "Le Lebel a une crosse en deux parties, séparées par la boîte de culasse.", "pos": [0, 0, 0], "explode": [0, -0.22, 0], "shapes": [
+			{"t": "box", "s": [0.62, 0.045, 0.04], "p": [0.25, -0.005, 0], "m": "wood"},
+			{"t": "box", "s": [0.42, 0.11, 0.042], "p": [-0.42, -0.04, 0], "r": [0, 0, -6], "m": "wood"}
+		]},
+		{"id": "canon", "name": "Canon", "desc": "Canon rayé de 80 cm : les rayures font tourner la balle sur elle-même pour la stabiliser.", "pos": [0.33, 0.026, 0], "explode": [0, 0.16, 0], "shapes": [
+			{"t": "cyl", "rad": 0.011, "rad2": 0.0095, "h": 0.8, "p": [0, 0, 0], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.08, 0.022, 0.024], "p": [-0.28, 0.018, 0], "m": "blued"}
+		]},
+		{"id": "boite", "name": "Boîte de culasse", "desc": "Elle relie le canon à la crosse et guide la culasse mobile.", "pos": [-0.13, 0.015, 0], "explode": [0, 0.06, 0.18], "shapes": [
+			{"t": "box", "s": [0.2, 0.05, 0.035], "p": [0, 0, 0], "m": "blued"}
+		]},
+		{"id": "culasse", "name": "Culasse mobile (verrou)", "desc": "Le tireur la tourne, la tire, la repousse et la verrouille à chaque tir : le système à verrou, robuste et précis.", "pos": [-0.13, 0.035, 0], "explode": [-0.1, 0.18, 0.18], "shapes": [
+			{"t": "cyl", "rad": 0.011, "h": 0.17, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "box", "s": [0.01, 0.05, 0.01], "p": [-0.05, -0.02, 0.025], "r": [-40, 0, 0], "m": "steel"},
+			{"t": "sphere", "rad": 0.01, "p": [-0.05, -0.04, 0.045], "m": "steel"}
+		]},
+		{"id": "magasin", "name": "Magasin tubulaire", "desc": "Un tube sous le canon contient 8 cartouches bout à bout, poussées par un ressort.", "pos": [0.2, -0.012, 0], "explode": [0.02, -0.38, 0], "shapes": [
+			{"t": "cyl", "rad": 0.008, "h": 0.6, "p": [0, 0, 0], "r": [0, 0, 90], "m": "metal"}
+		]},
+		{"id": "hausse", "name": "Hausse", "desc": "Le système de visée, graduable jusqu'à 2 000 mètres pour les tirs de salve à longue distance.", "pos": [0.0, 0.05, 0], "explode": [0, 0.26, 0], "shapes": [
+			{"t": "box", "s": [0.06, 0.012, 0.02], "p": [0, 0, 0], "m": "blued"},
+			{"t": "box", "s": [0.006, 0.03, 0.016], "p": [0.02, 0.015, 0], "m": "blued"}
+		]},
+		{"id": "rosalie", "name": "Baïonnette « Rosalie »", "desc": "Longue lame à section en croix de 52 cm, surnommée « Rosalie » par les soldats.", "pos": [0.76, 0.02, 0], "explode": [0.25, 0, 0], "shapes": [
+			{"t": "cyl", "rad": 0.014, "h": 0.05, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "box", "s": [0.52, 0.012, 0.004], "p": [0.29, 0.0, 0], "m": "steel"},
+			{"t": "box", "s": [0.52, 0.004, 0.012], "p": [0.29, 0.0, 0], "m": "steel"}
+		]}
+	]
+}

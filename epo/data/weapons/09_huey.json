@@ -1,0 +1,130 @@
+{
+	"id": "huey",
+	"era": "e09",
+	"name": "Bell UH-1 « Huey »",
+	"full_name": "Hélicoptère utilitaire Bell UH-1 Iroquois",
+	"type": "Hélicoptère de transport",
+	"country": "États-Unis",
+	"year": "1956",
+	"designer": "Bell Helicopter (équipe de Bartram Kelley)",
+	"camera": {"size": 11.5, "center": [-2.0, 1.9, 0]},
+	"story": "[b]Le cheval du ciel.[/b] En 1955, l'armée américaine lance un concours pour un hélicoptère capable d'évacuer les blessés. La société Bell le remporte avec le XH-40, qui vole en 1956. D'abord appelé HU-1, d'où son surnom de « Huey », il devient le UH-1 Iroquois. Plus de 16 000 exemplaires sont construits, toutes versions confondues.\n\n[b]La révolution de la turbine.[/b] Les premiers hélicoptères avaient des moteurs à pistons, lourds et peu puissants. Le Huey est l'un des premiers hélicoptères militaires à [b]turbine[/b] : plus léger, plus puissant, plus fiable. C'est un appareil français, l'Alouette II (1955), qui avait ouvert la voie en devenant le premier hélicoptère à turbine produit en série.\n\n[b]La cavalerie de l'air.[/b] Au Vietnam, des divisions entières se déplacent en hélicoptère : c'est l'[b]aéromobilité[/b]. Le Huey dépose les soldats au cœur de la jungle, les ravitaille et évacue les blessés. Grâce aux hélicoptères sanitaires surnommés « Dustoff », un blessé grave atteint souvent un hôpital en moins d'une heure.",
+	"facts": [
+		"Environ 7 000 Huey ont servi pendant la guerre du Vietnam. Le bruit de leurs pales, le fameux « wop-wop », est devenu au cinéma le son de cette guerre.",
+		"La barre stabilisatrice, avec ses deux masselottes au-dessus du rotor, vient d'une invention d'Arthur Young pour le premier hélicoptère de Bell, dans les années 1940.",
+		"Plus de 60 ans après son premier vol, le Huey et ses descendants volent encore dans de nombreux pays, pour l'armée, les pompiers ou le secours en montagne."
+	],
+	"specs": [["Équipage", "2 pilotes, souvent un mécanicien et un mitrailleur"], ["Capacité", "une douzaine de soldats ou 6 blessés sur brancards"], ["Rotor", "2 pales, 14,6 m de diamètre"], ["Moteur", "turbine Lycoming T53 d'environ 1 400 ch (UH-1H)"], ["Vitesse", "environ 200 km/h"], ["Autonomie", "environ 500 km"]],
+	"parts": [
+		{"id": "fuselage", "name": "Cabine", "desc": "Le fuselage en aluminium abrite deux pilotes à l'avant et une grande soute qui peut accueillir une douzaine de soldats équipés.", "pos": [0, 0, 0], "shapes": [
+			{"t": "box", "s": [4.2, 1.9, 2.4], "p": [0.3, 1.5, 0], "m": "paint", "c": "414a2e"},
+			{"t": "sphere", "rad": 1.0, "p": [2.3, 1.2, 0], "s": [1.3, 0.7, 1.15], "m": "paint", "c": "414a2e"},
+			{"t": "sphere", "rad": 1.0, "p": [2.35, 1.7, 0], "s": [1.15, 0.7, 1.1], "m": "glass"},
+			{"t": "box", "s": [3.4, 0.5, 1.7], "p": [-0.3, 2.7, 0], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [0.9, 1.2, 1.6], "p": [-2.15, 1.9, 0], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [1.7, 1.35, 0.02], "p": [-0.1, 1.4, 1.205], "m": "black"},
+			{"t": "box", "s": [1.7, 1.35, 0.02], "p": [-0.1, 1.4, -1.205], "m": "black"},
+			{"t": "box", "s": [1.0, 0.7, 0.02], "p": [1.55, 1.85, 1.205], "m": "glass"},
+			{"t": "box", "s": [1.0, 0.7, 0.02], "p": [1.55, 1.85, -1.205], "m": "glass"},
+			{"t": "box", "s": [0.9, 0.06, 0.02], "p": [1.2, 1.0, 1.205], "m": "black"},
+			{"t": "box", "s": [0.9, 0.06, 0.02], "p": [1.2, 1.0, -1.205], "m": "black"}
+		]},
+		{"id": "cockpit", "name": "Poste de pilotage", "desc": "Deux pilotes côte à côte. Le manche cyclique incline le rotor pour avancer ou tourner, le levier de pas collectif fait monter ou descendre l'appareil, et les palonniers commandent le rotor de queue.", "pos": [1.9, 1.3, 0], "explode": [1.6, 2.0, 0], "shapes": [
+			{"t": "box", "s": [0.15, 0.45, 1.9], "p": [0.6, 0.45, 0], "m": "black"},
+			{"t": "box", "s": [0.55, 0.15, 0.55], "p": [-0.2, 0, 0.5], "m": "leather"},
+			{"t": "box", "s": [0.55, 0.15, 0.55], "p": [-0.2, 0, -0.5], "m": "leather"},
+			{"t": "box", "s": [0.12, 0.75, 0.55], "p": [-0.45, 0.35, 0.5], "m": "leather"},
+			{"t": "box", "s": [0.12, 0.75, 0.55], "p": [-0.45, 0.35, -0.5], "m": "leather"},
+			{"t": "cyl", "rad": 0.025, "h": 0.5, "p": [0.12, 0.2, 0.5], "m": "black"},
+			{"t": "cyl", "rad": 0.025, "h": 0.5, "p": [0.12, 0.2, -0.5], "m": "black"},
+			{"t": "cyl", "rad": 0.025, "h": 0.55, "p": [-0.1, 0.12, 0.85], "r": [0, 0, 65], "m": "black"}
+		]},
+		{"id": "brancards", "name": "Brancards d'évacuation sanitaire", "desc": "Les Huey sanitaires, surnommés « Dustoff », pouvaient emporter six blessés couchés. Leur rapidité a sauvé de très nombreuses vies.", "pos": [-0.6, 0.95, 0], "explode": [0, 0, 2.8], "shapes": [
+			{"t": "box", "s": [2.0, 0.05, 0.55], "p": [0, 0, 0.45], "m": "paint", "c": "7a8a58"},
+			{"t": "box", "s": [2.0, 0.05, 0.55], "p": [0, 0, -0.45], "m": "paint", "c": "7a8a58"},
+			{"t": "box", "s": [2.0, 0.05, 0.55], "p": [0, 0.55, 0.45], "m": "paint", "c": "7a8a58"},
+			{"t": "box", "s": [0.25, 0.06, 0.08], "p": [0.6, 0.58, 0.45], "m": "red"},
+			{"t": "box", "s": [0.08, 0.06, 0.25], "p": [0.6, 0.58, 0.45], "m": "red"},
+			{"t": "cyl", "rad": 0.025, "h": 0.6, "p": [0.95, 0.28, 0.72], "m": "metal"},
+			{"t": "cyl", "rad": 0.025, "h": 0.6, "p": [-0.95, 0.28, 0.72], "m": "metal"}
+		]},
+		{"id": "porte_d", "name": "Porte coulissante droite", "desc": "Les grandes portes coulissantes restaient souvent ouvertes en vol : les soldats pouvaient sauter à terre en quelques secondes.", "pos": [-1.55, 1.45, 1.27], "explode": [0, 0, 1.3], "shapes": [
+			{"t": "box", "s": [1.5, 1.3, 0.05], "p": [0, 0, 0], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [0.5, 0.4, 0.02], "p": [0, 0.3, 0.03], "m": "glass"}
+		]},
+		{"id": "porte_g", "name": "Porte coulissante gauche", "desc": "Une porte de chaque côté : on embarque et on débarque des deux côtés à la fois.", "pos": [-1.55, 1.45, -1.27], "explode": [0, 0, -1.3], "shapes": [
+			{"t": "box", "s": [1.5, 1.3, 0.05], "p": [0, 0, 0], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [0.5, 0.4, 0.02], "p": [0, 0.3, -0.03], "m": "glass"}
+		]},
+		{"id": "m60", "name": "Mitrailleuses de sabord", "desc": "Deux mitrailleuses M60 sur pivot, servies par le mécanicien de bord et un mitrailleur, protègent l'appareil pendant l'atterrissage et le décollage.", "pos": [0.1, 1.55, 0], "explode": [2.4, 0.2, 0], "shapes": [
+			{"t": "box", "s": [0.7, 0.12, 0.1], "p": [0, 0, 1.55], "m": "blued"},
+			{"t": "cyl", "rad": 0.022, "h": 0.6, "p": [0.6, 0.02, 1.55], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.3, 0.1, 0.06], "p": [-0.45, -0.03, 1.55], "m": "blued"},
+			{"t": "cyl", "rad": 0.035, "h": 0.5, "p": [0, -0.3, 1.45], "m": "metal"},
+			{"t": "box", "s": [0.7, 0.12, 0.1], "p": [0, 0, -1.55], "m": "blued"},
+			{"t": "cyl", "rad": 0.022, "h": 0.6, "p": [0.6, 0.02, -1.55], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.3, 0.1, 0.06], "p": [-0.45, -0.03, -1.55], "m": "blued"},
+			{"t": "cyl", "rad": 0.035, "h": 0.5, "p": [0, -0.3, -1.45], "m": "metal"}
+		]},
+		{"id": "patins", "name": "Patins d'atterrissage", "desc": "Pas de roues : de simples tubes qui permettent de se poser presque partout, même dans une clairière ou une rizière.", "pos": [0, 0, 0], "explode": [0, -1.0, 0], "shapes": [
+			{"t": "cyl", "rad": 0.06, "h": 4.6, "p": [0.3, 0.06, 1.3], "r": [0, 0, 90], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 4.6, "p": [0.3, 0.06, -1.3], "r": [0, 0, 90], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.5, "p": [2.82, 0.185, 1.3], "r": [0, 0, -60], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.5, "p": [2.82, 0.185, -1.3], "r": [0, 0, -60], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.55, "p": [1.3, 0.33, 1.25], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.55, "p": [1.3, 0.33, -1.25], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.55, "p": [-0.9, 0.33, 1.25], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 0.55, "p": [-0.9, 0.33, -1.25], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 2.5, "p": [1.3, 0.6, 0], "r": [90, 0, 0], "m": "metal"},
+			{"t": "cyl", "rad": 0.06, "h": 2.5, "p": [-0.9, 0.6, 0], "r": [90, 0, 0], "m": "metal"}
+		]},
+		{"id": "turbine", "name": "Turbine Lycoming T53", "desc": "Une turbine à gaz légère et puissante, d'environ 1 400 chevaux sur le UH-1H. C'est elle qui a rendu possible un hélicoptère aussi efficace.", "pos": [-1.3, 2.85, 0], "explode": [-0.4, 1.7, 0], "shapes": [
+			{"t": "cyl", "rad": 0.33, "h": 1.3, "p": [0, 0, 0], "r": [0, 0, 90], "m": "metal"},
+			{"t": "cyl", "rad": 0.3, "rad2": 0.24, "h": 0.6, "p": [-0.95, 0.03, 0], "r": [0, 0, 90], "m": "black"},
+			{"t": "torus", "rad": 0.26, "rad2": 0.36, "p": [0.62, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "mat", "name": "Mât et transmission", "desc": "La boîte de transmission réduit la vitesse de la turbine et fait tourner le rotor par le mât. Le plateau cyclique, juste dessous, transmet les ordres du pilote aux pales.", "pos": [0.2, 2.95, 0], "explode": [0.3, 1.3, 0], "shapes": [
+			{"t": "cyl", "rad": 0.12, "h": 0.65, "p": [0, 0.32, 0], "m": "steel"},
+			{"t": "cyl", "rad": 0.32, "h": 0.08, "p": [0, 0.12, 0], "m": "steel"},
+			{"t": "box", "s": [1.0, 0.4, 0.9], "p": [0, -0.12, 0], "m": "metal"}
+		]},
+		{"id": "rotor", "name": "Rotor principal", "desc": "Deux pales de plus de 7 mètres chacune. La barre stabilisatrice et ses masselottes, au-dessus, rendent l'appareil plus stable.", "pos": [0.2, 3.62, 0], "explode": [0, 2.6, 0], "shapes": [
+			{"t": "box", "s": [14.6, 0.05, 0.53], "p": [0, 0, 0], "m": "black"},
+			{"t": "box", "s": [0.6, 0.2, 0.4], "p": [0, 0.02, 0], "m": "metal"},
+			{"t": "box", "s": [0.06, 0.06, 2.6], "p": [0, 0.18, 0], "m": "steel"},
+			{"t": "cyl", "rad": 0.06, "h": 0.4, "p": [0, 0.18, 1.3], "r": [90, 0, 0], "m": "steel"},
+			{"t": "cyl", "rad": 0.06, "h": 0.4, "p": [0, 0.18, -1.3], "r": [90, 0, 0], "m": "steel"}
+		]},
+		{"id": "poutre", "name": "Poutre de queue", "desc": "Elle éloigne le rotor de queue du rotor principal et porte les empennages qui stabilisent le vol vers l'avant. Un long arbre, à l'intérieur, entraîne le rotor de queue.", "pos": [-2.5, 2.1, 0], "explode": [-1.6, 0, 0], "shapes": [
+			{"t": "cyl", "rad": 0.55, "rad2": 0.22, "h": 6.2, "p": [-3.1, 0, 0], "r": [0, 0, 90], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [1.0, 1.7, 0.12], "p": [-5.9, 0.75, 0], "r": [0, 0, 30], "m": "paint", "c": "414a2e"},
+			{"t": "box", "s": [0.7, 0.06, 2.6], "p": [-3.8, 0, 0], "m": "paint", "c": "414a2e"},
+			{"t": "cyl", "rad": 0.04, "h": 0.8, "p": [-5.6, -0.4, 0], "r": [0, 0, -40], "m": "metal"}
+		]},
+		{"id": "rotor_queue", "name": "Rotor anticouple", "desc": "Sans lui, la cabine tournerait sur elle-même dans le sens inverse du grand rotor ! Le pilote règle sa poussée avec les palonniers pour garder le cap.", "pos": [-8.75, 3.3, -0.3], "explode": [-0.8, 0, -1.2], "shapes": [
+			{"t": "box", "s": [0.18, 2.6, 0.03], "p": [0, 0, 0], "m": "black"},
+			{"t": "cyl", "rad": 0.12, "h": 0.25, "p": [0, 0, 0], "r": [90, 0, 0], "m": "metal"}
+		]}
+	],
+	"cycle": {
+		"note": "Le vol est montré en accéléré, et la rotation des rotors très ralentie pour que l'œil puisse la suivre.",
+		"duration": 12.0,
+		"sound": "engine",
+		"hide": [],
+		"spins": {
+			"rotor": [0, 5400, 0],
+			"rotor_queue": [0, 0, 21600]
+		},
+		"body": [[0, 0, 0, 0], [0.2, 0, 0, 0], [0.38, 0, 2.0, 0], [0.5, 0, 2.2, 0], [0.68, 1.5, 2.4, 0], [0.82, 0.6, 1.6, 0], [0.92, 0, 0, 0], [1, 0, 0, 0]],
+		"body_rot": [[0, 0, 0, 0], [0.38, 0, 0, 0], [0.46, 0, 0, -9], [0.62, 0, 0, -9], [0.74, 0, 0, 7], [0.86, 0, 0, 3], [0.92, 0, 0, 0], [1, 0, 0, 0]],
+		"objects": [],
+		"steps": [
+			[0.0, "1. Démarrage : la turbine tourne à des milliers de tours par minute. La transmission réduit cette vitesse et fait tourner le rotor principal et, par un long arbre, le rotor de queue."],
+			[0.2, "2. Décollage : le pilote lève le levier de pas collectif. Toutes les pales prennent plus d'angle en même temps : elles « mordent » davantage l'air et la portance soulève l'appareil."],
+			[0.4, "3. Vol vers l'avant : avec le manche cyclique, le pilote incline le disque du rotor vers l'avant. La portance tire alors l'hélicoptère vers l'avant : il pique du nez et accélère."],
+			[0.55, "4. Anticouple : en tournant, le grand rotor pousse la cabine à tourner dans l'autre sens. Le rotor de queue l'en empêche ; avec les palonniers, le pilote règle sa poussée pour garder le cap."],
+			[0.7, "5. Approche : le pilote cabre l'appareil pour freiner, puis baisse le pas collectif pour descendre doucement vers la zone d'atterrissage."],
+			[0.9, "6. Posé ! Les soldats sautent par les portes ouvertes et l'hélicoptère repart aussitôt : moins il reste au sol, moins il est exposé."]
+		]
+	}
+}

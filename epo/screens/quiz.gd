@@ -12,7 +12,7 @@ var _counter: Label
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e01"))
 	var era := Content.era(era_id)
@@ -24,7 +24,7 @@ func _ready() -> void:
 	questions = all.slice(0, min(10, all.size()))
 
 	var center := CenterContainer.new()
-	center.set_anchors_preset(Control.PRESET_FULL_RECT)
+	center.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	center.offset_top = 70
 	add_child(center)
 	var panel := UI.panel(30)

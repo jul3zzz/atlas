@@ -43,7 +43,7 @@ var _card_home := Vector2.ZERO
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e08"))
 	deck = Content.state_decks.get(era_id, {})
@@ -56,7 +56,7 @@ func _ready() -> void:
 
 	var root := UI.vbox(14)
 	var m := UI.margin(root, 60, 84, 60, 20)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 	# Jauges
 	var grow := UI.hbox(30)

@@ -15,7 +15,7 @@ var _stage: Control
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_filter = String(Nav.params.get("era", ""))
 	Sfx.music("ambient")
@@ -25,7 +25,7 @@ func _ready() -> void:
 
 	var row := UI.hbox(24)
 	var m := UI.margin(row, 40, 88, 40, 24)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var left := UI.vbox(12)
@@ -216,7 +216,7 @@ func card_widget(card: Dictionary, show: bool, width := 150, is_new := false) ->
 	var v := UI.vbox(4)
 	v.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	var mm := UI.margin(v, 10, 8, 10, 8)
-	mm.set_anchors_preset(Control.PRESET_FULL_RECT)
+	mm.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	mm.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	b.add_child(mm)
 	var era := Content.era(String(card.era))

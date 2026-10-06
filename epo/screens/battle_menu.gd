@@ -6,7 +6,7 @@ var sandbox := false
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", ""))
 	sandbox = bool(Nav.params.get("sandbox", false)) or era_id == ""
@@ -17,7 +17,7 @@ func _ready() -> void:
 
 	var row := UI.hbox(26)
 	var m := UI.margin(row, 50, 92, 50, 30)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var left := UI.vbox(12)

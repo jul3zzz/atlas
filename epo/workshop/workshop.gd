@@ -2,6 +2,10 @@ extends Node3D
 ## Atelier d'armes : histoire, vue éclatée, fonctionnement animé, démontage chronométré.
 ## Paramètres Nav : {"weapon": id, "era": id}
 
+const HOLDER_POS := Vector3(0, 1.05, 0)
+const DEFAULT_TARGET := Vector3(0, 1.1, 0)
+const DEFAULT_DIST := 1.9
+
 var weapon_id := ""
 var back_era := ""
 var data: Dictionary
@@ -13,11 +17,13 @@ var mode := "story"
 # Caméra orbitale
 var yaw := 0.3
 var pitch := -0.2
-var dist := 1.9
-var target := Vector3(0, 1.1, 0)
+var dist := DEFAULT_DIST
+var target := DEFAULT_TARGET
+var _target := DEFAULT_TARGET
+var _focused := false
 var _yaw := 0.3
 var _pitch := -0.2
-var _dist := 1.9
+var _dist := DEFAULT_DIST
 var _rot_drag := false
 
 # Interface
@@ -111,7 +117,7 @@ func _build_world() -> void:
 	add_child(Models.box(Vector3(0.06, 0.28, 0.06), Models.mat(Color("2a2a2a"), 0.6, 0.5), Vector3(-0.1, 0.84, 0)))
 	add_child(Models.box(Vector3(0.3, 0.03, 0.2), Models.mat(Color("2a2a2a"), 0.6, 0.5), Vector3(-0.1, 0.72, 0)))
 	holder = Node3D.new()
-	holder.position = Vector3(0, 1.05, 0)
+	holder.position = HOLDER_POS
 	add_child(holder)
 	weapon = WeaponModel.new()
 	weapon.build(data)
@@ -133,9 +139,10 @@ func _update_cam(k: float) -> void:
 	_yaw = lerp_angle(_yaw, yaw, k)
 	_pitch = lerpf(_pitch, pitch, k)
 	_dist = lerpf(_dist, dist, k)
+	_target = _target.lerp(target, k)
 	var b := Basis(Vector3.UP, _yaw) * Basis(Vector3.RIGHT, _pitch)
-	cam.global_position = target + b * Vector3(0, 0, _dist)
-	cam.look_at(target)
+	cam.global_position = _target + b * Vector3(0, 0, _dist)
+	cam.look_at(_target)
 	# Décale l'image vers la droite pour ne pas cacher l'arme derrière le panneau de gauche.
 	cam.h_offset = -0.16 * _dist
 
@@ -171,7 +178,7 @@ func _process(delta: float) -> void:
 		_apply_cycle(cycle_t)
 	if mode == "strip" and strip_state in ["strip", "assemble"]:
 		strip_time += delta
-		timer_label.text = "Temps : %.1f s   ·   erreurs : %d" % [strip_time, strip_errors]
+		timer_label.text = "Temps : %s s   ·   erreurs : %d" % [UI.dec(strip_time), strip_errors]
 	if mode == "inspect" and hovered != "":
 		_hover_time += delta
 		if _hover_time > 0.5 and not inspected.has(hovered):
@@ -189,9 +196,27 @@ func _pick() -> void:
 		var from := cam.project_ray_origin(mp)
 		var to := from + cam.project_ray_normal(mp) * 10.0
 		var q := PhysicsRayQueryParameters3D.create(from, to, 8)
-		var hit := get_world_3d().direct_space_state.intersect_ray(q)
-		if hit and hit.collider and hit.collider.has_meta("part"):
-			id = String(hit.collider.get_meta("part"))
+		var space := get_world_3d().direct_space_state
+		var order: Array = data.get("strip", [])
+		var first := ""
+		var ex: Array[RID] = []
+		# Les pièces cachées à l'intérieur restent accessibles à travers la carcasse :
+		# en démontage, on garde la première pièce démontable touchée ; en inspection,
+		# la première pièce pas encore examinée (vision « rayons X »).
+		for i in 6:
+			var hit := space.intersect_ray(q)
+			if not hit or not hit.collider or not hit.collider.has_meta("part"):
+				break
+			var pid := String(hit.collider.get_meta("part"))
+			if first == "":
+				first = pid
+			if (mode == "strip" and order.has(pid)) or (mode == "inspect" and not inspected.has(pid)):
+				id = pid
+				break
+			ex.append(hit.rid)
+			q.exclude = ex
+		if id == "":
+			id = first
 	if id != hovered:
 		hovered = id
 		_hover_time = 0.0
@@ -220,6 +245,17 @@ func _set_mode(m: String) -> void:
 	_clear_cycle_objects()
 	weapon.removed.clear()
 	weapon.reset_home()
+	holder.position = HOLDER_POS
+	holder.rotation = Vector3.ZERO
+	# Zoom sur le mécanisme pendant l'animation, s'il est minuscule (platine d'un fusil…).
+	if m == "cycle" and data.has("cycle") and data.cycle.has("focus"):
+		target = weapon.to_global(WeaponModel._v3(data.cycle.focus))
+		dist = float(data.cycle.get("focus_dist", 0.8))
+		_focused = true
+	elif _focused:
+		target = DEFAULT_TARGET
+		dist = DEFAULT_DIST
+		_focused = false
 	strip_state = "idle"
 	match m:
 		"story":
@@ -278,7 +314,7 @@ func _cycle_panel() -> void:
 	if not data.has("cycle"):
 		content.add_child(UI.wrap_label("Pas d'animation de fonctionnement pour cette pièce.", 18, UI.MUTED))
 		return
-	content.add_child(UI.wrap_label("Le cycle est montré au ralenti. Le couvercle de culasse est rendu invisible pour voir l'intérieur.", 16, UI.MUTED))
+	content.add_child(UI.wrap_label(String(data.cycle.get("note", "Le fonctionnement est montré au ralenti.")), 16, UI.MUTED))
 	step_label = UI.rich("", true, 19)
 	var box := UI.panel(14, Color("2e2a1c"), UI.GOLD_DARK)
 	box.add_child(step_label)
@@ -335,7 +371,7 @@ func _strip_panel() -> void:
 	content.add_child(box)
 	var best = Game.best("strip_" + weapon_id, null)
 	if best != null:
-		content.add_child(UI.label("Ton record : %.1f s" % float(best), 17, UI.MUTED))
+		content.add_child(UI.label("Ton record : %s s" % UI.dec(float(best)), 17, UI.MUTED))
 	content.add_child(UI.primary_button("▶ Commencer", _strip_start, 21))
 	content.add_child(UI.button("Indice", func():
 		var order: Array = data.get("strip", [])
@@ -446,7 +482,7 @@ func _strip_done() -> void:
 	var improved := Game.set_step(_era(), "workshop", stars)
 	Game.reward(60 + 30 * stars if improved else 20, 20 + 10 * stars, "Démontage")
 	Sfx.play("victory")
-	strip_label.text = "[b]Arme remontée ![/b]\nTemps : %.1f s · Erreurs : %d\n[font_size=34][color=#d4ac2b]%s[/color][/font_size]%s\n[color=#a8a48c]3 étoiles : aucune erreur et moins de %d s.[/color]" % [strip_time, strip_errors, UI.stars(stars), "\n[color=#7cb855]Nouveau record ![/color]" if record else "", int(par)]
+	strip_label.text = "[b]Arme remontée ![/b]\nTemps : %s s · Erreurs : %d\n[font_size=34][color=#d4ac2b]%s[/color][/font_size]%s\n[color=#a8a48c]3 étoiles : aucune erreur et moins de %d s.[/color]" % [UI.dec(strip_time), strip_errors, UI.stars(stars), "\n[color=#7cb855]Nouveau record ![/color]" if record else "", int(par)]
 
 
 # --- Cycle animé --------------------------------------------------------------------
@@ -523,9 +559,19 @@ func _apply_cycle(t: float) -> void:
 		if weapon.parts.has(id):
 			var base := WeaponModel._v3(weapon.part_data[id].get("rot", [0, 0, 0]))
 			weapon.parts[id].rotation_degrees = base + _key_interp(c.rotations[id], t)
+	# Rotation continue (rotors, hélices) : degrés parcourus pendant un cycle complet.
+	for id in c.get("spins", {}):
+		if weapon.parts.has(id):
+			var base := WeaponModel._v3(weapon.part_data[id].get("rot", [0, 0, 0]))
+			weapon.parts[id].rotation_degrees = base + WeaponModel._v3(c.spins[id]) * t
 	for id in c.get("scales", {}):
 		if weapon.parts.has(id):
 			weapon.parts[id].scale = _key_interp(c.scales[id], t)
+	# Mouvement de l'ensemble (décollage d'un hélicoptère, vol d'un drone…).
+	if c.has("body"):
+		holder.position = HOLDER_POS + _key_interp(c.body, t) * weapon.scale.x
+	if c.has("body_rot"):
+		holder.rotation_degrees = _key_interp(c.body_rot, t)
 	for pair in cycle_objects:
 		var n: Node3D = pair[0]
 		var o: Dictionary = pair[1]
@@ -612,6 +658,11 @@ func _build_ui() -> void:
 
 
 func test_action(a: String) -> void:
+	if a.begins_with("cycle@"):
+		_set_mode("cycle")
+		cycle_playing = false
+		cycle_t = float(a.get_slice("@", 1))
+		return
 	match a:
 		"explode":
 			_set_mode("explode")

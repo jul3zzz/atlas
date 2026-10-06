@@ -58,6 +58,8 @@ func build(d: Dictionary) -> void:
 		for s in p.get("shapes", []):
 			var mesh := _shape_mesh(s)
 			node.add_child(mesh)
+			if String(s.get("m", "")) == "glass":
+				continue  # Les vitres laissent voir (et viser) l'intérieur.
 			var cs := _shape_collision(s)
 			if cs:
 				body.add_child(cs)

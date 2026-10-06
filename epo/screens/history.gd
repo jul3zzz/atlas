@@ -13,7 +13,7 @@ var _nav_label: Label
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e01"))
 	era = Content.era(era_id)
@@ -25,7 +25,7 @@ func _ready() -> void:
 
 	var row := UI.hbox(24)
 	var m := UI.margin(row, 40, 88, 40, 24)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var side := UI.panel(14)

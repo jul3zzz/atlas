@@ -5,7 +5,7 @@ var era_id := ""
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e08"))
 	var era := Content.era(era_id)
@@ -14,7 +14,7 @@ func _ready() -> void:
 	add_child(UI.top_bar("Atelier · " + String(era.get("name", "")), func(): Nav.goto("era", {"era": era_id})))
 	var row := UI.hbox(26)
 	var m := UI.margin(row, 50, 92, 50, 30)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var left := UI.vbox(12)
@@ -46,7 +46,7 @@ func _ready() -> void:
 	v.add_child(UI.wrap_label("L'État passe commande : à toi de concevoir l'arme qui répond le mieux à son cahier des charges. Chaque choix technique est un compromis !", 17, UI.MUTED))
 	if not brief.is_empty():
 		v.add_child(UI.rich("[b]Commande :[/b] %s" % brief.get("title", ""), false, 18))
-	var best := Game.best("design_" + era_id, null)
+	var best = Game.best("design_" + era_id, null)
 	if best != null:
 		v.add_child(UI.label("Meilleure note : %d / 100" % int(best), 17, UI.GOLD))
 	v.add_child(UI.primary_button("Entrer au bureau d'études", func(): Nav.goto("design", {"era": era_id}), 21))
@@ -83,6 +83,6 @@ func _card(w: Dictionary, highlight: bool) -> Control:
 	v.add_child(UI.label(" · ".join(feats), 15, UI.MUTED))
 	var best = Game.best("strip_" + String(w.id), null)
 	if best != null:
-		v.add_child(UI.label("Record de démontage : %.1f s" % float(best), 15, UI.GOLD))
+		v.add_child(UI.label("Record de démontage : %s s" % UI.dec(float(best)), 15, UI.GOLD))
 	r.add_child(UI.primary_button("Examiner", func(): Nav.goto("workshop", {"weapon": w.id, "era": era_id}), 19, 130))
 	return p

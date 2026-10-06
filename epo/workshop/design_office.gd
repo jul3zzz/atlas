@@ -11,7 +11,7 @@ var _verdict: Control
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	era_id = String(Nav.params.get("era", "e08"))
 	for b in Content.briefs:
@@ -31,7 +31,7 @@ func _ready() -> void:
 
 	var row := UI.hbox(22)
 	var m := UI.margin(row, 36, 88, 36, 24)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	# Commande de l'État
@@ -201,7 +201,7 @@ func _submit() -> void:
 	if improved:
 		Game.reward(score + 20, score / 2, "Bureau d'études")
 	Sfx.play("stamp")
-	var verdict := ["REFUSÉE", "ACCEPTÉE AVEC RÉSERVES", "ADOPTÉE", "ADOPTÉE AVEC FÉLICITATIONS"][stars]
+	var verdict: String = ["REFUSÉE", "ACCEPTÉE AVEC RÉSERVES", "ADOPTÉE", "ADOPTÉE AVEC FÉLICITATIONS"][stars]
 	var body := "[font_size=40][color=#d4ac2b]%d / 100[/color][/font_size]   %s\n\n" % [score, UI.stars(stars)]
 	body += "[b]Avis de la commission sur tes choix :[/b]\n"
 	for cat in brief.categories:

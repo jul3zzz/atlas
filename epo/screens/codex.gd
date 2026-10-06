@@ -30,13 +30,13 @@ var _tab := 0
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	add_child(UI.map_background())
 	add_child(UI.top_bar("Encyclopédie", func(): Nav.goto("hub" if Game.has_profile() else "title")))
 	var v := UI.vbox(12)
 	var m := UI.margin(v, 50, 90, 50, 24)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 	var tabs := UI.hbox(8)
 	v.add_child(tabs)
@@ -58,7 +58,7 @@ func _show(i: int) -> void:
 				_content.add_child(UI.label("%02d · %s" % [int(e.num), String(e.name).to_upper()], 22, Color(e.color).lightened(0.3), UI.font_ui_bold))
 				for u in Content.units_for_era(e.id):
 					var a: Dictionary = u.attack
-					var txt := "[b]%s[/b] — ◉ %d · PV %d · vitesse %.1f m/s · %s\n[color=#a8a48c]%s[/color]" % [u.name, int(u.cost), int(u.hp), float(u.speed), "corps à corps" if a.kind == "melee" else "portée %d m" % int(a.get("range", 0)), u.get("desc", "")]
+					var txt := "[b]%s[/b] — ◉ %d · PV %d · vitesse %s m/s · %s\n[color=#a8a48c]%s[/color]" % [u.name, int(u.cost), int(u.hp), UI.dec(float(u.speed)), "corps à corps" if a.kind == "melee" else "portée %d m" % int(a.get("range", 0)), u.get("desc", "")]
 					var p := UI.panel(10, Color(UI.PANEL, 0.9))
 					p.add_child(UI.rich(txt, false, 17))
 					_content.add_child(p)

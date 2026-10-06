@@ -3,13 +3,13 @@ extends Control
 
 
 func _ready() -> void:
-	set_anchors_preset(Control.PRESET_FULL_RECT)
+	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = UI.theme
 	add_child(UI.map_background())
 	add_child(UI.top_bar("Paramètres", func(): Nav.goto("hub" if Game.has_profile() else "title")))
 	var row := UI.hbox(26)
 	var m := UI.margin(row, 60, 100, 60, 30)
-	m.set_anchors_preset(Control.PRESET_FULL_RECT)
+	m.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	add_child(m)
 
 	var p := UI.panel(24)

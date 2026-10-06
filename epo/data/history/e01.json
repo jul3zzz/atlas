@@ -1,0 +1,56 @@
+{
+	"chapters": [
+		{
+			"title": "Les premières armées",
+			"text": "Les premières armées organisées naissent avec les premiers États, en Mésopotamie et en Égypte, il y a plus de 4 500 ans. Un roi qui collecte des impôts en céréales peut nourrir des soldats à plein temps : la guerre devient une affaire d'État.\n\nVers 1274 av. J.-C., à [b]Qadesh[/b] (en Syrie actuelle), le pharaon Ramsès II affronte les Hittites. Des milliers de [b]chars légers[/b], tirés par deux chevaux et portant un conducteur et un archer, s'affrontent. Les deux camps revendiquent la victoire. Une quinzaine d'années plus tard, les deux royaumes signent l'un des plus anciens traités de paix connus.\n\nDéjà, tout ce qui fera la guerre pendant des millénaires est là : le renseignement (Ramsès est trompé par de faux déserteurs), la logistique, la propagande (les temples égyptiens racontent une victoire éclatante) et la diplomatie.",
+			"fact": "Une copie du traité de paix entre l'Égypte et les Hittites, gravée sur une tablette d'argile, est exposée au musée d'archéologie d'Istanbul. Une réplique est accrochée au siège de l'ONU à New York."
+		},
+		{
+			"title": "La phalange grecque",
+			"text": "Dans les cités grecques, ce sont les citoyens eux-mêmes qui combattent : les [b]hoplites[/b]. Chacun achète son équipement (casque, cuirasse, lance, grand bouclier rond appelé hoplon). Ils se battent en [b]phalange[/b], une formation serrée de plusieurs rangs, où le bouclier de chacun protège aussi son voisin de gauche.\n\nLa phalange est redoutable de face, mais vulnérable sur les flancs et sur un terrain accidenté. Sa force tient à la cohésion : si un homme fuit, toute la ligne peut céder.\n\nEn 490 av. J.-C., à [b]Marathon[/b], les Athéniens battent l'armée perse. Plus tard, Philippe II de Macédoine et son fils Alexandre le Grand perfectionnent la phalange avec la [b]sarisse[/b], une pique de 5 à 6 mètres, et la combinent avec une cavalerie lourde décisive.",
+			"fact": "La légende du coureur de Marathon, mort après avoir annoncé la victoire à Athènes, a inspiré l'épreuve du marathon lors des premiers Jeux olympiques modernes en 1896."
+		},
+		{
+			"title": "La légion romaine",
+			"text": "Rome invente une armée d'une efficacité exceptionnelle. La [b]légion[/b] (environ 5 000 hommes) est divisée en cohortes et en centuries, ce qui la rend plus souple que la phalange. Après les réformes attribuées au général Marius (vers 107 av. J.-C.), les soldats deviennent des professionnels, engagés pour 20 à 25 ans, payés et équipés par l'État.\n\nLe légionnaire est autant ingénieur que combattant : il construit chaque soir un camp fortifié, des routes, des ponts. Ses outils comptent autant que son glaive. Son équipement est si lourd qu'on le surnomme la « mule de Marius ».\n\nLa discipline est la clé : entraînement quotidien, punitions sévères, récompenses et décorations. À la fin de son service, le vétéran reçoit une terre ou une prime : de nombreuses villes de l'Empire sont nées de ces colonies de vétérans.",
+			"fact": "Le mot « salaire » viendrait du latin « salarium », une somme versée aux soldats romains, parfois expliquée par l'achat de sel. Les historiens débattent de cette origine, mais le mot « solde » vient bien du « solidus », une pièce d'or romaine."
+		},
+		{
+			"title": "Hannibal et César, génies de la stratégie",
+			"text": "Pendant la deuxième guerre punique, le Carthaginois [b]Hannibal[/b] franchit les Pyrénées puis les Alpes avec son armée et ses éléphants (218 av. J.-C.). À [b]Cannes[/b] (216 av. J.-C.), il encercle une armée romaine bien plus nombreuse : c'est le modèle parfait de la bataille d'anéantissement. Pourtant, Rome refuse de négocier, lève de nouvelles légions et finit par gagner la guerre à Zama (202 av. J.-C.).\n\nUn siècle et demi plus tard, [b]Jules César[/b] conquiert la Gaule (58-50 av. J.-C.). À [b]Alésia[/b] (52 av. J.-C.), il assiège Vercingétorix en construisant deux lignes de fortifications : l'une tournée vers la ville, l'autre vers l'armée gauloise de secours. Vercingétorix finit par se rendre.\n\nCésar raconte lui-même ses campagnes dans [i]La Guerre des Gaules[/i], un récit écrit à la troisième personne… qui sert aussi sa propagande politique à Rome.",
+			"fact": "Les lignes de siège de César à Alésia mesuraient au total plus de 30 km. Des fouilles menées à Alise-Sainte-Reine (Côte-d'Or) en ont retrouvé les fossés et les pièges."
+		},
+		{
+			"title": "Sun Tzu et la fin de l'Empire",
+			"text": "À l'autre bout du monde, en Chine, un traité attribué au général [b]Sun Tzu[/b] (vers le Ve siècle av. J.-C.), [i]L'Art de la guerre[/i], pose des principes étonnamment modernes : connaître l'ennemi et se connaître soi-même, utiliser la ruse, éviter les combats inutiles, gagner si possible sans combattre.\n\nEn Europe, l'Empire romain domine le monde méditerranéen pendant des siècles grâce à ses légions, ses routes et ses frontières fortifiées (le mur d'Hadrien, le limes). Mais l'entretien de cette armée coûte très cher. À partir du IIIe siècle, crises, guerres civiles et pressions aux frontières l'affaiblissent.\n\nEn 476, le dernier empereur d'Occident est déposé : c'est la date traditionnelle de la fin de l'Antiquité. L'Empire romain d'Orient, lui, survivra encore près de mille ans, jusqu'en 1453.",
+			"fact": "Le mur d'Hadrien, construit à partir de 122 dans le nord de l'Angleterre, mesurait environ 117 km. Une grande partie est encore visible aujourd'hui."
+		}
+	],
+	"book": {
+		"title": "L'Art de la guerre",
+		"author": "Sun Tzu",
+		"year": "vers le Ve siècle av. J.-C.",
+		"summary": "Treize courts chapitres sur la préparation de la guerre, la ruse, le terrain, l'utilisation des espions et l'art de gagner sans s'épuiser. Le livre insiste sur l'intelligence plus que sur la force brute : la meilleure victoire est celle qui évite la bataille. Traduit en français dès 1772 par le jésuite Jean Joseph Marie Amiot, il est encore lu dans les écoles militaires… et dans les écoles de commerce.",
+		"quote": "Tout l'art de la guerre est fondé sur la duperie.",
+		"quote_ref": "Sun Tzu, L'Art de la guerre, chapitre I",
+		"why": "C'est le plus ancien traité de stratégie connu. Ses principes (renseignement, surprise, économie des forces) s'appliquent à la guerre comme au sport ou aux affaires."
+	},
+	"more_books": [
+		{"title": "La Guerre des Gaules", "author": "Jules César", "note": "Le récit de la conquête de la Gaule par son propre conquérant."},
+		{"title": "Anabase", "author": "Xénophon", "note": "La retraite de 10 000 mercenaires grecs à travers l'Empire perse : un récit d'aventure de 2 400 ans."},
+		{"title": "Astérix le Gaulois", "author": "Goscinny et Uderzo", "note": "Pour s'amuser… en gardant un œil critique : les vrais Gaulois n'avaient pas de casques à ailes au combat !"}
+	],
+	"quiz": [
+		{"q": "Quelle bataille, vers 1274 av. J.-C., oppose l'Égypte de Ramsès II aux Hittites ?", "a": ["Qadesh", "Marathon", "Cannes", "Alésia"], "ok": 0, "why": "Qadesh, en Syrie actuelle, voit s'affronter des milliers de chars. Quelques années plus tard, Égyptiens et Hittites signent l'un des plus anciens traités de paix connus."},
+		{"q": "Comment s'appelle le fantassin lourd des cités grecques ?", "a": ["Le légionnaire", "L'hoplite", "Le samouraï", "Le hussard"], "ok": 1, "why": "L'hoplite tire son nom de son grand bouclier rond, l'hoplon."},
+		{"q": "Pourquoi la phalange est-elle vulnérable ?", "a": ["Elle est trop rapide", "Ses flancs et ses arrières sont mal protégés", "Elle n'a pas de boucliers", "Elle combat uniquement la nuit"], "ok": 1, "why": "Redoutable de face, la phalange est lente à pivoter et fragile sur les côtés ou en terrain accidenté."},
+		{"q": "Combien d'années un légionnaire professionnel servait-il environ ?", "a": ["2 ans", "5 ans", "20 à 25 ans", "Toute sa vie"], "ok": 2, "why": "Les légionnaires s'engageaient pour 20 à 25 ans, puis recevaient une terre ou une prime."},
+		{"q": "Quel surnom donnait-on au légionnaire chargé de tout son équipement ?", "a": ["Le loup de Rome", "La mule de Marius", "Le bœuf de César", "Le lion d'Afrique"], "ok": 1, "why": "Le légionnaire portait armes, outils, vivres et pieux : la « mule de Marius »."},
+		{"q": "Quelle manœuvre Hannibal réussit-il à Cannes ?", "a": ["Un débarquement", "Un double enveloppement", "Un siège de deux ans", "Une retraite"], "ok": 1, "why": "Hannibal encercle les légions par les deux ailes : c'est le modèle de la bataille d'encerclement."},
+		{"q": "Que construit César autour d'Alésia ?", "a": ["Un pont sur la Seine", "Deux lignes de fortifications", "Une flotte", "Une muraille de Chine"], "ok": 1, "why": "Une ligne contre la ville assiégée, une autre contre l'armée gauloise de secours."},
+		{"q": "Quel est le principe le plus célèbre de Sun Tzu ?", "a": ["Toujours attaquer de face", "Le meilleur est de soumettre l'ennemi sans combattre", "Ne jamais utiliser d'espions", "Compter sur la chance"], "ok": 1, "why": "Pour Sun Tzu, la victoire idéale évite le combat grâce à la ruse, au renseignement et à la préparation."},
+		{"q": "Quelle date marque traditionnellement la fin de l'Empire romain d'Occident ?", "a": ["52 av. J.-C.", "476", "800", "1453"], "ok": 1, "why": "En 476, le dernier empereur d'Occident, Romulus Augustule, est déposé."},
+		{"q": "Les Gaulois portaient-ils des casques à cornes au combat ?", "a": ["Oui, toujours", "Non, c'est une invention du XIXe siècle", "Seulement les chefs", "Seulement à Alésia"], "ok": 1, "why": "Les casques à cornes ou à ailes sont une image romantique popularisée au XIXe siècle."},
+		{"q": "Qu'est-ce que le « limes » romain ?", "a": ["Une pièce de monnaie", "La frontière fortifiée de l'Empire", "Un type de bouclier", "Un grade militaire"], "ok": 1, "why": "Le limes est l'ensemble des fortifications, routes et camps qui protégeaient les frontières de l'Empire."}
+	]
+}

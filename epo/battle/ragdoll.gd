@@ -50,10 +50,12 @@ static func _register(rb: RigidBody3D) -> void:
 		var old = _bodies.pop_front()
 		if is_instance_valid(old):
 			old.freeze = true
-	var tree := rb.get_tree()
-	if tree:
-		tree.create_timer(FREEZE_AFTER, false).timeout.connect(func():
-			if is_instance_valid(rb) and rb.linear_velocity.length() < 1.0:
+	if rb.is_inside_tree():
+		# Tween lié au corps : il disparaît avec lui (pas de rappel vers un objet libéré).
+		var tw := rb.create_tween()
+		tw.tween_interval(FREEZE_AFTER)
+		tw.tween_callback(func():
+			if rb.linear_velocity.length() < 1.0:
 				rb.freeze = true)
 
 
@@ -156,8 +158,10 @@ static func wreck_vehicle(v: VehicleModel, parent: Node3D, impulse: Vector3, bat
 		rb.angular_velocity = Vector3(randf_range(-3, 3), randf_range(-6, 6), randf_range(-3, 3))
 		_burn(v)
 		if v.kind != "drone":
-			rb.get_tree().create_timer(1.4, false).timeout.connect(func():
-				if is_instance_valid(rb) and is_instance_valid(battle):
+			var tw := rb.create_tween()
+			tw.tween_interval(1.4)
+			tw.tween_callback(func():
+				if is_instance_valid(battle):
 					battle.fx.explosion(rb.global_position, 3.0)
 					battle.fx.fire(rb.global_position, 20.0))
 		return
