@@ -1,0 +1,57 @@
+{
+	"chapters": [
+		{
+			"title": "1940 : la percée de Sedan",
+			"text": "Le 10 mai 1940, l'Allemagne attaque à l'Ouest. Les Alliés s'attendent à une offensive par la Belgique, comme en 1914, et y envoient leurs meilleures troupes. Mais le gros des blindés allemands traverse la forêt des [b]Ardennes[/b], jugée infranchissable, et perce le front à [b]Sedan[/b] le 13 mai.\n\nCe qu'on appellera plus tard la « [b]guerre éclair[/b] » (Blitzkrieg) combine chars regroupés en divisions blindées, aviation d'appui (les bombardiers en piqué Stuka), radio dans chaque char et vitesse. Les divisions blindées foncent vers la Manche et coupent l'armée alliée en deux.\n\nL'armée française n'avait pas moins de chars que l'armée allemande, et certains étaient meilleurs. Mais ils étaient dispersés, souvent sans radio, et la doctrine était trop lente. En six semaines, la France est vaincue. L'armistice est signé le 22 juin 1940.",
+			"fact": "À Dunkerque, entre le 26 mai et le 4 juin 1940, plus de 330 000 soldats britanniques et français sont évacués vers l'Angleterre, en partie grâce à des centaines de bateaux civils."
+		},
+		{
+			"title": "La France libre",
+			"text": "Le 18 juin 1940, un général de brigade presque inconnu, [b]Charles de Gaulle[/b], lance un appel à la radio de Londres (BBC) : la France a perdu une bataille, mais pas la guerre. Peu de gens l'entendent en direct, mais l'appel devient l'acte de naissance de la [b]France libre[/b].\n\nDe Gaulle doit tout construire : une armée, des finances (prêtées par Churchill), un territoire. Dès août 1940, le [b]Tchad[/b] du gouverneur Félix Éboué le rallie. Les Forces françaises libres combattent en Afrique : à Koufra (1941), Leclerc fait le serment de ne s'arrêter qu'une fois le drapeau français hissé sur Strasbourg ; à [b]Bir Hakeim[/b] (1942), les hommes du général Kœnig tiennent seize jours face à Rommel.\n\nEn France, la [b]Résistance[/b] s'organise : renseignement, sabotages, presse clandestine, maquis. En 1943, Jean Moulin unifie les mouvements au sein du Conseil national de la Résistance.",
+			"fact": "Leclerc a tenu son serment de Koufra : le 23 novembre 1944, sa 2e division blindée libère Strasbourg et hisse le drapeau sur la cathédrale."
+		},
+		{
+			"title": "La guerre des usines et des codes",
+			"text": "La Seconde Guerre mondiale se gagne aussi dans les usines. Les [b]États-Unis[/b] deviennent « l'arsenal de la démocratie » : ils produisent environ 300 000 avions, près de 50 000 chars Sherman et des milliers de navires. Les cargos [b]Liberty ships[/b] sont assemblés en quelques semaines, parfois en quelques jours.\n\nL'URSS, envahie en 1941, démonte des usines entières et les reconstruit derrière l'Oural. Après la terrible bataille de [b]Stalingrad[/b] (1942-1943), l'Armée rouge repousse l'armée allemande.\n\nLa guerre se joue enfin dans le domaine du renseignement. Les Britanniques de [b]Bletchley Park[/b], dont le mathématicien Alan Turing, parviennent à déchiffrer de nombreux messages codés par la machine allemande [b]Enigma[/b]. Le [b]radar[/b], lui, aide la Royal Air Force à gagner la bataille d'Angleterre (1940).",
+			"fact": "Le travail des cryptographes polonais, qui avaient percé le fonctionnement d'Enigma dès les années 1930, a été transmis aux Britanniques et aux Français en 1939 : une contribution longtemps oubliée."
+		},
+		{
+			"title": "Le Débarquement",
+			"text": "Le 6 juin 1944, l'opération [b]Overlord[/b] commence en Normandie : environ 156 000 soldats alliés débarquent par mer et par air sur cinq plages (Utah, Omaha, Gold, Juno, Sword). C'est la plus grande opération amphibie de l'histoire.\n\nLe succès repose sur une [b]logistique[/b] colossale : deux ports artificiels préfabriqués (Mulberry), des milliers de navires, un oléoduc sous la Manche (PLUTO) pour le carburant. Il repose aussi sur la [b]tromperie[/b] : l'opération Fortitude fait croire aux Allemands, avec une fausse armée de chars gonflables et de faux messages radio, que le vrai débarquement aura lieu dans le Pas-de-Calais.\n\nLes 177 Français du [b]commando Kieffer[/b] débarquent à Sword Beach. Le 15 août, un second débarquement a lieu en Provence, avec l'armée française du général de Lattre.",
+			"fact": "Pour préparer le jour J, la BBC avait demandé aux Britanniques d'envoyer leurs photos de vacances sur les côtes françaises : des milliers de cartes postales et clichés ont aidé à étudier les plages."
+		},
+		{
+			"title": "Libération et fin de la guerre",
+			"text": "Le 19 août 1944, Paris se soulève. Le 25 août, la [b]2e division blindée[/b] du général Leclerc entre dans la capitale. De Gaulle descend les Champs-Élysées le lendemain.\n\nLa guerre continue jusqu'au [b]8 mai 1945[/b], date de la capitulation allemande. La France, représentée par le général de Lattre de Tassigny, est présente à la signature à Berlin : elle fait partie des vainqueurs. Dans le Pacifique, la guerre se termine en août 1945, après les deux bombardements atomiques sur Hiroshima et Nagasaki.\n\nLa Seconde Guerre mondiale est le conflit le plus meurtrier de l'histoire, avec plus de 60 millions de morts, en majorité des civils. Pour éviter une nouvelle catastrophe, l'[b]ONU[/b] est créée en 1945.",
+			"fact": "En voyant un Français à la cérémonie de capitulation allemande, le maréchal allemand Keitel se serait exclamé : « Quoi ? Les Français aussi ! »"
+		}
+	],
+	"book": {
+		"title": "Mémoires de guerre",
+		"author": "Charles de Gaulle",
+		"year": "1954 – 1959 (3 tomes)",
+		"summary": "Trois tomes : « L'Appel » (1940-1942), « L'Unité » (1942-1944) et « Le Salut » (1944-1946). De Gaulle raconte comment, parti presque seul à Londres, il construit la France libre, s'impose face aux Alliés, unifie la Résistance et rétablit l'État à la Libération. Écrit avec un grand style, le livre est aussi un plaidoyer : de Gaulle y défend sa vision de la France et son propre rôle.",
+		"quote": "Toute ma vie, je me suis fait une certaine idée de la France.",
+		"quote_ref": "Mémoires de guerre, tome I, L'Appel (première phrase)",
+		"why": "Un témoignage de premier plan sur la Seconde Guerre mondiale vue par l'un de ses acteurs majeurs. À lire comme une source précieuse… et comme le récit d'un homme qui écrit sa propre légende."
+	},
+	"more_books": [
+		{"title": "L'Étrange Défaite", "author": "Marc Bloch", "note": "Un grand historien, officier en 1940, analyse à chaud les causes de la défaite. Il sera fusillé comme résistant en 1944."},
+		{"title": "L'Armée des ombres", "author": "Joseph Kessel", "note": "La vie clandestine des résistants, écrite à Londres en 1943."},
+		{"title": "Le Silence de la mer", "author": "Vercors", "note": "Une courte nouvelle publiée clandestinement en 1942 : une résistance par le silence."},
+		{"title": "La Promesse de l'aube", "author": "Romain Gary", "note": "Les souvenirs d'un aviateur de la France libre, entre humour et émotion."}
+	],
+	"quiz": [
+		{"q": "Par quelle forêt passent les blindés allemands en mai 1940 ?", "a": ["Les Vosges", "Les Ardennes", "La forêt de Fontainebleau", "La Forêt-Noire"], "ok": 1, "why": "Les Ardennes étaient jugées infranchissables pour des blindés : la percée de Sedan surprend tout le monde."},
+		{"q": "Qu'est-ce qui fait la force de la « guerre éclair » allemande ?", "a": ["Le nombre de chars uniquement", "Chars regroupés, aviation, radio et vitesse", "Les gaz de combat", "La cavalerie à cheval"], "ok": 1, "why": "L'armée française n'avait pas moins de chars, mais ils étaient dispersés et souvent sans radio."},
+		{"q": "Quel jour de Gaulle lance-t-il son appel depuis Londres ?", "a": ["6 juin 1940", "18 juin 1940", "14 juillet 1940", "11 novembre 1940"], "ok": 1, "why": "L'appel du 18 juin, sur la BBC, fonde la France libre."},
+		{"q": "Quel territoire rallie la France libre dès août 1940 ?", "a": ["La Corse", "Le Tchad", "L'Algérie", "La Bretagne"], "ok": 1, "why": "Le Tchad de Félix Éboué devient la base de l'Afrique française libre."},
+		{"q": "Quelle machine allemande les Britanniques de Bletchley Park parviennent-ils à déchiffrer ?", "a": ["Colossus", "Enigma", "Turing", "Panzer"], "ok": 1, "why": "Avec l'aide décisive des travaux polonais d'avant-guerre."},
+		{"q": "Combien de soldats alliés débarquent environ le 6 juin 1944 ?", "a": ["15 000", "156 000", "1,5 million", "5 000"], "ok": 1, "why": "Par mer et par air, sur cinq plages de Normandie."},
+		{"q": "À quoi sert l'opération Fortitude ?", "a": ["Construire des ports artificiels", "Tromper les Allemands sur le lieu du débarquement", "Libérer Paris", "Bombarder Berlin"], "ok": 1, "why": "Fausse armée, chars gonflables, faux messages radio : les Allemands attendent le débarquement dans le Pas-de-Calais."},
+		{"q": "Quel commando français débarque à Sword Beach le 6 juin 1944 ?", "a": ["Le commando Kieffer", "La 2e DB", "Le commando Hubert", "La Légion étrangère"], "ok": 0, "why": "177 fusiliers marins, intégrés aux commandos britanniques."},
+		{"q": "Quelle division entre dans Paris le 25 août 1944 ?", "a": ["La 1re armée", "La 2e division blindée de Leclerc", "La 101e aéroportée", "La Garde républicaine"], "ok": 1, "why": "Les Alliés acceptent que des Français libèrent la capitale."},
+		{"q": "Quelle date marque la capitulation allemande en Europe ?", "a": ["6 juin 1944", "25 août 1944", "8 mai 1945", "2 septembre 1945"], "ok": 2, "why": "Le Japon capitule, lui, le 2 septembre 1945."},
+		{"q": "Quelle est la première phrase des Mémoires de guerre ?", "a": ["« Je vous ai compris »", "« Toute ma vie, je me suis fait une certaine idée de la France »", "« La France a perdu une bataille »", "« Paris outragé ! »"], "ok": 1, "why": "Une des phrases les plus célèbres de la littérature politique française."}
+	]
+}

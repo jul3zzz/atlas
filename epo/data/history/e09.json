@@ -1,0 +1,54 @@
+{
+	"chapters": [
+		{
+			"title": "La fin des empires coloniaux",
+			"text": "Après 1945, les grands empires coloniaux européens (britannique, français, néerlandais, portugais…) sont contestés partout. Les peuples colonisés réclament leur indépendance, souvent au nom des principes de liberté que les Alliés ont défendus pendant la guerre.\n\nCertaines indépendances sont obtenues par la négociation (l'Inde en 1947, la plupart des pays d'Afrique noire autour de 1960). D'autres passent par des guerres longues et douloureuses : en Indonésie, en Indochine, en Algérie, en Angola…\n\nCes guerres sont très différentes des batailles rangées des deux guerres mondiales. Le plus faible évite l'affrontement direct : il mise sur la [b]guérilla[/b], le temps, le terrain et le soutien de la population. On parle de « guerre révolutionnaire » ou de « guerre asymétrique ».",
+			"fact": "Le stratège chinois Mao Zedong comparait le guérillero dans la population à « un poisson dans l'eau » : sans le soutien des habitants, la guérilla ne peut pas survivre."
+		},
+		{
+			"title": "L'Indochine et Diên Biên Phu",
+			"text": "De 1946 à 1954, la France affronte en [b]Indochine[/b] le Viêt-minh, mouvement indépendantiste et communiste dirigé par Hô Chi Minh et le général [b]Võ Nguyên Giáp[/b]. Le corps expéditionnaire français est composé de soldats de métier, de légionnaires, de troupes coloniales et de soldats vietnamiens ; aucun appelé du contingent n'y est envoyé.\n\nEn 1953, l'état-major installe un camp retranché à [b]Diên Biên Phu[/b], dans une cuvette du nord-ouest, ravitaillé par avion. Il pense attirer le Viêt-minh dans une bataille rangée où la puissance de feu française l'écraserait.\n\nMais Giáp accomplit un exploit logistique : avec des dizaines de milliers de porteurs et des vélos chargés de plus de 200 kg, il amène son artillerie sur les crêtes et la camoufle. La piste d'aviation est vite rendue inutilisable. Après 57 jours de siège, le camp tombe le [b]7 mai 1954[/b]. Les accords de Genève mettent fin à la guerre en juillet.",
+			"fact": "Les points d'appui du camp de Diên Biên Phu portaient des prénoms féminins : Anne-Marie, Béatrice, Claudine, Dominique, Éliane, Gabrielle, Huguette, Isabelle…"
+		},
+		{
+			"title": "La guerre d'Algérie",
+			"text": "De 1954 à 1962, la France mène en [b]Algérie[/b] une guerre contre le Front de libération nationale (FLN), qui réclame l'indépendance. Cette fois, environ 1,5 million de jeunes [b]appelés du contingent[/b] traversent la Méditerranée pour y servir.\n\nL'armée française met en place de nouvelles méthodes : quadrillage du territoire, unités mobiles héliportées (la France est pionnière de l'[b]hélicoptère[/b] de combat), barrages électrifiés le long des frontières (la ligne Morice) pour couper les maquis de leurs bases.\n\nMilitairement, l'armée prend le dessus vers 1959-1960. Mais la décision est politique : après le retour au pouvoir du général de Gaulle (1958) et de difficiles négociations, les [b]accords d'Évian[/b] (mars 1962) puis le référendum mènent à l'indépendance de l'Algérie le 5 juillet 1962.",
+			"fact": "Les hélicoptères Vertol H-21, surnommés « bananes volantes » à cause de leur forme, transportaient une vingtaine de soldats chacun."
+		},
+		{
+			"title": "Le Vietnam, guerre de l'hélicoptère",
+			"text": "Après le départ des Français, le Vietnam est divisé en deux. Pour empêcher le Sud de passer au communisme, les [b]États-Unis[/b] s'engagent de plus en plus : jusqu'à environ 540 000 soldats américains sont présents en 1968.\n\nC'est la première « guerre de l'hélicoptère » : le [b]UH-1 « Huey »[/b] transporte les troupes en quelques minutes au cœur de la jungle et évacue les blessés. Les Américains disposent d'une puissance de feu écrasante. Mais l'adversaire, ravitaillé par la [b]piste Hô Chi Minh[/b] (un réseau de chemins à travers le Laos et le Cambodge), refuse souvent le combat et compte sur le temps.\n\nEn 1968, l'[b]offensive du Têt[/b] est un échec militaire pour le Nord, mais un choc pour l'opinion américaine, qui ne croit plus à la victoire. Les dernières troupes américaines partent en 1973 et Saïgon tombe en 1975.",
+			"fact": "Le Vietnam est souvent appelé la « première guerre télévisée » : chaque soir, les images du front entraient dans les foyers américains."
+		},
+		{
+			"title": "Penser la contre-insurrection",
+			"text": "Ces guerres poussent des officiers à réfléchir : comment une armée moderne peut-elle vaincre un adversaire qui se cache dans la population ?\n\nLe Français [b]David Galula[/b], qui a observé la guerre civile chinoise puis combattu en Algérie, écrit en 1964 [i]Contre-insurrection : théorie et pratique[/i]. Pour lui, l'enjeu n'est pas le terrain ni même l'ennemi, mais la [b]population[/b] : il faut la protéger, gagner sa confiance, répondre à ses besoins. L'action militaire ne représente qu'une petite partie de l'effort ; l'essentiel est politique.\n\nSon livre, peu lu en France à l'époque, est redécouvert par l'armée américaine dans les années 2000, pendant les guerres d'Irak et d'Afghanistan. Les leçons des guerres de décolonisation restent étudiées dans les écoles militaires du monde entier.",
+			"fact": "Galula résumait sa pensée par une formule : dans ce type de guerre, l'action est « 20 % militaire et 80 % politique »."
+		}
+	],
+	"book": {
+		"title": "Contre-insurrection : théorie et pratique",
+		"author": "David Galula",
+		"year": "1964",
+		"summary": "Un officier français tire les leçons de ce qu'il a vu en Chine, en Grèce et en Algérie. Il explique comment naît une insurrection, pourquoi elle peut vaincre un adversaire bien plus puissant, et propose une méthode en plusieurs étapes pour reprendre le contrôle d'une région en gagnant le soutien de la population. Écrit en anglais aux États-Unis, il n'a été traduit en français qu'en 2008.",
+		"why": "Un livre de stratégie qui montre que la force militaire ne suffit pas : ce sont les populations et la politique qui décident de l'issue de ces guerres."
+	},
+	"more_books": [
+		{"title": "La 317e Section", "author": "Pierre Schoendoerffer", "note": "Une section isolée qui tente de rejoindre ses lignes dans la jungle, en 1954 (roman et film)."},
+		{"title": "Les Centurions", "author": "Jean Lartéguy", "note": "Un roman sur des officiers français, de Diên Biên Phu à l'Algérie (1960)."},
+		{"title": "Diên Biên Phu, un coin d'enfer", "author": "Bernard Fall", "note": "Le grand récit du siège par un historien qui connaissait bien l'Indochine."}
+	],
+	"quiz": [
+		{"q": "Qu'est-ce qu'une guerre « asymétrique » ?", "a": ["Une guerre entre deux armées identiques", "Un conflit où le plus faible évite la bataille rangée", "Une guerre navale", "Une guerre sans armes"], "ok": 1, "why": "Le plus faible mise sur la guérilla, le terrain, le temps et la population."},
+		{"q": "À quoi Mao comparait-il le guérillero dans la population ?", "a": ["Un loup dans la bergerie", "Un poisson dans l'eau", "Un oiseau dans le ciel", "Un tigre de papier"], "ok": 1, "why": "Sans le soutien de la population, la guérilla ne peut pas survivre."},
+		{"q": "Qui commande le Viêt-minh à Diên Biên Phu ?", "a": ["Hô Chi Minh", "Le général Giáp", "Mao Zedong", "Le général Navarre"], "ok": 1, "why": "Le général Võ Nguyên Giáp."},
+		{"q": "Des appelés du contingent français ont-ils combattu en Indochine ?", "a": ["Oui, des millions", "Non, seulement des soldats de métier et des volontaires", "Seulement en 1954", "Seulement des marins"], "ok": 1, "why": "En revanche, environ 1,5 million d'appelés serviront en Algérie."},
+		{"q": "Quel exploit logistique Giáp réussit-il ?", "a": ["Un pont aérien", "Hisser son artillerie sur les crêtes autour du camp", "Creuser un tunnel sous la mer", "Construire un porte-avions"], "ok": 1, "why": "Avec des milliers de porteurs et des vélos chargés de plus de 200 kg."},
+		{"q": "Quand le camp de Diên Biên Phu tombe-t-il ?", "a": ["7 mai 1954", "8 mai 1945", "5 juillet 1962", "30 avril 1975"], "ok": 0, "why": "Après 57 jours de siège."},
+		{"q": "Qu'est-ce que la ligne Morice ?", "a": ["Une ligne de chemin de fer", "Un barrage fortifié aux frontières de l'Algérie", "Une ligne téléphonique", "Une ligne de défense en Alsace"], "ok": 1, "why": "Elle coupe les maquis de leurs bases en Tunisie."},
+		{"q": "Quels accords mènent à l'indépendance de l'Algérie ?", "a": ["Les accords de Genève", "Les accords d'Évian", "Le traité de Versailles", "Les accords de Munich"], "ok": 1, "why": "Signés en mars 1962 ; indépendance le 5 juillet 1962."},
+		{"q": "Quel hélicoptère symbolise la guerre du Vietnam ?", "a": ["Le Tigre", "Le UH-1 « Huey »", "L'Alouette", "Le Chinook"], "ok": 1, "why": "Il transporte les troupes et évacue les blessés."},
+		{"q": "Pourquoi l'offensive du Têt (1968) est-elle un tournant ?", "a": ["C'est une grande victoire militaire du Nord", "C'est un choc pour l'opinion américaine", "Elle met fin à la guerre", "Elle est menée par la France"], "ok": 1, "why": "Échec militaire pour le Nord, mais le public américain cesse de croire à la victoire."},
+		{"q": "Selon Galula, quel est l'enjeu principal d'une contre-insurrection ?", "a": ["Le terrain", "La population", "Les armes lourdes", "La météo"], "ok": 1, "why": "Protéger la population et gagner sa confiance : « 20 % militaire, 80 % politique »."}
+	]
+}

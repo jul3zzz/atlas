@@ -1,0 +1,8 @@
+# Cache d'import Godot (regénéré automatiquement)
+.godot/
+# Exports locaux
+build/
+*.tmp
+# Le .gitignore racine (bot Discord) ignore tous les dossiers « data/ » :
+# on ré-autorise celui du jeu, qui contient tout le contenu.
+!data/

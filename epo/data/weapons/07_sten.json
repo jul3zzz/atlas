@@ -1,0 +1,106 @@
+{
+	"id": "sten",
+	"era": "e07",
+	"name": "Sten Mk II",
+	"full_name": "Pistolet-mitrailleur Sten Mark II",
+	"type": "Pistolet-mitrailleur",
+	"country": "Royaume-Uni",
+	"year": "1941",
+	"designer": "Reginald Shepherd et Harold Turpin (manufacture royale d'Enfield)",
+	"camera": {"size": 0.95, "center": [-0.04, -0.02, -0.04]},
+	"story": "[b]Une arme née de l'urgence.[/b] En 1940, après l'évacuation de Dunkerque, l'armée britannique a abandonné une grande partie de son matériel en France. Elle manque d'armes, et la mitraillette américaine Thompson coûte cher et arrive au compte-gouttes. Deux ingénieurs, Reginald Shepherd et Harold Turpin, conçoivent alors une arme ultra-simple à la manufacture d'Enfield : la [b]Sten[/b] (S + T + EN).\n\n[b]Le moins de pièces possible.[/b] Un tube d'acier, un ressort, une culasse, un canon et une crosse en tube : la Sten compte très peu de pièces et peut être produite par des usines qui n'avaient jamais fabriqué d'armes. Elle coûte environ 3 livres sterling, contre plusieurs dizaines pour une Thompson.\n\n[b]L'arme de la Résistance.[/b] Plus de 4 millions de Sten sont produites. Légère et facile à démonter, elle est parachutée par milliers aux résistants français dans des containers. Elle tire la cartouche de 9 mm, la même que les pistolets allemands : les résistants pouvaient donc utiliser des munitions prises à l'ennemi.",
+	"facts": [
+		"Les soldats britanniques lui donnaient des surnoms moqueurs, comme « Stench gun » (le fusil puant) ou « le cauchemar du plombier », à cause de son allure de tuyauterie.",
+		"Son point faible : le chargeur latéral s'enrayait facilement s'il était sale ou cabossé. On apprenait aux soldats à ne jamais s'en servir comme poignée.",
+		"Au Danemark et en Pologne occupés, des résistants ont fabriqué en secret des copies de la Sten ou des armes inspirées de son principe."
+	],
+	"specs": [["Calibre", "9 mm (9 × 19 Parabellum)"], ["Longueur", "76 cm"], ["Masse", "environ 3,2 kg (sans chargeur)"], ["Chargeur", "32 cartouches, sur le côté gauche"], ["Cadence", "environ 500 à 550 coups par minute"], ["Portée pratique", "environ 100 m"]],
+	"parts": [
+		{"id": "boite", "name": "Boîte de culasse (tube)", "desc": "Un simple tube d'acier : il guide la culasse et porte le logement du chargeur, la détente et les organes de visée.", "pos": [0, 0, 0], "shapes": [
+			{"t": "cyl", "rad": 0.02, "h": 0.32, "p": [-0.01, 0, 0], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.046, 0.032, 0.05], "p": [0.095, 0, -0.035], "m": "blued"},
+			{"t": "box", "s": [0.11, 0.032, 0.026], "p": [-0.065, -0.03, 0], "m": "blued"},
+			{"t": "box", "s": [0.055, 0.004, 0.016], "p": [-0.06, -0.072, 0], "m": "metal"},
+			{"t": "box", "s": [0.004, 0.028, 0.016], "p": [-0.034, -0.058, 0], "m": "metal"},
+			{"t": "box", "s": [0.006, 0.02, 0.006], "p": [-0.062, -0.056, 0], "r": [0, 0, 12], "m": "metal"},
+			{"t": "cyl", "rad": 0.004, "h": 0.034, "p": [-0.04, -0.03, 0], "r": [90, 0, 0], "m": "metal"},
+			{"t": "box", "s": [0.012, 0.016, 0.012], "p": [-0.14, 0.025, 0], "m": "blued"},
+			{"t": "box", "s": [0.008, 0.022, 0.004], "p": [0.135, 0.028, 0], "m": "blued"},
+			{"t": "box", "s": [0.13, 0.006, 0.002], "p": [0.0, 0, 0.0201], "m": "black"},
+			{"t": "box", "s": [0.03, 0.012, 0.002], "p": [0.115, 0.004, 0.0201], "m": "black"}
+		]},
+		{"id": "canon", "name": "Canon et écrou", "desc": "Un canon court de 20 cm, tenu par un écrou vissé à l'avant du tube. Il se change en quelques secondes.", "pos": [0.2, 0, 0], "explode": [0.2, 0.06, 0], "shapes": [
+			{"t": "cyl", "rad": 0.0115, "h": 0.2, "p": [0.04, 0, 0], "r": [0, 0, 90], "m": "blued"},
+			{"t": "cyl", "rad": 0.023, "h": 0.03, "p": [-0.035, 0, 0], "r": [0, 0, 90], "m": "metal"}
+		]},
+		{"id": "chargeur", "name": "Chargeur latéral", "desc": "Placé à l'horizontale sur le côté gauche, il contient 32 cartouches. Pratique pour tirer couché, mais sensible à la saleté.", "pos": [0.095, 0, -0.13], "explode": [0, -0.04, -0.2], "shapes": [
+			{"t": "box", "s": [0.036, 0.024, 0.2], "p": [0, 0, 0], "m": "blued"},
+			{"t": "box", "s": [0.04, 0.028, 0.008], "p": [0, 0, -0.1], "m": "metal"}
+		]},
+		{"id": "crosse", "name": "Crosse squelette", "desc": "Un simple tube terminé par une plaque de couche : léger, économique, et il se retire d'un geste.", "pos": [-0.3, -0.02, 0], "explode": [-0.12, -0.12, 0], "shapes": [
+			{"t": "cyl", "rad": 0.008, "h": 0.27, "p": [0, 0, 0], "r": [0, 0, 94], "m": "metal"},
+			{"t": "box", "s": [0.03, 0.026, 0.02], "p": [0.125, 0.012, 0], "m": "metal"},
+			{"t": "box", "s": [0.012, 0.12, 0.03], "p": [-0.14, -0.03, 0], "m": "metal"}
+		]},
+		{"id": "capuchon", "name": "Capuchon arrière", "desc": "Il ferme l'arrière du tube et retient le ressort récupérateur. On l'enfonce et on le tourne pour le libérer.", "pos": [-0.172, 0, 0], "explode": [-0.12, 0.12, 0], "shapes": [
+			{"t": "cyl", "rad": 0.021, "h": 0.012, "p": [0, 0, 0], "r": [0, 0, 90], "m": "metal"},
+			{"t": "sphere", "rad": 0.005, "p": [-0.007, 0, 0], "m": "steel"}
+		]},
+		{"id": "ressort", "name": "Ressort récupérateur", "desc": "Comprimé quand la culasse recule, il la renvoie vers l'avant à chaque tir.", "pos": [-0.162, 0, 0], "explode": [-0.3, 0.16, 0], "shapes": [
+			{"t": "cyl", "rad": 0.003, "h": 0.18, "p": [0.095, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.008, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.024, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.040, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.056, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.072, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.088, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.104, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.120, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.136, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.152, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.168, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.0075, "rad2": 0.0105, "p": [0.184, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "culasse", "name": "Culasse et levier d'armement", "desc": "Un cylindre d'acier massif avec un percuteur fixe. Son levier dépasse sur le côté droit pour armer l'arme à la main.", "pos": [0.075, 0, 0], "explode": [-0.38, 0.24, 0], "shapes": [
+			{"t": "cyl", "rad": 0.0165, "h": 0.09, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "cyl", "rad": 0.0045, "h": 0.034, "p": [-0.025, 0, 0.028], "r": [90, 0, 0], "m": "steel"},
+			{"t": "sphere", "rad": 0.0075, "p": [-0.025, 0, 0.046], "m": "steel"},
+			{"t": "cyl", "rad": 0.002, "h": 0.006, "p": [0.047, 0, 0], "r": [0, 0, 90], "m": "metal"}
+		]}
+	],
+	"strip": ["chargeur", "crosse", "capuchon", "ressort", "culasse", "canon"],
+	"strip_hints": {
+		"chargeur": "Toujours en premier : on retire le chargeur, sur le côté gauche, puis on vérifie que la chambre est vide. C'est la règle de sécurité n°1.",
+		"crosse": "On appuie sur le verrou de crosse et on fait glisser la crosse squelette.",
+		"capuchon": "On enfonce le capuchon à l'arrière du tube et on le tourne pour le libérer.",
+		"ressort": "Le ressort récupérateur sort par l'arrière du tube.",
+		"culasse": "On fait glisser la culasse vers l'arrière en guidant le levier d'armement dans sa fente.",
+		"canon": "Enfin, on dévisse l'écrou et on retire le canon par l'avant."
+	},
+	"cycle": {
+		"note": "Le cycle est montré au ralenti. Le tube de la boîte de culasse est rendu invisible pour voir l'intérieur.",
+		"duration": 4.5,
+		"sound": "mg",
+		"hide": ["boite"],
+		"moves": {
+			"culasse": [[0, -0.11, 0, 0], [0.12, -0.11, 0, 0], [0.3, 0, 0, 0], [0.33, 0, 0, 0], [0.55, -0.11, 0, 0], [1, -0.11, 0, 0]]
+		},
+		"scales": {
+			"ressort": [[0, 0.43, 1, 1], [0.12, 0.43, 1, 1], [0.3, 1, 1, 1], [0.33, 1, 1, 1], [0.55, 0.43, 1, 1], [1, 0.43, 1, 1]]
+		},
+		"objects": [
+			{"kind": "round", "t0": 0.21, "t1": 0.3, "path": [[0.097, 0, -0.03], [0.115, 0, -0.008], [0.139, 0, 0]]},
+			{"kind": "bullet", "t0": 0.3, "t1": 0.36, "path": [[0.15, 0, 0], [0.9, 0, 0]]},
+			{"kind": "flash", "t0": 0.3, "t1": 0.35, "path": [[0.35, 0, 0], [0.37, 0, 0]]},
+			{"kind": "case", "t0": 0.3, "t1": 0.62, "path": [[0.139, 0, 0], [0.125, 0, 0], [0.07, 0, 0], [0.07, 0.03, 0.05], [0.0, 0.16, 0.36]]}
+		],
+		"steps": [
+			[0.0, "1. Arme armée : la culasse est retenue en arrière par la gâchette ; on dit que la Sten tire « culasse ouverte ». Le ressort est comprimé. (Le tube est masqué pour voir l'intérieur.)"],
+			[0.12, "2. Le tireur appuie sur la détente : la culasse est libérée et le ressort la pousse violemment vers l'avant."],
+			[0.21, "3. En avançant, la culasse prend la cartouche du haut du chargeur, placé à gauche, et la pousse dans la chambre."],
+			[0.3, "4. Mise à feu : le percuteur est fixe, au centre de la culasse. Dès que la cartouche est en place, le coup part et la balle file dans le canon."],
+			[0.34, "5. Culasse non calée : rien ne la verrouille. Seuls sa masse et le ressort la retiennent, juste le temps que la balle sorte. Puis la pression des gaz la repousse en arrière et l'étui vide est éjecté à droite."],
+			[0.56, "6. En coup par coup, la gâchette rattrape la culasse en arrière. En rafale, le cycle recommence aussitôt, environ 9 fois par seconde. C'est le principe le plus simple qui soit !"]
+		]
+	}
+}

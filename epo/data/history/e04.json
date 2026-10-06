@@ -1,0 +1,56 @@
+{
+	"chapters": [
+		{
+			"title": "La nation en armes",
+			"text": "En 1792, la France révolutionnaire est en guerre contre l'Autriche et la Prusse. Le 20 septembre, à [b]Valmy[/b], une armée française faite de soldats de métier et de volontaires arrête les Prussiens sous une canonnade. Le lendemain, la royauté est abolie : la République commence.\n\nEn 1793, face à une coalition de presque toute l'Europe, la Convention décrète la [b]levée en masse[/b] (23 août 1793) : « Les jeunes gens iront au combat ; les hommes mariés forgeront les armes et transporteront les subsistances ; les femmes feront des tentes et des habits… ». Pour la première fois, toute une nation est mobilisée.\n\nLazare [b]Carnot[/b], surnommé « l'organisateur de la victoire », fusionne volontaires et anciens soldats (l'« amalgame ») et organise la production d'armes. En 1798, la [b]loi Jourdan[/b] instaure la conscription, qui durera en France jusqu'en 1997.",
+			"fact": "Goethe, présent à Valmy dans le camp prussien, aurait déclaré : « De ce lieu et de ce jour date une nouvelle ère dans l'histoire du monde. »"
+		},
+		{
+			"title": "Le système Napoléon",
+			"text": "[b]Napoléon Bonaparte[/b], officier d'artillerie, devient général à 24 ans, Premier consul en 1799 puis empereur en 1804. Son génie est d'abord un génie d'organisation.\n\nSon armée est divisée en [b]corps d'armée[/b] : chacun réunit infanterie, cavalerie et artillerie, et peut combattre seul un jour ou deux. Les corps marchent séparément, sur des routes différentes, ce qui va beaucoup plus vite, puis se concentrent au moment décisif. C'est le principe « marcher divisés, combattre réunis ».\n\nNapoléon dispose d'un état-major dirigé par le maréchal [b]Berthier[/b], qui transforme ses idées en ordres précis. Il sait aussi choisir ses maréchaux (Davout, Lannes, Ney…) et récompenser le mérite : chaque soldat porte « dans sa giberne son bâton de maréchal ».",
+			"fact": "La Légion d'honneur, créée en 1802 par Bonaparte, récompense les mérites militaires… et civils. C'est encore aujourd'hui la plus haute décoration française."
+		},
+		{
+			"title": "Austerlitz, le chef-d'œuvre",
+			"text": "Le 2 décembre 1805, près d'[b]Austerlitz[/b] (en Moravie), Napoléon affronte les armées russe et autrichienne, plus nombreuses. Il abandonne volontairement le plateau de Pratzen et dégarnit son aile droite pour tendre un piège.\n\nLes Austro-Russes attaquent cette aile droite, qui tient grâce au corps de Davout arrivé à marche forcée de Vienne (environ 110 km en deux jours). Quand l'ennemi a dégarni son centre, le maréchal [b]Soult[/b] surgit de la brume et s'empare du plateau : l'armée adverse est coupée en deux.\n\nLe « soleil d'Austerlitz » devient légendaire. Cette bataille, appelée aussi « bataille des Trois Empereurs », est encore étudiée dans toutes les écoles militaires du monde comme un modèle de tromperie et de manœuvre.",
+			"fact": "Les canons pris aux Russes et aux Autrichiens à Austerlitz ont été fondus pour fabriquer la colonne Vendôme, à Paris."
+		},
+		{
+			"title": "La logistique et la chute",
+			"text": "Pour aller vite, la Grande Armée transporte peu de vivres : elle vit en grande partie « sur le pays », en réquisitionnant chez l'habitant. Cela marche dans les riches campagnes d'Europe de l'Ouest… beaucoup moins dans les pays pauvres et immenses.\n\nEn Espagne (1808-1814), la population se soulève : des bandes armées harcèlent les Français. C'est la [b]guérilla[/b] (la « petite guerre »), un mot qui vient de là.\n\nEn 1812, Napoléon envahit la [b]Russie[/b] avec plus de 600 000 hommes. Les Russes reculent et pratiquent la terre brûlée. Moscou est atteinte, mais incendiée. La retraite, dans le froid, la faim et sous le harcèlement des cosaques, est une catastrophe : une petite partie seulement de l'armée revient. En 1815, après les Cent-Jours, [b]Waterloo[/b] met fin à l'Empire.",
+			"fact": "« Waterloo ! Waterloo ! Waterloo ! morne plaine ! » : ce vers célèbre vient du poème « L'Expiation » de Victor Hugo (1853)."
+		},
+		{
+			"title": "Clausewitz et Jomini tirent les leçons",
+			"text": "Deux officiers qui ont combattu pendant ces guerres vont écrire les grands livres de stratégie du XIXe siècle.\n\nLe Suisse [b]Antoine de Jomini[/b], qui a servi Napoléon, cherche des règles presque mathématiques : lignes d'opérations, concentration des forces au point décisif. Son [i]Précis de l'art de la guerre[/i] (1838) est très lu par les officiers.\n\nLe Prussien [b]Carl von Clausewitz[/b] (1780-1831) écrit [i]De la guerre[/i], publié après sa mort par sa femme Marie (1832). Pour lui, la guerre n'est jamais une science exacte : elle est faite de hasard, de passions, de « brouillard » et de « friction ». Et surtout, elle est toujours au service d'un but politique.\n\nCes deux auteurs sont encore étudiés aujourd'hui dans les écoles de guerre.",
+			"fact": "Clausewitz est mort du choléra en 1831 sans avoir terminé son livre. Il avait prévenu que seul le premier chapitre était vraiment achevé !"
+		}
+	],
+	"book": {
+		"title": "De la guerre",
+		"author": "Carl von Clausewitz",
+		"year": "1832",
+		"summary": "Le grand traité de la guerre moderne. Clausewitz y décrit la guerre comme un « caméléon » qui change de forme selon les époques, et comme une « étrange trinité » : la violence et la passion (du peuple), le hasard et le talent (de l'armée et de son chef), la raison politique (du gouvernement). Il y explique aussi le « brouillard de la guerre » et la « friction » qui rendent tout plus difficile qu'il n'y paraît.",
+		"quote": "La guerre n'est qu'une simple continuation de la politique par d'autres moyens.",
+		"quote_ref": "De la guerre, livre I, chapitre 1",
+		"why": "C'est le livre de stratégie le plus cité au monde. Il rappelle qu'une guerre ne se juge pas seulement aux batailles gagnées, mais au but politique atteint."
+	},
+	"more_books": [
+		{"title": "Guerre et Paix", "author": "Léon Tolstoï", "note": "La campagne de Russie de 1812 vue par des familles russes : un monument de la littérature."},
+		{"title": "La Chartreuse de Parme", "author": "Stendhal", "note": "Waterloo vue par un jeune homme qui ne comprend rien à la bataille : le « brouillard de la guerre » avant l'heure."},
+		{"title": "Précis de l'art de la guerre", "author": "Antoine de Jomini", "note": "Le manuel de stratégie le plus lu au XIXe siècle."}
+	],
+	"quiz": [
+		{"q": "Que décrète la Convention le 23 août 1793 ?", "a": ["La fin de la guerre", "La levée en masse", "L'abolition de l'armée", "Le sacre de Napoléon"], "ok": 1, "why": "Toute la nation est mobilisée : c'est la naissance de la guerre de masse."},
+		{"q": "Quel est le surnom de Lazare Carnot ?", "a": ["Le Petit Caporal", "L'organisateur de la victoire", "Le Tigre", "Le Brave des braves"], "ok": 1, "why": "Carnot organise les armées de la République et leur production d'armes."},
+		{"q": "Quelle loi crée la conscription en 1798 ?", "a": ["La loi Jourdan", "Le Code civil", "La loi Le Chapelier", "Le Concordat"], "ok": 0, "why": "La loi Jourdan-Delbrel instaure le service militaire obligatoire."},
+		{"q": "Qu'est-ce qu'un corps d'armée napoléonien ?", "a": ["Un régiment de cavalerie", "Une petite armée complète capable de combattre seule", "Un hôpital militaire", "Une unité d'espions"], "ok": 1, "why": "Infanterie, cavalerie et artillerie : chaque corps peut tenir seul en attendant les autres."},
+		{"q": "Quel principe résume la stratégie napoléonienne ?", "a": ["Attaquer partout à la fois", "Marcher divisés, combattre réunis", "Ne jamais bouger", "Toujours se replier"], "ok": 1, "why": "Les corps marchent séparément pour aller vite, puis se concentrent au moment décisif."},
+		{"q": "Quel plateau Soult prend-il à Austerlitz ?", "a": ["Le plateau de Pratzen", "Le plateau de Langres", "Le plateau du Vercors", "Le mont Saint-Jean"], "ok": 0, "why": "Napoléon l'avait abandonné exprès pour attirer l'ennemi."},
+		{"q": "D'où vient le mot « guérilla » ?", "a": ["De la guerre d'Espagne (1808-1814)", "De la guerre de Cent Ans", "De la Révolution russe", "Du Vietnam"], "ok": 0, "why": "En espagnol, « guerrilla » signifie « petite guerre »."},
+		{"q": "Combien d'hommes environ entrent en Russie avec Napoléon en 1812 ?", "a": ["50 000", "Plus de 600 000", "2 millions", "10 000"], "ok": 1, "why": "Plus de 600 000 hommes de toute l'Europe ; seule une petite partie en revient."},
+		{"q": "Selon Clausewitz, qu'est-ce que la guerre ?", "a": ["Un sport", "La continuation de la politique par d'autres moyens", "Une science exacte", "Un accident"], "ok": 1, "why": "La guerre est toujours au service d'un but politique."},
+		{"q": "Qu'appelle-t-on la « friction » chez Clausewitz ?", "a": ["Le frottement des roues des canons", "Tout ce qui rend l'exécution plus difficile que prévu", "Une technique de combat", "Un traité de paix"], "ok": 1, "why": "Fatigue, météo, erreurs, hasard : « à la guerre, tout est simple, mais la chose la plus simple est difficile »."},
+		{"q": "Quelle bataille met fin à l'Empire en 1815 ?", "a": ["Austerlitz", "Iéna", "Waterloo", "Leipzig"], "ok": 2, "why": "Le 18 juin 1815, Napoléon est battu par Wellington et Blücher."}
+	]
+}

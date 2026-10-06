@@ -1,0 +1,54 @@
+{
+	"chapters": [
+		{
+			"title": "L'usine et le chemin de fer",
+			"text": "Au XIXe siècle, la révolution industrielle transforme la guerre. Les [b]usines[/b] produisent en série armes, munitions, uniformes et conserves. L'acier remplace le bronze et le fer. La puissance d'un pays se mesure désormais à sa production de charbon et d'acier autant qu'au courage de ses soldats.\n\nLe [b]chemin de fer[/b] change tout : il transporte en quelques jours des centaines de milliers d'hommes, avec leurs chevaux, leurs canons et leurs vivres. Les états-majors préparent des horaires de mobilisation d'une précision extrême.\n\nLe [b]télégraphe électrique[/b] permet de transmettre des ordres instantanément sur des centaines de kilomètres. Les gouvernements peuvent diriger la guerre depuis leur capitale… et les journalistes envoyer leurs articles en quelques heures.",
+			"fact": "Pendant la guerre de Crimée (1853-1856), les Britanniques construisent une petite voie ferrée pour ravitailler le siège de Sébastopol : l'une des premières lignes militaires de l'histoire."
+		},
+		{
+			"title": "Fusils rayés et chargement par la culasse",
+			"text": "Les armes à feu font d'énormes progrès. La [b]balle Minié[/b] (1849), conique, permet de charger facilement un canon rayé : le fusil devient précis à plusieurs centaines de mètres.\n\nPuis vient le [b]chargement par la culasse[/b] : on n'introduit plus la poudre et la balle par la bouche du canon, mais par l'arrière, avec une cartouche. Le soldat peut tirer plus vite… et recharger couché, à l'abri. Le fusil prussien Dreyse (1841) puis le [b]Chassepot[/b] français (1866) font de chaque fantassin une puissance de feu.\n\nEn 1884, le chimiste français Paul Vieille invente la [b]poudre sans fumée[/b]. Le fusil [b]Lebel[/b] (1886) est le premier fusil réglementaire qui l'utilise : plus de nuage blanc pour trahir le tireur, et une portée encore plus grande.",
+			"fact": "Le Lebel, avec sa longue baïonnette surnommée « Rosalie », restera le fusil emblématique des poilus de 1914."
+		},
+		{
+			"title": "La guerre de Sécession",
+			"text": "De 1861 à 1865, les États-Unis se déchirent dans la [b]guerre de Sécession[/b] : le Nord (l'Union) contre le Sud (la Confédération), qui veut maintenir l'esclavage. C'est souvent considéré comme la première grande guerre industrielle.\n\nLe Nord a plus d'habitants, d'usines et de voies ferrées. Le Sud a d'excellents généraux, comme Robert E. Lee, mais ne peut pas remplacer ses pertes. Le blocus naval du Nord asphyxie l'économie sudiste.\n\nLes fusils rayés rendent les assauts frontaux meurtriers : à [b]Gettysburg[/b] (juillet 1863), la « charge de Pickett » est fauchée. On voit aussi les premiers navires cuirassés, la photographie de guerre, les ballons d'observation… et des tranchées autour de Petersburg qui annoncent celles de 1914.",
+			"fact": "En mars 1862, le Monitor et le CSS Virginia (ex-Merrimack) livrent le premier combat entre navires cuirassés : aucun des deux ne parvient à couler l'autre."
+		},
+		{
+			"title": "1870 : la défaite française",
+			"text": "En juillet 1870, la France de Napoléon III déclare la guerre à la Prusse. Le soldat français a un meilleur fusil (le Chassepot), mais tout le reste est mieux organisé côté allemand.\n\nGrâce à ses [b]chemins de fer[/b] et à un [b]état-major[/b] remarquable dirigé par Helmuth von Moltke, la Prusse et ses alliés allemands mobilisent plus vite et plus d'hommes. Leurs [b]canons Krupp[/b] en acier, chargés par la culasse, surclassent l'artillerie française.\n\nLe 2 septembre 1870, l'empereur est encerclé et capturé à [b]Sedan[/b]. Paris, assiégé, résiste quatre mois. En 1871, la France perd l'Alsace et une partie de la Lorraine, et l'Empire allemand est proclamé… dans la galerie des Glaces du château de Versailles.",
+			"fact": "Pendant le siège de Paris, 66 ballons montés s'envolent de la capitale avec du courrier, des pigeons voyageurs et des passagers, dont le ministre Léon Gambetta."
+		},
+		{
+			"title": "La préparation de la Grande Guerre",
+			"text": "Après 1870, toute l'Europe copie le modèle prussien : service militaire pour tous, réserves nombreuses, état-major, plans de mobilisation par chemin de fer.\n\nLa France se réforme : service militaire universel, École supérieure de guerre, ligne de forts à l'Est conçue par le général Séré de Rivières, alliance avec la Russie (1892), Entente cordiale avec le Royaume-Uni (1904).\n\nDe nouvelles armes apparaissent : [b]mitrailleuses[/b] (la Maxim, 1884), canons à tir rapide comme le célèbre [b]75 français[/b] (1897), premiers avions, sous-marins… Pourtant, beaucoup d'officiers croient encore à l'« offensive à outrance » et au courage qui triompherait du feu. La Grande Guerre va montrer cruellement le contraire.",
+			"fact": "Le frein de recul du canon de 75 était un secret militaire si bien gardé qu'il a fallu des années aux autres armées pour le copier."
+		}
+	],
+	"book": {
+		"title": "La Débâcle",
+		"author": "Émile Zola",
+		"year": "1892",
+		"summary": "Le dix-neuvième roman de la saga des Rougon-Macquart raconte la guerre de 1870 à travers deux soldats, le paysan Jean Macquart et le jeune bourgeois Maurice Levasseur. Marches épuisantes, ordres contradictoires, désastre de Sedan, siège de Paris : Zola montre comment une armée courageuse est vaincue par la désorganisation. Il s'est documenté sur place, en parcourant le champ de bataille de Sedan.",
+		"why": "Un grand roman pour comprendre pourquoi la France a perdu en 1870 : la guerre se gagne aussi dans les bureaux, les gares et les usines."
+	},
+	"more_books": [
+		{"title": "Études sur le combat", "author": "Charles Ardant du Picq", "note": "Un colonel tué en 1870 étudie ce que ressent vraiment le soldat au combat : la peur, la cohésion, le moral."},
+		{"title": "L'Insigne rouge du courage", "author": "Stephen Crane", "note": "Un jeune soldat de la guerre de Sécession face à sa propre peur (1895)."},
+		{"title": "Le Désastre", "author": "Paul et Victor Margueritte", "note": "Un autre grand roman sur la défaite de 1870 et le siège de Metz."}
+	],
+	"quiz": [
+		{"q": "Quelle invention permet de transporter des armées entières en quelques jours ?", "a": ["Le télégraphe", "Le chemin de fer", "L'avion", "Le dirigeable"], "ok": 1, "why": "Le chemin de fer transforme la mobilisation et le ravitaillement."},
+		{"q": "Quel est l'avantage du chargement par la culasse ?", "a": ["On peut recharger couché et plus vite", "L'arme est plus légère", "Elle ne fait pas de fumée", "Elle tire des flèches"], "ok": 0, "why": "La cartouche entre par l'arrière : plus besoin de se tenir debout pour recharger."},
+		{"q": "Quel fusil français de 1866 surclasse le Dreyse prussien ?", "a": ["Le Lebel", "Le Chassepot", "Le FAMAS", "Le MAS 36"], "ok": 1, "why": "Le Chassepot porte plus loin et tire 6 à 8 coups par minute."},
+		{"q": "Qui a inventé la poudre sans fumée en 1884 ?", "a": ["Alfred Nobel", "Paul Vieille", "Louis Pasteur", "Gustave Eiffel"], "ok": 1, "why": "La « poudre B » du chimiste Paul Vieille permet le fusil Lebel (1886)."},
+		{"q": "Pourquoi le Nord gagne-t-il la guerre de Sécession ?", "a": ["Grâce à de meilleurs généraux", "Grâce à son industrie, ses chemins de fer et sa population", "Grâce à la cavalerie", "Grâce à l'aide de la France"], "ok": 1, "why": "Le Sud, malgré d'excellents généraux, ne peut pas remplacer ses pertes."},
+		{"q": "Quel premier combat a lieu en mars 1862 ?", "a": ["Entre deux sous-marins", "Entre deux navires cuirassés", "Entre deux avions", "Entre deux chars"], "ok": 1, "why": "Le Monitor contre le CSS Virginia, à Hampton Roads."},
+		{"q": "Où Napoléon III est-il capturé en 1870 ?", "a": ["Metz", "Sedan", "Paris", "Verdun"], "ok": 1, "why": "Le 2 septembre 1870, l'armée encerclée à Sedan capitule avec l'empereur."},
+		{"q": "Où l'Empire allemand est-il proclamé en 1871 ?", "a": ["À Berlin", "Dans la galerie des Glaces de Versailles", "À Strasbourg", "À Sedan"], "ok": 1, "why": "Une humiliation pour la France, qui pèsera lourd dans les relations franco-allemandes."},
+		{"q": "Comment le courrier quitte-t-il Paris assiégé en 1870 ?", "a": ["Par tunnel", "Par ballons montés", "Par sous-marin", "Par télégraphe sans fil"], "ok": 1, "why": "66 ballons quittent Paris, dont celui de Gambetta."},
+		{"q": "Quelle est la grande innovation du canon de 75 (1897) ?", "a": ["Il tire des fusées", "Son frein de recul : il ne bouge plus à chaque tir", "Il est en bronze", "Il se charge par la bouche"], "ok": 1, "why": "Plus besoin de réajuster la pièce : jusqu'à 15 coups par minute et plus."},
+		{"q": "Quel roman de Zola raconte la guerre de 1870 ?", "a": ["Germinal", "La Débâcle", "L'Assommoir", "Nana"], "ok": 1, "why": "La Débâcle (1892), 19e volume des Rougon-Macquart."}
+	]
+}

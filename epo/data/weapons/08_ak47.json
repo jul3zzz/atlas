@@ -1,0 +1,141 @@
+{
+	"id": "ak47",
+	"era": "e08",
+	"name": "AK-47",
+	"full_name": "Avtomat Kalachnikova, modèle 1947",
+	"type": "Fusil d'assaut",
+	"country": "URSS",
+	"year": "1947 (adopté en 1949)",
+	"designer": "Mikhaïl Kalachnikov",
+	"camera": {"size": 1.0, "center": [0.0, 0.0, 0.0]},
+	"story": "[b]Un sergent blessé devenu concepteur.[/b] Mikhaïl Kalachnikov (1919-2013), fils de paysans de l'Altaï, est mécanicien de char dans l'Armée rouge. Grièvement blessé en octobre 1941 près de Briansk, il commence à dessiner des armes pendant sa convalescence.\n\n[b]Un concours d'État.[/b] Après la guerre, l'URSS organise un concours pour une arme automatique utilisant la nouvelle cartouche « intermédiaire » 7,62 × 39 mm, adoptée en 1943. Le projet de Kalachnikov, retravaillé avec les ingénieurs de l'usine, l'emporte en 1947. L'arme est adoptée en 1949 sous le nom d'AK (« Avtomat Kalachnikova »).\n\n[b]Le choix de la robustesse.[/b] Peu de pièces, des jeux larges entre elles, un piston long et un canon chromé : l'arme fonctionne dans la boue, le sable ou le grand froid, et un soldat peu formé apprend vite à l'entretenir. Elle est moins précise qu'un fusil de tireur d'élite : c'est un compromis assumé.\n\n[b]Une arme mondiale.[/b] Produite sous licence ou copiée dans des dizaines de pays (AKM en 1959, Type 56 chinois…), elle devient l'arme la plus répandue de l'histoire : on l'estime entre 70 et 100 millions d'exemplaires, toutes versions confondues. Elle figure même sur le drapeau du Mozambique.\n\n[b]Le débat du StG 44.[/b] On lit souvent que l'AK-47 copie le StG 44 allemand. Les deux armes partagent le concept (cartouche intermédiaire, chargeur courbe), mais leur mécanisme interne est différent : l'AK utilise une culasse rotative, le StG 44 une culasse basculante.",
+	"facts": [
+		"Les premières séries ont une boîte de culasse en tôle emboutie ; trop de défauts : on passe à l'acier usiné, puis on revient à la tôle sur l'AKM en 1959, une fois la technique maîtrisée.",
+		"Kalachnikov n'a jamais touché de droits sur son arme. Il a reçu de nombreuses décorations, dont deux fois le titre de Héros du travail socialiste.",
+		"En 2012, peu avant sa mort, il écrit au patriarche de l'Église orthodoxe russe pour confier son tourment face aux morts causées par son arme."
+	],
+	"specs": [
+		["Calibre", "7,62 × 39 mm"],
+		["Longueur", "environ 87 cm"],
+		["Masse", "environ 4,3 kg (sans chargeur)"],
+		["Chargeur", "30 cartouches"],
+		["Cadence de tir", "environ 600 coups par minute"],
+		["Portée pratique", "300 à 400 m"]
+	],
+	"parts": [
+		{"id": "receiver", "name": "Boîte de culasse", "desc": "Le « corps » de l'arme : elle reçoit la culasse, le mécanisme de détente et tous les autres éléments. Sur l'AK-47, elle est en acier usiné.", "pos": [0, 0, 0], "shapes": [
+			{"t": "box", "s": [0.25, 0.085, 0.048], "p": [0, 0, 0], "m": "blued"},
+			{"t": "box", "s": [0.032, 0.082, 0.05], "p": [0.14, 0.0, 0], "m": "blued"},
+			{"t": "box", "s": [0.07, 0.02, 0.05], "p": [0.065, -0.05, 0], "m": "blued"},
+			{"t": "box", "s": [0.06, 0.022, 0.03], "p": [0.15, 0.052, 0], "m": "blued"},
+			{"t": "box", "s": [0.03, 0.012, 0.022], "p": [0.15, 0.068, 0], "m": "blued"},
+			{"t": "box", "s": [0.085, 0.006, 0.026], "p": [-0.03, -0.078, 0], "m": "blued"},
+			{"t": "box", "s": [0.006, 0.03, 0.026], "p": [0.011, -0.064, 0], "m": "blued"},
+			{"t": "box", "s": [0.008, 0.03, 0.008], "p": [-0.018, -0.058, 0], "r": [0, 0, 10], "m": "metal"},
+			{"t": "box", "s": [0.13, 0.016, 0.004], "p": [-0.005, 0.012, 0.027], "m": "metal"},
+			{"t": "box", "s": [0.015, 0.03, 0.005], "p": [-0.07, 0.0, 0.027], "m": "metal"}
+		]},
+		{"id": "barrel", "name": "Canon", "desc": "Tube rayé de 415 mm où la balle prend sa vitesse (environ 715 m/s) et sa rotation. Son intérieur est chromé pour résister à la corrosion.", "pos": [0.29, 0.012, 0], "shapes": [
+			{"t": "cyl", "rad": 0.011, "h": 0.27, "p": [0, 0, 0], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.03, 0.05, 0.035], "p": [0.055, 0.022, 0], "m": "blued"},
+			{"t": "box", "s": [0.026, 0.038, 0.028], "p": [0.1, 0.018, 0], "m": "blued"},
+			{"t": "cyl", "rad": 0.0025, "h": 0.026, "p": [0.1, 0.048, 0], "m": "blued"},
+			{"t": "cyl", "rad": 0.013, "h": 0.02, "p": [0.14, 0, 0], "r": [0, 0, 90], "m": "metal"}
+		]},
+		{"id": "lower_handguard", "name": "Garde-main inférieur", "desc": "Pièce de bois qui protège la main du tireur de la chaleur du canon.", "pos": [0.235, -0.008, 0], "shapes": [
+			{"t": "box", "s": [0.17, 0.036, 0.052], "p": [0, 0, 0], "m": "wood"}
+		]},
+		{"id": "stock", "name": "Crosse", "desc": "Crosse fixe en bois, appuyée contre l'épaule. Une trappe à l'arrière cache la trousse de nettoyage.", "pos": [-0.27, -0.035, 0], "rot": [0, 0, -6], "shapes": [
+			{"t": "box", "s": [0.26, 0.065, 0.04], "p": [0.0, 0.0, 0], "m": "wood"},
+			{"t": "box", "s": [0.1, 0.11, 0.041], "p": [-0.12, -0.022, 0], "m": "wood"},
+			{"t": "box", "s": [0.008, 0.115, 0.043], "p": [-0.172, -0.022, 0], "m": "metal"},
+			{"t": "box", "s": [0.05, 0.05, 0.042], "p": [0.135, 0.03, 0], "m": "blued"}
+		]},
+		{"id": "grip", "name": "Poignée-pistolet", "desc": "Elle permet de tenir l'arme d'une main et d'actionner la détente.", "pos": [-0.085, -0.085, 0], "rot": [0, 0, 18], "shapes": [
+			{"t": "box", "s": [0.035, 0.11, 0.034], "p": [0, 0, 0], "m": "wood"}
+		]},
+		{"id": "magazine", "name": "Chargeur", "desc": "Chargeur courbe de 30 cartouches. Sa forme « en banane » suit la conicité de la cartouche 7,62 × 39 mm.", "pos": [0.062, -0.058, 0], "explode": [0.0, -0.17, 0], "shapes": [
+			{"t": "box", "s": [0.07, 0.085, 0.028], "p": [0, -0.04, 0], "r": [0, 0, -6], "m": "metal"},
+			{"t": "box", "s": [0.068, 0.085, 0.028], "p": [0.016, -0.12, 0], "r": [0, 0, -16], "m": "metal"},
+			{"t": "box", "s": [0.066, 0.07, 0.028], "p": [0.04, -0.188, 0], "r": [0, 0, -26], "m": "metal"},
+			{"t": "cyl", "rad": 0.0055, "h": 0.04, "p": [0.004, 0.006, 0], "r": [0, 0, 90], "m": "brass"}
+		]},
+		{"id": "cleaning_kit", "name": "Trousse de nettoyage", "desc": "Petit étui rangé dans la crosse : écouvillon, chasse-goupille, burette d'huile. Chaque soldat entretient lui-même son arme.", "pos": [-0.445, -0.06, 0], "rot": [0, 0, -6], "explode": [-0.05, -0.17, 0], "explode_rot": [0, 0, 90], "shapes": [
+			{"t": "cyl", "rad": 0.011, "h": 0.06, "p": [0, 0, 0], "r": [0, 0, 90], "m": "black"}
+		]},
+		{"id": "cleaning_rod", "name": "Baguette de nettoyage", "desc": "Tige d'acier fixée sous le canon, utilisée pour nettoyer l'intérieur du tube.", "pos": [0.28, -0.03, 0], "explode": [0.08, -0.34, 0], "shapes": [
+			{"t": "cyl", "rad": 0.003, "h": 0.32, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "cyl", "rad": 0.005, "h": 0.012, "p": [0.155, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "dust_cover", "name": "Couvercle de boîte de culasse", "desc": "Plaque de tôle qui protège le mécanisme de la poussière et de la boue.", "pos": [-0.005, 0.047, 0], "explode": [0, 0.13, 0], "shapes": [
+			{"t": "box", "s": [0.235, 0.01, 0.05], "p": [0, 0, 0], "m": "blued"},
+			{"t": "box", "s": [0.235, 0.022, 0.004], "p": [0, -0.012, 0.024], "m": "blued"},
+			{"t": "box", "s": [0.235, 0.022, 0.004], "p": [0, -0.012, -0.024], "m": "blued"}
+		]},
+		{"id": "recoil_spring", "name": "Ressort récupérateur", "desc": "Il se comprime quand le porte-culasse recule, puis le renvoie vers l'avant. C'est le « moteur » du retour.", "pos": [-0.11, 0.026, 0], "explode": [-0.03, 0.22, 0], "shapes": [
+			{"t": "box", "s": [0.016, 0.022, 0.022], "p": [0, 0, 0], "m": "steel"},
+			{"t": "cyl", "rad": 0.0035, "h": 0.19, "p": [0.1, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.03, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.06, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.09, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.12, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.15, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "torus", "rad": 0.004, "rad2": 0.0075, "p": [0.18, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "bolt_carrier", "name": "Porte-culasse et piston", "desc": "Pièce lourde qui porte la culasse. Son long piston, poussé par les gaz, la fait reculer : c'est le cœur du système à emprunt de gaz.", "pos": [0.0, 0.024, 0], "explode": [0.02, 0.32, 0], "shapes": [
+			{"t": "box", "s": [0.13, 0.03, 0.032], "p": [0, 0, 0], "m": "steel"},
+			{"t": "cyl", "rad": 0.0065, "h": 0.27, "p": [0.2, 0.031, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "cyl", "rad": 0.012, "h": 0.03, "p": [0.335, 0.031, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "box", "s": [0.02, 0.012, 0.034], "p": [0.055, 0.004, 0.03], "m": "steel"}
+		]},
+		{"id": "bolt", "name": "Culasse rotative", "desc": "Elle pousse la cartouche dans la chambre puis tourne pour se verrouiller grâce à deux tenons. Au tir, elle tourne dans l'autre sens pour se déverrouiller.", "pos": [0.085, 0.014, 0], "explode": [-0.26, 0.33, 0], "shapes": [
+			{"t": "cyl", "rad": 0.012, "h": 0.06, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "box", "s": [0.012, 0.008, 0.032], "p": [0.025, 0, 0], "m": "steel"},
+			{"t": "box", "s": [0.01, 0.012, 0.01], "p": [-0.005, 0.012, 0.0], "m": "steel"},
+			{"t": "cyl", "rad": 0.003, "h": 0.022, "p": [-0.038, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "gas_tube", "name": "Tube de gaz et garde-main supérieur", "desc": "Les gaz prélevés dans le canon arrivent dans ce tube et poussent la tête du piston. Le bois au-dessus protège la main.", "pos": [0.255, 0.055, 0], "explode": [0.03, 0.42, 0], "shapes": [
+			{"t": "cyl", "rad": 0.0145, "h": 0.19, "p": [0, 0, 0], "r": [0, 0, 90], "m": "blued"},
+			{"t": "box", "s": [0.14, 0.024, 0.042], "p": [-0.005, 0.004, 0], "m": "wood"}
+		]}
+	],
+	"strip": ["magazine", "cleaning_kit", "cleaning_rod", "dust_cover", "recoil_spring", "bolt_carrier", "bolt", "gas_tube"],
+	"strip_hints": {
+		"magazine": "Toujours en premier : on retire le chargeur, puis on vérifie que la chambre est vide. C'est la règle de sécurité n°1.",
+		"cleaning_kit": "La trousse de nettoyage est rangée dans la crosse, derrière une petite trappe.",
+		"cleaning_rod": "La baguette de nettoyage est fixée sous le canon.",
+		"dust_cover": "On appuie sur l'arrière du guide du ressort pour libérer le couvercle.",
+		"recoil_spring": "Le ressort récupérateur et son guide sortent ensuite vers l'arrière.",
+		"bolt_carrier": "On tire le porte-culasse (avec son piston) vers l'arrière puis vers le haut.",
+		"bolt": "La culasse se retire du porte-culasse en la faisant tourner.",
+		"gas_tube": "Enfin, on libère le tube de gaz avec son garde-main supérieur."
+	},
+	"cycle": {
+		"note": "Le cycle est montré au ralenti. Le couvercle de culasse et le tube de gaz sont rendus invisibles pour voir l'intérieur.",
+		"duration": 5.0,
+		"moves": {
+			"bolt_carrier": [[0, 0, 0, 0], [0.22, 0, 0, 0], [0.45, -0.12, 0, 0], [0.72, 0, 0, 0], [1, 0, 0, 0]],
+			"bolt": [[0, 0, 0, 0], [0.3, 0, 0, 0], [0.45, -0.115, 0, 0], [0.7, 0, 0, 0], [1, 0, 0, 0]]
+		},
+		"rotations": {
+			"bolt": [[0, 0, 0, 0], [0.23, 0, 0, 0], [0.3, -40, 0, 0], [0.7, -40, 0, 0], [0.78, 0, 0, 0], [1, 0, 0, 0]]
+		},
+		"scales": {
+			"recoil_spring": [[0, 1, 1, 1], [0.22, 1, 1, 1], [0.45, 0.45, 1, 1], [0.72, 1, 1, 1], [1, 1, 1, 1]]
+		},
+		"objects": [
+			{"kind": "bullet", "t0": 0.0, "t1": 0.08, "path": [[0.16, 0.012, 0], [0.95, 0.012, 0]]},
+			{"kind": "flash", "t0": 0.07, "t1": 0.12, "path": [[0.45, 0.012, 0], [0.47, 0.012, 0]]},
+			{"kind": "gas", "t0": 0.05, "t1": 0.24, "path": [[0.345, 0.014, 0], [0.345, 0.05, 0], [0.31, 0.056, 0]]},
+			{"kind": "case", "t0": 0.36, "t1": 0.62, "path": [[0.15, 0.012, 0], [0.13, 0.05, 0.03], [0.02, 0.2, 0.38]]},
+			{"kind": "round", "t0": 0.52, "t1": 0.7, "path": [[0.066, -0.016, 0], [0.12, 0.0, 0], [0.152, 0.012, 0]]}
+		],
+		"steps": [
+			[0.0, "1. Mise à feu : le chien frappe le percuteur ; la poudre brûle et chasse la balle dans le canon."],
+			[0.06, "2. Emprunt des gaz : juste avant la sortie de la balle, une partie des gaz passe par un petit trou du canon et pousse le piston."],
+			[0.22, "3. Recul : le piston entraîne le porte-culasse vers l'arrière. La culasse tourne et se déverrouille, l'étui vide est extrait puis éjecté à droite. Le ressort se comprime."],
+			[0.47, "4. Retour : le ressort renvoie l'ensemble vers l'avant ; la culasse pousse une nouvelle cartouche du chargeur dans la chambre."],
+			[0.72, "5. Verrouillage : la culasse tourne et se verrouille. En rafale, ce cycle se répète environ 10 fois par seconde !"]
+		]
+	}
+}

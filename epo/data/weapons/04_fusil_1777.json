@@ -1,0 +1,80 @@
+{
+	"id": "fusil1777",
+	"era": "e04",
+	"name": "Fusil modèle 1777",
+	"full_name": "Fusil d'infanterie modèle 1777 (corrigé an IX)",
+	"type": "Fusil à silex",
+	"country": "France",
+	"year": "1777",
+	"designer": "Manufactures royales (Charleville, Saint-Étienne, Tulle…)",
+	"camera": {"size": 1.6, "center": [0.05, 0, 0]},
+	"story": "[b]Le fusil des armées de la Révolution et de l'Empire.[/b] Adopté en 1777 et légèrement modifié en l'an IX (1800-1801), il est fabriqué à des centaines de milliers d'exemplaires par les manufactures d'État. Les soldats de Valmy, d'Austerlitz et de Waterloo le portaient.\n\n[b]La platine à silex.[/b] Son cœur est la platine : un silex, serré dans les mâchoires du [b]chien[/b], frappe une pièce d'acier, la [b]batterie[/b]. Les étincelles tombent dans le [b]bassinet[/b] et enflamment la poudre d'amorce, dont le feu passe dans le canon par un petit trou, la lumière.\n\n[b]Un fusil à tout faire.[/b] Il se charge par la bouche avec une cartouche de papier (poudre et balle). Un soldat entraîné tire 2 à 3 coups par minute. Peu précis au-delà de 100 mètres, il est utilisé en salves. Avec sa baïonnette, il devient aussi une pique.",
+	"facts": [
+		"Un silex ne dure qu'une trentaine de tirs environ : chaque soldat transportait des pierres de rechange.",
+		"L'expression « faire long feu » vient de ces armes : quand la poudre brûlait lentement, le coup partait en retard… ou pas du tout."
+	],
+	"specs": [["Longueur", "environ 1,52 m (sans baïonnette)"], ["Masse", "environ 4,6 kg"], ["Calibre", "17,5 mm"], ["Cadence", "2 à 3 coups par minute"], ["Portée efficace", "environ 100 à 150 m"]],
+	"parts": [
+		{"id": "crosse", "name": "Crosse et fût", "desc": "En noyer. La crosse se cale contre l'épaule ; le fût soutient le canon.", "pos": [0, 0, 0], "explode": [0, -0.2, 0], "shapes": [
+			{"t": "box", "s": [1.12, 0.045, 0.042], "p": [0.18, 0, 0], "m": "wood"},
+			{"t": "box", "s": [0.38, 0.12, 0.044], "p": [-0.52, -0.045, 0], "r": [0, 0, -7], "m": "wood"}
+		]},
+		{"id": "canon", "name": "Canon", "desc": "Canon lisse de 1,14 m en fer. La balle est un peu plus petite que le canon pour charger vite, au détriment de la précision.", "pos": [0.28, 0.028, 0], "explode": [0, 0.16, 0], "shapes": [
+			{"t": "cyl", "rad": 0.013, "rad2": 0.011, "h": 1.14, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "platine", "name": "Platine", "desc": "La plaque qui porte tout le mécanisme de mise à feu, sur le côté droit de l'arme.", "pos": [-0.22, 0.018, 0.024], "explode": [0, 0.0, 0.22], "shapes": [
+			{"t": "box", "s": [0.16, 0.034, 0.006], "p": [0, 0, 0], "m": "steel"}
+		]},
+		{"id": "chien", "name": "Chien et silex", "desc": "Le chien tient le silex entre ses mâchoires. Libéré par la détente, il bascule violemment vers l'avant.", "pos": [-0.265, 0.03, 0.03], "explode": [-0.02, 0.1, 0.24], "shapes": [
+			{"t": "box", "s": [0.012, 0.055, 0.008], "p": [0, 0.026, 0], "r": [0, 0, -18], "m": "steel"},
+			{"t": "box", "s": [0.022, 0.014, 0.01], "p": [0.013, 0.052, 0], "m": "steel"},
+			{"t": "box", "s": [0.014, 0.009, 0.012], "p": [0.028, 0.052, 0], "m": "stone", "c": "#4a4844"}
+		]},
+		{"id": "batterie", "name": "Batterie", "desc": "Pièce d'acier frappée par le silex : c'est elle qui produit les étincelles. Elle sert aussi de couvercle au bassinet.", "pos": [-0.205, 0.04, 0.03], "explode": [0.03, 0.12, 0.24], "shapes": [
+			{"t": "box", "s": [0.006, 0.034, 0.014], "p": [0, 0.014, 0], "m": "steel"},
+			{"t": "box", "s": [0.022, 0.004, 0.014], "p": [-0.011, -0.003, 0], "m": "steel"}
+		]},
+		{"id": "bassinet", "name": "Bassinet", "desc": "Petit réservoir de poudre d'amorce, relié au canon par la lumière.", "pos": [-0.218, 0.033, 0.03], "explode": [0.06, 0.06, 0.24], "shapes": [
+			{"t": "box", "s": [0.022, 0.007, 0.014], "p": [0, 0, 0], "m": "brass"}
+		]},
+		{"id": "garnitures", "name": "Garnitures", "desc": "Capucines, pontet et plaque de couche en laiton ou en fer : elles tiennent le canon et protègent le bois.", "pos": [0, 0, 0], "explode": [0, -0.32, 0], "shapes": [
+			{"t": "torus", "rad": 0.016, "rad2": 0.021, "p": [0.32, 0.015, 0], "r": [0, 0, 90], "m": "brass"},
+			{"t": "torus", "rad": 0.016, "rad2": 0.021, "p": [0.6, 0.015, 0], "r": [0, 0, 90], "m": "brass"},
+			{"t": "box", "s": [0.12, 0.006, 0.014], "p": [-0.27, -0.055, 0], "m": "brass"},
+			{"t": "box", "s": [0.006, 0.028, 0.006], "p": [-0.28, -0.038, 0], "m": "steel"}
+		]},
+		{"id": "baguette", "name": "Baguette", "desc": "Tige d'acier pour enfoncer la cartouche au fond du canon. On la range sous le fût.", "pos": [0.25, -0.028, 0], "explode": [0.05, -0.42, 0], "shapes": [
+			{"t": "cyl", "rad": 0.0045, "h": 1.08, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"}
+		]},
+		{"id": "baionnette", "name": "Baïonnette à douille", "desc": "Une lame de 40 cm montée sur une douille qui se fixe autour du canon : on peut tirer et charger avec la lame en place.", "pos": [0.86, 0.03, 0], "explode": [0.2, 0.0, 0], "shapes": [
+			{"t": "cyl", "rad": 0.016, "h": 0.07, "p": [0, 0, 0], "r": [0, 0, 90], "m": "steel"},
+			{"t": "box", "s": [0.4, 0.016, 0.006], "p": [0.24, 0.025, 0], "m": "steel"}
+		]}
+	],
+	"cycle": {
+		"focus": [-0.23, 0.03, 0.03],
+		"focus_dist": 0.45,
+		"note": "Le mécanisme de la platine est montré au ralenti : en vrai, tout se passe en une fraction de seconde.",
+		"duration": 5.0,
+		"sound": "musket",
+		"hide": [],
+		"rotations": {
+			"chien": [[0, 0, 0, 0], [0.12, 0, 0, 0], [0.18, 0, 0, -58], [0.85, 0, 0, -58], [0.95, 0, 0, 0], [1, 0, 0, 0]],
+			"batterie": [[0, 0, 0, 0], [0.17, 0, 0, 0], [0.22, 0, 0, 60], [0.85, 0, 0, 60], [0.95, 0, 0, 0], [1, 0, 0, 0]]
+		},
+		"objects": [
+			{"kind": "spark", "t0": 0.17, "t1": 0.26, "path": [[-0.205, 0.06, 0.03], [-0.215, 0.035, 0.034]]},
+			{"kind": "spark", "t0": 0.18, "t1": 0.27, "path": [[-0.2, 0.065, 0.032], [-0.22, 0.04, 0.028]]},
+			{"kind": "flash", "t0": 0.23, "t1": 0.3, "path": [[-0.218, 0.04, 0.03], [-0.218, 0.07, 0.03]]},
+			{"kind": "flash", "t0": 0.33, "t1": 0.38, "path": [[0.86, 0.028, 0], [0.9, 0.028, 0]]},
+			{"kind": "stone", "t0": 0.33, "t1": 0.45, "path": [[0.84, 0.028, 0], [2.4, 0.03, 0]]}
+		],
+		"steps": [
+			[0.0, "1. Le fusil est chargé et armé : le chien, tenant le silex, est tiré en arrière ; le bassinet est rempli de poudre d'amorce et fermé par la batterie."],
+			[0.12, "2. Le tireur presse la détente : le chien bascule et le silex frappe la batterie d'acier."],
+			[0.17, "3. Le choc fait jaillir des étincelles et rabat la batterie vers l'avant, ce qui découvre le bassinet."],
+			[0.23, "4. La poudre d'amorce s'enflamme (« un feu de paille ») ; le feu passe par la lumière jusqu'à la charge dans le canon."],
+			[0.33, "5. Départ du coup ! Il faut ensuite recharger par la bouche avec une cartouche de papier : 2 à 3 coups par minute pour un bon soldat."]
+		]
+	}
+}

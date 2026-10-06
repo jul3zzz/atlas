@@ -1,0 +1,54 @@
+{
+	"chapters": [
+		{
+			"title": "Deux blocs, un rideau de fer",
+			"text": "Après 1945, les deux grands vainqueurs, les [b]États-Unis[/b] et l'[b]URSS[/b], s'opposent. D'un côté, des démocraties à économie de marché ; de l'autre, un bloc communiste dirigé par Moscou. En 1946, Winston Churchill parle d'un « [b]rideau de fer[/b] » tombé sur l'Europe.\n\nC'est la [b]guerre froide[/b] (1947-1991) : une rivalité totale (militaire, économique, idéologique, sportive, scientifique) mais sans affrontement direct entre les deux superpuissances.\n\nChacun organise son camp : le [b]plan Marshall[/b] (1948) aide l'Europe de l'Ouest à se reconstruire ; l'[b]OTAN[/b] est fondée en 1949 ; le [b]Pacte de Varsovie[/b] lui répond en 1955. En 1948-1949, quand l'URSS bloque Berlin-Ouest, les Américains et leurs alliés organisent un gigantesque pont aérien : la logistique devient une arme politique.",
+			"fact": "L'expression « guerre froide » a été popularisée par l'écrivain George Orwell dans un article de 1945, « You and the Atom Bomb », puis par le journaliste américain Walter Lippmann."
+		},
+		{
+			"title": "La bombe et la dissuasion",
+			"text": "Les États-Unis utilisent la bombe atomique en 1945. L'URSS fait exploser la sienne dès 1949, puis viennent le Royaume-Uni (1952), la [b]France[/b] (1960) et la Chine (1964). Les bombes thermonucléaires (bombes H) sont des centaines de fois plus puissantes que celle d'Hiroshima.\n\nUne guerre nucléaire détruirait les deux camps : c'est l'« équilibre de la terreur ». La [b]dissuasion[/b] consiste à convaincre l'adversaire qu'une attaque lui coûterait plus qu'elle ne lui rapporterait.\n\nLa France de De Gaulle choisit une dissuasion [b]indépendante[/b], la « force de frappe » : bombardiers Mirage IV, missiles du plateau d'Albion, puis sous-marins nucléaires lanceurs d'engins, comme Le Redoutable (1971), quasiment indétectables sous les océans. En 1966, la France quitte le commandement militaire intégré de l'OTAN.",
+			"fact": "En octobre 1962, la crise des missiles de Cuba amène le monde au bord de la guerre nucléaire. Après la crise, un « téléphone rouge » (en réalité un téléscripteur) relie Washington et Moscou pour éviter les malentendus."
+		},
+		{
+			"title": "Des guerres par procuration",
+			"text": "Puisqu'ils ne peuvent pas s'affronter directement, Américains et Soviétiques s'opposent par alliés interposés : ce sont les guerres « par procuration ».\n\nEn [b]Corée[/b] (1950-1953), le Nord communiste envahit le Sud ; une force de l'ONU dirigée par les États-Unis intervient, puis la Chine envoie des centaines de milliers de « volontaires ». La guerre se termine sur un armistice… et la Corée est toujours divisée aujourd'hui.\n\nLe [b]Vietnam[/b] (1955-1975), le Proche-Orient, l'Angola ou l'[b]Afghanistan[/b] (occupé par l'URSS de 1979 à 1989) deviennent aussi des terrains d'affrontement indirect. Chaque superpuissance fournit armes, conseillers et argent à son camp.",
+			"fact": "Le bataillon français de l'ONU combat en Corée de 1950 à 1953 ; il se distingue notamment à Chipyong-ni et à Crèvecœur (Heartbreak Ridge)."
+		},
+		{
+			"title": "L'AK-47 : l'arme d'un monde",
+			"text": "En 1947, le sergent [b]Mikhaïl Kalachnikov[/b], ancien mécanicien de char blessé en 1941, remporte un concours d'État avec un fusil d'assaut tirant la cartouche intermédiaire 7,62 × 39 mm. L'[b]AK-47[/b] est adopté par l'Armée rouge en 1949.\n\nSes qualités : il est [b]simple[/b], [b]robuste[/b] et [b]bon marché[/b]. Il fonctionne dans la boue, le sable ou le froid, et s'apprend en quelques heures. Moins précis que certaines armes occidentales, il est surtout conçu pour être fabriqué en masse et utilisé par des millions de conscrits.\n\nL'URSS le produit et le diffuse à ses alliés et à de nombreux mouvements dans le monde. Copié, fabriqué sous licence (AKM, Type 56 chinois…), il devient l'arme la plus répandue de l'histoire : entre 70 et 100 millions d'exemplaires selon les estimations. Son grand rival occidental est le [b]M16[/b] américain, adopté dans les années 1960.",
+			"fact": "L'AK-47 figure sur le drapeau du Mozambique et sur les armoiries de plusieurs pays : un symbole des luttes d'indépendance pour certains, de la violence pour d'autres."
+		},
+		{
+			"title": "Espions, espace et chute du Mur",
+			"text": "La guerre froide est aussi une guerre du [b]renseignement[/b] : CIA contre KGB, agents doubles, satellites espions, avions U-2 volant à plus de 20 000 mètres. Berlin, divisée par un [b]mur[/b] à partir de 1961, devient la capitale des espions.\n\nC'est encore une course à l'[b]espace[/b] : l'URSS lance le premier satellite (Spoutnik, 1957) et le premier homme dans l'espace (Youri Gagarine, 1961) ; les États-Unis posent les premiers hommes sur la Lune (1969). En 1965, la France devient la troisième puissance spatiale avec le satellite Astérix.\n\nDans les années 1980, l'URSS s'épuise : économie en crise, guerre d'Afghanistan, course aux armements trop coûteuse. Le [b]mur de Berlin tombe[/b] le 9 novembre 1989, l'Allemagne est réunifiée en 1990 et l'URSS disparaît en décembre 1991.",
+			"fact": "L'affaire « Farewell » : au début des années 1980, un officier du KGB, Vladimir Vetrov, livre aux services secrets français des milliers de documents sur l'espionnage technologique soviétique."
+		}
+	],
+	"book": {
+		"title": "L'Espion qui venait du froid",
+		"author": "John le Carré",
+		"year": "1963",
+		"summary": "À Berlin, au temps du Mur, Alec Leamas, un agent secret britannique usé, accepte une dernière mission : se faire passer pour un traître afin de piéger un chef du contre-espionnage est-allemand. Loin de James Bond, le livre montre un monde gris, fait de manipulations et de loyautés troubles. Son auteur, John le Carré, avait lui-même travaillé pour les services secrets britanniques.",
+		"why": "Le roman d'espionnage le plus célèbre de la guerre froide : il fait comprendre l'atmosphère de Berlin et la guerre de l'ombre entre les deux blocs."
+	},
+	"more_books": [
+		{"title": "1984", "author": "George Orwell", "note": "Un monde de surveillance totale et de guerre permanente entre trois blocs (1949)."},
+		{"title": "Paix et guerre entre les nations", "author": "Raymond Aron", "note": "Le grand livre français de relations internationales à l'âge nucléaire (1962)."},
+		{"title": "Ma vie en rafales", "author": "Mikhaïl Kalachnikov (avec Elena Joly)", "note": "Les souvenirs du concepteur de l'AK-47."}
+	],
+	"quiz": [
+		{"q": "Qui parle d'un « rideau de fer » en 1946 ?", "a": ["Staline", "Winston Churchill", "De Gaulle", "Kennedy"], "ok": 1, "why": "Dans un discours à Fulton, aux États-Unis."},
+		{"q": "En quelle année l'OTAN est-elle créée ?", "a": ["1945", "1949", "1955", "1961"], "ok": 1, "why": "Le Pacte de Varsovie lui répond en 1955."},
+		{"q": "Qu'est-ce que la dissuasion nucléaire ?", "a": ["Attaquer le premier", "Convaincre l'adversaire qu'une attaque lui coûterait trop cher", "Désarmer totalement", "Construire des abris"], "ok": 1, "why": "C'est l'« équilibre de la terreur » : personne n'a intérêt à attaquer."},
+		{"q": "En quelle année la France fait-elle exploser sa première bombe atomique ?", "a": ["1945", "1952", "1960", "1971"], "ok": 2, "why": "En février 1960, dans le Sahara (Gerboise bleue)."},
+		{"q": "Que se passe-t-il en octobre 1962 ?", "a": ["La chute du mur de Berlin", "La crise des missiles de Cuba", "Le premier homme sur la Lune", "La fin de la guerre de Corée"], "ok": 1, "why": "Des missiles soviétiques sont découverts à Cuba : le monde frôle la guerre nucléaire."},
+		{"q": "Qu'est-ce qu'une guerre « par procuration » ?", "a": ["Une guerre entre robots", "Un conflit où deux puissances s'affrontent par alliés interposés", "Une guerre déclarée par courrier", "Une guerre sans armes"], "ok": 1, "why": "Corée, Vietnam, Afghanistan : les superpuissances soutiennent chacune un camp."},
+		{"q": "Quelle cartouche tire l'AK-47 ?", "a": ["5,56 × 45 mm", "7,62 × 39 mm", "9 mm Parabellum", "12,7 mm"], "ok": 1, "why": "Une cartouche « intermédiaire » adoptée par l'URSS en 1943."},
+		{"q": "Quelles sont les grandes qualités de l'AK-47 ?", "a": ["Précision extrême et légèreté", "Simplicité, robustesse et faible coût", "Silence et discrétion", "Portée de 2 km"], "ok": 1, "why": "Il fonctionne dans la boue, le sable et le froid, et s'apprend très vite."},
+		{"q": "Quel est le premier satellite artificiel ?", "a": ["Apollo", "Spoutnik", "Astérix", "Hubble"], "ok": 1, "why": "Lancé par l'URSS le 4 octobre 1957."},
+		{"q": "Quand tombe le mur de Berlin ?", "a": ["9 novembre 1989", "8 mai 1945", "13 août 1961", "25 décembre 1991"], "ok": 0, "why": "L'Allemagne est réunifiée le 3 octobre 1990, l'URSS disparaît en décembre 1991."},
+		{"q": "Qui a écrit « L'Espion qui venait du froid » ?", "a": ["Ian Fleming", "John le Carré", "George Orwell", "Agatha Christie"], "ok": 1, "why": "Un ancien agent secret britannique, publié en 1963."}
+	]
+}

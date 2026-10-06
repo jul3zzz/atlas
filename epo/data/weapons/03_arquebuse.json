@@ -1,0 +1,44 @@
+{
+	"id": "arquebuse",
+	"era": "e03",
+	"name": "Arquebuse à mèche",
+	"full_name": "Arquebuse à serpentin",
+	"type": "Arme à feu d'épaule",
+	"country": "Europe",
+	"year": "XVe – XVIIe siècle",
+	"designer": "Armuriers européens",
+	"camera": {"size": 1.4, "center": [0.1, 0, 0]},
+	"story": "[b]La poudre entre dans les mains du fantassin.[/b] L'arquebuse apparaît au XVe siècle. Son mécanisme est très simple : une mèche lente (une corde trempée dans du salpêtre, qui se consume doucement) est tenue par une pièce en forme de S, le [b]serpentin[/b]. En appuyant sur la détente, le tireur abaisse la mèche dans le [b]bassinet[/b], où une pincée de poudre s'enflamme et met le feu à la charge du canon par un petit trou, la lumière.\n\n[b]Lente mais redoutable.[/b] Il faut une à deux minutes pour recharger, et l'arme est imprécise au-delà de quelques dizaines de mètres. Mais sa balle de plomb perce les armures, et un paysan apprend à s'en servir en quelques semaines.\n\n[b]Ses défauts.[/b] La mèche allumée trahit le tireur la nuit, s'éteint sous la pluie et rend dangereuse la manipulation de la poudre. Le mousquet, plus lourd, puis le fusil à silex (vers 1700) lui succéderont.",
+	"facts": [
+		"Les arquebusiers gardaient souvent leur mèche allumée aux deux bouts, au cas où l'un s'éteindrait.",
+		"À Pavie (1525), les arquebusiers espagnols jouent un rôle décisif contre la cavalerie lourde française."
+	],
+	"specs": [["Longueur", "environ 1,2 à 1,4 m"], ["Masse", "4 à 5 kg"], ["Calibre", "environ 15 mm"], ["Cadence", "environ un coup par minute"], ["Portée efficace", "une cinquantaine de mètres"]],
+	"parts": [
+		{"id": "fut", "name": "Fût et crosse", "desc": "Le bois qui porte le canon et se cale contre l'épaule ou la joue.", "pos": [0, 0, 0], "explode": [0, -0.18, 0], "shapes": [
+			{"t": "box", "s": [0.95, 0.05, 0.045], "p": [0.1, -0.005, 0], "m": "wood"},
+			{"t": "box", "s": [0.32, 0.11, 0.045], "p": [-0.48, -0.035, 0], "r": [0, 0, -6], "m": "wood"}
+		]},
+		{"id": "canon", "name": "Canon", "desc": "Tube de fer forgé, lisse à l'intérieur. La poudre et la balle sont introduites par la bouche.", "pos": [0.17, 0.03, 0], "explode": [0, 0.14, 0], "shapes": [
+			{"t": "cyl", "rad": 0.014, "rad2": 0.012, "h": 0.95, "p": [0, 0, 0], "r": [0, 0, 90], "m": "blued"}
+		]},
+		{"id": "serpentin", "name": "Serpentin", "desc": "Le levier en forme de S qui tient la mèche et l'abaisse dans le bassinet quand on presse la détente.", "pos": [-0.2, 0.03, 0.026], "explode": [0, 0.12, 0.12], "shapes": [
+			{"t": "box", "s": [0.01, 0.07, 0.006], "p": [0, 0.03, 0], "r": [0, 0, 25], "m": "metal"},
+			{"t": "box", "s": [0.03, 0.01, 0.008], "p": [0.02, 0.065, 0], "m": "metal"}
+		]},
+		{"id": "meche", "name": "Mèche", "desc": "Une corde de chanvre trempée dans le salpêtre, qui brûle lentement. Son extrémité rougeoyante met le feu à la poudre.", "pos": [-0.17, 0.1, 0.03], "explode": [0, 0.22, 0.12], "shapes": [
+			{"t": "box", "s": [0.12, 0.008, 0.008], "p": [-0.05, 0, 0], "m": "rope"},
+			{"t": "sphere", "rad": 0.007, "p": [0.012, 0, 0], "m": "red", "c": "#ff6a1a"}
+		]},
+		{"id": "bassinet", "name": "Bassinet et couvre-bassinet", "desc": "Un petit réservoir où l'on verse la poudre d'amorce. Un couvercle pivotant la protège du vent et de la pluie.", "pos": [-0.16, 0.035, 0.026], "explode": [0.05, 0.08, 0.16], "shapes": [
+			{"t": "box", "s": [0.03, 0.01, 0.018], "p": [0, 0, 0], "m": "metal"},
+			{"t": "box", "s": [0.03, 0.004, 0.02], "p": [0, 0.008, 0], "m": "metal"}
+		]},
+		{"id": "detente", "name": "Détente", "desc": "Sur les premières arquebuses, un long levier sous le fût que l'on serre avec la main.", "pos": [-0.24, -0.045, 0], "explode": [0, -0.12, 0.1], "shapes": [
+			{"t": "box", "s": [0.14, 0.01, 0.01], "p": [0, 0, 0], "r": [0, 0, 8], "m": "metal"}
+		]},
+		{"id": "baguette", "name": "Baguette", "desc": "Tige de bois pour tasser la poudre et la balle au fond du canon.", "pos": [0.15, -0.03, 0], "explode": [0.05, -0.3, 0], "shapes": [
+			{"t": "cyl", "rad": 0.005, "h": 0.85, "p": [0, 0, 0], "r": [0, 0, 90], "m": "light_wood"}
+		]}
+	]
+}

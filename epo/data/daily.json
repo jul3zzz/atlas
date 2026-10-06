@@ -1,0 +1,399 @@
+{
+	"e01": {
+		"title": "Une semaine dans la légion",
+		"role": "Tu es Marcus, 19 ans, jeune légionnaire en campagne en Gaule au Ier siècle. Ton contubernium (8 soldats qui partagent la même tente) compte sur toi.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "Discipline, entraînement constant et logistique bien huilée : c'est ce quotidien répété des milliers de fois qui faisait la force des légions.",
+		"items": [
+			{"id": "sagum", "name": "Cape de laine (sagum)", "kg": 2, "desc": "Épaisse, elle sert aussi de couverture la nuit."},
+			{"id": "dolabra", "name": "Dolabra (pioche-hache)", "kg": 2, "desc": "Pour creuser le fossé du camp et couper le bois."},
+			{"id": "pieux", "name": "Pieux de palissade", "kg": 2, "desc": "Chaque soldat porte des pieux pour la palissade du camp."},
+			{"id": "ble", "name": "Blé pour 3 jours", "kg": 3, "desc": "Ta ration de céréales, à moudre toi-même.", "daily": {"sante": 2}},
+			{"id": "gourde", "name": "Gourde de posca", "kg": 1, "desc": "Eau coupée de vinaigre : elle désaltère et limite les maladies."},
+			{"id": "patera", "name": "Gamelle en bronze", "kg": 1, "desc": "Pour cuire ta bouillie de céréales."},
+			{"id": "des", "name": "Dés et pions de jeu", "kg": 0.5, "desc": "Pour passer le temps au camp.", "daily": {"moral": 3}},
+			{"id": "tablettes", "name": "Tablettes à écrire", "kg": 0.5, "desc": "Pour écrire à ta famille.", "daily": {"moral": 2}}
+		],
+		"activities": [
+			{"name": "Entraînement aux armes", "icon": "⚔", "fx": {"discipline": 10, "energie": -12, "sante": 2}, "fact": "Selon Végèce, les recrues s'entraînaient avec des boucliers d'osier et des épées de bois deux fois plus lourds que les vrais."},
+			{"name": "Marche de 30 km en armes", "icon": "⚑", "fx": {"energie": -18, "discipline": 10, "sante": 3}, "fact": "Végèce recommande des marches de 20 milles romains (environ 30 km) en cinq heures d'été, au pas militaire."},
+			{"name": "Construire le camp de marche", "icon": "♜", "fx": {"energie": -12, "discipline": 8, "moral": 5}, "fact": "Chaque soir de campagne, la légion construisait un camp fortifié avec fossé et palissade, même pour une seule nuit."},
+			{"name": "Moudre son blé et cuire son pain", "icon": "♨", "fx": {"sante": 10, "energie": -5}, "fact": "Le légionnaire recevait près d'un kilo de céréales par jour, qu'il moulait et cuisait avec ses camarades."},
+			{"name": "Aller aux thermes du camp", "icon": "♒", "fx": {"sante": 8, "moral": 10, "energie": 5}, "fact": "Les camps permanents avaient leurs thermes : l'hygiène était une vraie force de l'armée romaine."},
+			{"name": "Jouer aux dés", "icon": "⚀", "fx": {"moral": 10, "discipline": -5}, "fact": "Les archéologues ont retrouvé de nombreux dés et pions de jeu dans les camps de légionnaires."},
+			{"name": "Écrire à sa famille", "icon": "✉", "fx": {"moral": 12, "energie": -2}, "fact": "Les tablettes de Vindolanda, près du mur d'Hadrien, conservent des lettres de soldats : l'une accompagne un envoi de chaussettes et de sous-vêtements chauds !"},
+			{"name": "Monter la garde", "icon": "◉", "fx": {"discipline": 12, "energie": -10, "moral": -3}, "fact": "S'endormir en sentinelle était puni très sévèrement : la sécurité de toute la légion en dépendait."},
+			{"name": "Se reposer sous la tente", "icon": "☾", "fx": {"energie": 18, "moral": 4, "discipline": -2}, "fact": "Huit légionnaires partageaient la même tente de cuir : ce petit groupe s'appelait le contubernium."}
+		],
+		"events": [
+			{"text": "Une pluie glaciale tombe toute la nuit sur le camp.", "needs": "sagum", "ok": {"fx": {"sante": -2}, "note": "Ta cape de laine épaisse te garde au chaud : elle sert de manteau le jour et de couverture la nuit."}, "ko": {"fx": {"sante": -16, "moral": -6}, "note": "Trempé et grelottant, tu attrapes froid. Le sagum faisait partie de l'équipement indispensable."}},
+			{"text": "Ordre du centurion : creuser en urgence un fossé, l'ennemi approche !", "needs": "dolabra", "ok": {"fx": {"discipline": 10, "energie": -6}, "note": "Avec ta dolabra, tu creuses vite. Le légionnaire était autant terrassier que combattant."}, "ko": {"fx": {"discipline": -14, "energie": -10}, "note": "Sans outil, tu creuses avec ton bouclier… Le centurion te le fait payer."}},
+			{"text": "Fièvre dans le camp : l'eau du ruisseau est douteuse.", "needs": "gourde", "ok": {"fx": {"sante": -3}, "note": "La posca (eau et vinaigre) limite les maladies : un réflexe d'hygiène des soldats romains."}, "ko": {"fx": {"sante": -18}, "note": "Tu bois l'eau du ruisseau et tombes malade."}},
+			{"text": "Embuscade pendant la marche ! Des flèches pleuvent depuis la forêt.", "options": [
+				{"label": "Former la tortue (testudo)", "fx": {"sante": -4, "discipline": 8}, "note": "Boucliers levés en toit et sur les côtés : la tortue protège la troupe des projectiles."},
+				{"label": "Courir te mettre à l'abri", "fx": {"sante": -12, "discipline": -12}, "note": "Quitter le rang, c'est mettre tout le monde en danger : la discipline est vitale."}
+			]},
+			{"text": "Jour de paie : le trésorier distribue la solde… avec des retenues.", "options": [
+				{"label": "Mettre de côté", "fx": {"moral": 6, "discipline": 4}, "note": "Une partie de la solde était retenue pour la nourriture, les vêtements et l'équipement ; on pouvait aussi épargner auprès des enseignes."},
+				{"label": "Tout dépenser chez les marchands", "fx": {"moral": 14, "discipline": -6}, "note": "Des marchands et des familles suivaient l'armée et s'installaient près des camps : certaines villes sont nées ainsi."}
+			]},
+			{"text": "Le légat inspecte la légion au petit matin.", "options": [
+				{"label": "Astiquer ton équipement toute la nuit", "fx": {"discipline": 12, "energie": -10}, "note": "Une revue réussie peut valoir des éloges… et de meilleures corvées."},
+				{"label": "Dormir et espérer", "chance": 0.5, "fx": {"energie": 8}, "fx_fail": {"discipline": -15}, "note": "Personne n'a rien remarqué !", "note_fail": "Ton casque terni n'échappe pas au regard du légat : corvée de latrines."}
+			]}
+		]
+	},
+	"e02": {
+		"title": "Une semaine au siège d'une ville",
+		"role": "Tu es Jehan, franc-archer en 1449, pendant la reconquête de la Normandie par Charles VII. Ta compagnie assiège une ville tenue par les Anglais.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "Au XVe siècle, la guerre est surtout faite de sièges, de marches, d'attente et de corvées. Les batailles rangées sont rares.",
+		"items": [
+			{"id": "cordes", "name": "Cordes d'arc de rechange", "kg": 0.5, "desc": "Une corde mouillée se détend et perd sa puissance."},
+			{"id": "couverture", "name": "Couverture de laine", "kg": 2, "desc": "Les nuits sont froides sous la tente."},
+			{"id": "pain", "name": "Pain et lard salé", "kg": 3, "desc": "De quoi manger quelques jours.", "daily": {"sante": 2}},
+			{"id": "outre", "name": "Outre de vin coupé d'eau", "kg": 1.5, "desc": "L'eau pure est souvent dangereuse."},
+			{"id": "brigandine", "name": "Brigandine", "kg": 4, "desc": "Veste rembourrée de plaques de métal."},
+			{"id": "cartes", "name": "Jeu de cartes", "kg": 0.2, "desc": "Les cartes à jouer se répandent en Europe au XVe siècle.", "daily": {"moral": 3}},
+			{"id": "chapelet", "name": "Chapelet", "kg": 0.1, "desc": "La foi réconforte avant le combat.", "daily": {"moral": 2}}
+		],
+		"activities": [
+			{"name": "S'entraîner au tir à l'arc", "icon": "➶", "fx": {"discipline": 10, "energie": -10}, "fact": "Les francs-archers, créés en 1448, doivent s'entraîner régulièrement. En Angleterre, une ordonnance de 1363 imposait le tir à l'arc le dimanche."},
+			{"name": "Garder les machines de siège", "icon": "♜", "fx": {"discipline": 10, "energie": -8, "moral": -2}, "fact": "Les assiégés tentaient souvent des sorties de nuit pour incendier les machines et l'artillerie ennemies."},
+			{"name": "Fourrager dans la campagne", "icon": "♣", "fx": {"sante": 10, "discipline": -6, "energie": -6}, "fact": "Trouver de la nourriture était une préoccupation constante : les paysans craignaient autant les amis que les ennemis."},
+			{"name": "Entretenir son arc", "icon": "⚙", "fx": {"discipline": 6, "moral": 4}, "fact": "Cire, graisse et soin : un arc en if bien entretenu pouvait servir des années."},
+			{"name": "Aider les artilleurs de Jean Bureau", "icon": "◉", "fx": {"energie": -12, "discipline": 10, "moral": 4}, "fact": "Les bombardes royales tiraient des boulets de pierre : il fallait des dizaines d'hommes pour les déplacer et les charger."},
+			{"name": "Assister à la messe", "icon": "✝", "fx": {"moral": 10, "discipline": 4}, "fact": "La religion rythmait la vie des soldats : prières avant l'assaut, saints protecteurs, pèlerinages."},
+			{"name": "Écouter les nouvelles d'un messager", "icon": "✉", "fx": {"moral": 8}, "fact": "Sans journaux, les nouvelles circulaient par les messagers, les marchands et les hérauts."},
+			{"name": "Dormir", "icon": "☾", "fx": {"energie": 18, "moral": 3}, "fact": "Les soldats dormaient sous des tentes, dans des granges réquisitionnées ou à la belle étoile."}
+		],
+		"events": [
+			{"text": "Une averse tombe juste avant une sortie ennemie !", "needs": "cordes", "ok": {"fx": {"discipline": 8}, "note": "Tu changes de corde à temps. Les archers gardaient leurs cordes au sec, parfois sous leur chapeau."}, "ko": {"fx": {"discipline": -10, "sante": -8}, "note": "Ta corde mouillée a perdu sa force : tes flèches ne portent plus."}},
+			{"text": "Une nuit de gel s'abat sur le camp.", "needs": "couverture", "ok": {"fx": {"sante": -2}, "note": "Bien couvert, tu dors à peu près au chaud."}, "ko": {"fx": {"sante": -15, "energie": -8}, "note": "Tu grelottes toute la nuit. Le froid et les maladies tuaient plus que les combats."}},
+			{"text": "Les assiégés tentent une sortie en pleine nuit !", "needs": "brigandine", "ok": {"fx": {"sante": -4, "discipline": 8}, "note": "Ta brigandine arrête un coup d'épée. Les protections de toile et de métal équipaient beaucoup de fantassins."}, "ko": {"fx": {"sante": -18}, "note": "Sans protection, tu es blessé au bras."}},
+			{"text": "La paie n'est pas arrivée depuis deux mois.", "options": [
+				{"label": "Patienter", "fx": {"moral": -10, "discipline": 8}, "note": "L'armée permanente de Charles VII est payée par l'impôt : un grand progrès, même si les retards existent."},
+				{"label": "Rejoindre une bande de pillards", "fx": {"moral": 6, "discipline": -30}, "note": "Les « écorcheurs » pillaient le royaume entre deux campagnes : c'est pour en finir avec eux que le roi a créé une armée payée."}
+			]},
+			{"text": "La ville assiégée propose de se rendre si elle n'est pas secourue sous huit jours.", "options": [
+				{"label": "Fêter la nouvelle", "fx": {"moral": 15, "discipline": -4}, "note": "Beaucoup de villes se rendaient « à composition » : la reddition négociée évitait un assaut sanglant pour tous."},
+				{"label": "Rester sur ses gardes", "fx": {"discipline": 10, "moral": 4}, "note": "Prudence : une armée de secours pouvait toujours arriver."}
+			]},
+			{"text": "L'eau du puits du camp a mauvais goût.", "needs": "outre", "ok": {"fx": {"sante": -2}, "note": "Le vin coupé d'eau était souvent plus sûr que l'eau seule."}, "ko": {"fx": {"sante": -16}, "note": "La dysenterie frappe le camp. Les maladies faisaient des ravages dans les armées."}}
+		]
+	},
+	"e03": {
+		"title": "Une semaine de mousquetaire",
+		"role": "Tu es Pierre, 22 ans, mousquetaire dans un régiment d'infanterie de Louis XIV, en 1690, pendant la guerre de la ligue d'Augsbourg.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "Sous Louis XIV, l'armée devient une institution permanente, logée, nourrie et habillée par l'État. Mais la vie du simple soldat reste rude.",
+		"items": [
+			{"id": "apotres", "name": "Bandoulière des « douze apôtres »", "kg": 1, "desc": "Douze petites fioles de poudre prêtes à verser dans le mousquet."},
+			{"id": "meche", "name": "Mèche de rechange", "kg": 0.5, "desc": "Sans mèche allumée, pas de tir !"},
+			{"id": "pain", "name": "Pain de munition", "kg": 3, "desc": "Le pain distribué aux soldats.", "daily": {"sante": 2}},
+			{"id": "capote", "name": "Manteau", "kg": 2.5, "desc": "Pour les nuits de campagne."},
+			{"id": "pipe", "name": "Pipe et tabac", "kg": 0.3, "desc": "Le tabac se répand chez les soldats au XVIIe siècle.", "daily": {"moral": 3}},
+			{"id": "bas", "name": "Bas de laine de rechange", "kg": 0.5, "desc": "Des pieds secs, c'est la santé."},
+			{"id": "baionnette", "name": "Baïonnette", "kg": 0.5, "desc": "Une lame qui se fixe au bout du mousquet."}
+		],
+		"activities": [
+			{"name": "Exercice du mousquet", "icon": "⚔", "fx": {"discipline": 10, "energie": -10}, "fact": "Charger un mousquet demandait des dizaines de gestes codifiés, répétés à l'exercice jusqu'à devenir automatiques."},
+			{"name": "Creuser les tranchées du siège", "icon": "⚒", "fx": {"energie": -15, "discipline": 8, "sante": -2}, "fact": "Vauban invente l'attaque par « parallèles » : des tranchées qui permettent d'approcher une forteresse à l'abri des tirs."},
+			{"name": "Monter la garde", "icon": "◉", "fx": {"discipline": 10, "energie": -8}, "fact": "Le mot d'ordre (le « mot ») changeait chaque nuit pour reconnaître les amis des ennemis."},
+			{"name": "Préparer la soupe en chambrée", "icon": "♨", "fx": {"sante": 10, "moral": 6, "energie": -4}, "fact": "Les soldats mangeaient par « ordinaire » : un petit groupe qui met en commun sa paie pour la nourriture."},
+			{"name": "Toucher le « prêt »", "icon": "◉", "fx": {"moral": 10}, "fact": "Le « prêt » est la paie du soldat, versée tous les cinq jours. Une partie est retenue pour le pain et l'habillement."},
+			{"name": "Jouer aux cartes à la cantine", "icon": "♣", "fx": {"moral": 10, "discipline": -5}, "fact": "Les cantinières et vivandières vendaient boissons et tabac aux soldats."},
+			{"name": "Faire écrire une lettre", "icon": "✉", "fx": {"moral": 12}, "fact": "Beaucoup de soldats ne savaient pas écrire : un camarade ou un écrivain public écrivait pour eux."},
+			{"name": "Repos", "icon": "☾", "fx": {"energie": 18, "moral": 3}, "fact": "En garnison, les soldats logeaient souvent chez l'habitant, avant la construction de casernes."}
+		],
+		"events": [
+			{"text": "Une averse surprend la compagnie juste avant une escarmouche.", "needs": "meche", "ok": {"fx": {"discipline": 8}, "note": "Tu rallumes une mèche sèche. La pluie était l'ennemie du mousquet à mèche."}, "ko": {"fx": {"discipline": -10, "sante": -8}, "note": "Ta mèche s'éteint : impossible de tirer. C'est une raison du passage au fusil à silex vers 1700."}},
+			{"text": "La cavalerie ennemie charge ta compagnie !", "needs": "baionnette", "ok": {"fx": {"discipline": 10, "sante": -4}, "note": "Baïonnette au canon, la compagnie forme une haie de lames : les chevaux refusent de s'y jeter."}, "ko": {"fx": {"sante": -18, "discipline": -6}, "note": "Mousquet vide, sans lame : tu es à la merci des cavaliers. La baïonnette va bientôt remplacer la pique."}},
+			{"text": "Le régiment doit tirer plusieurs salves de suite.", "needs": "apotres", "ok": {"fx": {"discipline": 10}, "note": "Tes « douze apôtres » te permettent de recharger vite."}, "ko": {"fx": {"discipline": -10}, "note": "Tu mesures la poudre à la corne : trop lent !"}},
+			{"text": "Nuit froide au bivouac.", "needs": "capote", "ok": {"fx": {"sante": -2}, "note": "Ton manteau te sauve d'un mauvais rhume."}, "ko": {"fx": {"sante": -14, "energie": -6}, "note": "Le froid épuise ceux qui n'ont pas de quoi se couvrir."}},
+			{"text": "Un camarade te propose de déserter avec lui.", "options": [
+				{"label": "Refuser et rester", "fx": {"discipline": 10, "moral": -4}, "note": "La désertion était un fléau des armées de l'époque, durement réprimé."},
+				{"label": "Le dénoncer au sergent", "fx": {"discipline": 6, "moral": -10}, "note": "Tu gagnes l'estime du sergent… mais pas celle de la chambrée."}
+			]},
+			{"text": "Le roi passe le régiment en revue !", "options": [
+				{"label": "Briquer ton uniforme", "fx": {"discipline": 12, "energie": -8, "moral": 6}, "note": "Louis XIV aimait les revues : l'uniforme impeccable était une fierté du régiment."},
+				{"label": "Faire au plus vite", "chance": 0.5, "fx": {"energie": 5}, "fx_fail": {"discipline": -15}, "note": "Personne ne remarque la tache.", "note_fail": "Le colonel, furieux, te met aux arrêts."}
+			]}
+		]
+	},
+	"e04": {
+		"title": "Une semaine dans la Grande Armée",
+		"role": "Tu es Jean, grognard du 4e régiment d'infanterie de ligne, à l'automne 1805. La Grande Armée traverse l'Europe à marche forcée vers l'Autriche.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "« L'Empereur a trouvé une nouvelle manière de faire la guerre : il se sert de nos jambes plutôt que de nos baïonnettes », disaient les soldats en 1805.",
+		"items": [
+			{"id": "souliers", "name": "Paire de souliers de rechange", "kg": 1.5, "desc": "Les marches usent vite les semelles."},
+			{"id": "pierres", "name": "Pierres à fusil de rechange", "kg": 0.3, "desc": "Un silex s'use après quelques dizaines de tirs."},
+			{"id": "capote", "name": "Capote", "kg": 2.5, "desc": "Long manteau pour le froid et la pluie."},
+			{"id": "biscuit", "name": "Biscuit et riz", "kg": 2.5, "desc": "Vivres de réserve.", "daily": {"sante": 2}},
+			{"id": "gourde", "name": "Gourde", "kg": 1, "desc": "De l'eau ou de l'eau-de-vie."},
+			{"id": "aiguille", "name": "Trousse à couture", "kg": 0.2, "desc": "Pour réparer uniforme et guêtres."},
+			{"id": "pipe", "name": "Pipe", "kg": 0.2, "desc": "Compagne du bivouac.", "daily": {"moral": 3}}
+		],
+		"activities": [
+			{"name": "Marche forcée de 40 km", "icon": "⚑", "fx": {"energie": -20, "discipline": 10}, "fact": "En 1805, la Grande Armée traverse l'Europe à pied : certaines étapes dépassent 40 km par jour."},
+			{"name": "Exercice de feu de peloton", "icon": "⚔", "fx": {"discipline": 10, "energie": -8}, "fact": "Un fantassin entraîné tirait 2 à 3 coups par minute avec son fusil modèle 1777."},
+			{"name": "Faire la soupe à l'escouade", "icon": "♨", "fx": {"sante": 10, "moral": 8, "energie": -4}, "fact": "Chaque escouade cuisinait sa soupe dans une marmite commune, portée à tour de rôle."},
+			{"name": "Raccommoder ses guêtres", "icon": "✂", "fx": {"discipline": 6, "moral": 4}, "fact": "Les soldats réparaient eux-mêmes leurs vêtements : l'intendance ne suivait pas toujours."},
+			{"name": "Écouter la lecture du Bulletin", "icon": "✎", "fx": {"moral": 12}, "fact": "Les Bulletins de la Grande Armée, lus aux troupes, racontaient les victoires… parfois en les embellissant."},
+			{"name": "Chanter et danser au bivouac", "icon": "♫", "fx": {"moral": 12, "energie": -4}, "fact": "Chansons de route et musique militaire entretenaient le moral pendant les longues marches."},
+			{"name": "Monter la garde", "icon": "◉", "fx": {"discipline": 10, "energie": -8}, "fact": "Les avant-postes surveillaient l'ennemi jour et nuit, souvent par grand froid."},
+			{"name": "Dormir au bivouac", "icon": "☾", "fx": {"energie": 18, "moral": 2}, "fact": "Pour aller vite, la Grande Armée ne transportait pas de tentes : on dormait à la belle étoile, autour des feux."}
+		],
+		"events": [
+			{"text": "Tes semelles sont percées après des jours de marche.", "needs": "souliers", "ok": {"fx": {"sante": -2}, "note": "Les souliers de rechange étaient précieux : à ce rythme de marche, une paire de semelles ne dure que quelques semaines."}, "ko": {"fx": {"sante": -16, "energie": -8}, "note": "Tu marches pieds en sang. Les soldats sans souliers restaient en arrière."}},
+			{"text": "Ton silex rate trois fois de suite pendant un tir.", "needs": "pierres", "ok": {"fx": {"discipline": 8}, "note": "Tu changes de pierre à fusil : un réflexe de vieux soldat."}, "ko": {"fx": {"discipline": -10}, "note": "Ton fusil ne tire plus. Un silex s'use après quelques dizaines de coups."}},
+			{"text": "Pluie et nuit glaciale au bivouac.", "needs": "capote", "ok": {"fx": {"sante": -3}, "note": "La capote sert de manteau et de couverture : sans tente, elle est indispensable."}, "ko": {"fx": {"sante": -16}, "note": "Trempé jusqu'aux os, tu tombes malade."}},
+			{"text": "Le soir, l'Empereur passe à cheval devant le bivouac.", "options": [
+				{"label": "Allumer des torches de paille et crier « Vive l'Empereur ! »", "fx": {"moral": 18, "energie": -4}, "note": "La veille d'Austerlitz, les soldats allument des torches pour fêter l'anniversaire du sacre : un moment devenu légendaire."},
+				{"label": "Continuer à dormir", "fx": {"energie": 8}, "note": "Tu rates un moment historique… mais tu es en forme demain."}
+			]},
+			{"text": "Les vivres ne suivent pas. Il faut se nourrir sur le pays.", "options": [
+				{"label": "Acheter aux paysans", "fx": {"sante": 8, "moral": -4}, "note": "Pour aller vite, la Grande Armée transporte peu de vivres et compte sur les ressources locales."},
+				{"label": "Partager les réserves de l'escouade", "fx": {"sante": 4, "moral": 6}, "note": "La solidarité de l'escouade est la base de la survie en campagne."}
+			]},
+			{"text": "Ton uniforme est déchiré avant une revue.", "needs": "aiguille", "ok": {"fx": {"discipline": 8}, "note": "Chaque soldat savait coudre : c'était indispensable."}, "ko": {"fx": {"discipline": -12}, "note": "Le sergent n'apprécie pas du tout."}}
+		]
+	},
+	"e05": {
+		"title": "Une semaine en 1870",
+		"role": "Tu es Émile, 21 ans, fantassin de l'armée française pendant la guerre franco-prussienne, en août 1870.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "En 1870, le soldat français est bien armé (le Chassepot), mais l'organisation (mobilisation, intendance, commandement) ne suit pas. La leçon sera retenue.",
+		"items": [
+			{"id": "tente", "name": "Tente-abri (demi-toile)", "kg": 2, "desc": "Deux soldats assemblent leurs demi-toiles pour faire une tente."},
+			{"id": "couverture", "name": "Couverture", "kg": 2, "desc": "Pour les nuits fraîches."},
+			{"id": "biscuit", "name": "Biscuits de guerre", "kg": 2, "desc": "Très durs mais nourrissants.", "daily": {"sante": 2}},
+			{"id": "cartouches", "name": "Cartouches supplémentaires", "kg": 2, "desc": "Le Chassepot tire vite… et consomme beaucoup."},
+			{"id": "gamelle", "name": "Gamelle et quart", "kg": 1, "desc": "Pour cuisiner et boire le café."},
+			{"id": "journal", "name": "Journal et crayon", "kg": 0.3, "desc": "Pour lire et écrire.", "daily": {"moral": 3}}
+		],
+		"activities": [
+			{"name": "Exercice de tir au Chassepot", "icon": "⚔", "fx": {"discipline": 10, "energie": -8}, "fact": "Le Chassepot, chargé par la culasse, tire 6 à 8 coups par minute et porte bien plus loin que le fusil prussien Dreyse."},
+			{"name": "Corvée d'eau et de bois", "icon": "⚒", "fx": {"energie": -10, "discipline": 6, "sante": 4}, "fact": "Les corvées occupaient une grande partie de la journée du soldat."},
+			{"name": "Marche vers la frontière", "icon": "⚑", "fx": {"energie": -16, "discipline": 8}, "fact": "En 1870, des régiments se croisent sur les routes, cherchant leurs unités : la mobilisation française est désorganisée."},
+			{"name": "Entretenir son fusil", "icon": "⚙", "fx": {"discipline": 8, "moral": 2}, "fact": "Le Chassepot utilise une cartouche en papier et un joint en caoutchouc qu'il faut nettoyer souvent."},
+			{"name": "Lire le journal", "icon": "✎", "fx": {"moral": 8}, "fact": "Les journaux, très lus, annoncent parfois des victoires imaginaires au début de la guerre."},
+			{"name": "Écrire à sa famille", "icon": "✉", "fx": {"moral": 12}, "fact": "La poste militaire achemine le courrier des soldats ; beaucoup savent désormais lire et écrire grâce à l'école."},
+			{"name": "Faire le café avec l'escouade", "icon": "♨", "fx": {"moral": 8, "sante": 6}, "fact": "Le café, le « jus », devient au XIXe siècle la boisson emblématique du soldat français."},
+			{"name": "Dormir", "icon": "☾", "fx": {"energie": 18, "moral": 2}, "fact": "Depuis le Second Empire, chaque soldat porte une demi-toile de tente : la « tente-abri »."}
+		],
+		"events": [
+			{"text": "Orage violent pendant la nuit.", "needs": "tente", "ok": {"fx": {"sante": -2}, "note": "Abrité sous la tente avec ton camarade, tu passes une nuit correcte."}, "ko": {"fx": {"sante": -15, "energie": -6}, "note": "Sans abri, tu passes la nuit sous la pluie."}},
+			{"text": "Les vivres n'arrivent pas : l'intendance est débordée.", "needs": "biscuit", "ok": {"fx": {"sante": -2}, "note": "Tes biscuits de réserve te sauvent. En 1870, des vivres s'entassaient dans les gares pendant que des régiments manquaient de tout."}, "ko": {"fx": {"sante": -14, "moral": -8}, "note": "Tu as faim. L'intendance française de 1870 est l'un des grands échecs de la guerre."}},
+			{"text": "Accrochage avec une patrouille ennemie.", "needs": "cartouches", "ok": {"fx": {"discipline": 10, "sante": -3}, "note": "Grâce à tes cartouches supplémentaires, tu tiens ta position."}, "ko": {"fx": {"sante": -10, "discipline": -8}, "note": "Tu es à court de munitions au pire moment."}},
+			{"text": "Les nouvelles sont mauvaises : l'armée recule.", "options": [
+				{"label": "Remonter le moral des camarades", "fx": {"moral": 8, "energie": -4}, "note": "Dans les défaites, la cohésion du petit groupe fait tenir les soldats."},
+				{"label": "Te taire et obéir", "fx": {"discipline": 8, "moral": -6}, "note": "La discipline évite la panique, mais le moral baisse."}
+			]},
+			{"text": "Un officier cherche des volontaires pour une reconnaissance.", "options": [
+				{"label": "Se porter volontaire", "chance": 0.6, "fx": {"discipline": 14, "moral": 8}, "fx_fail": {"sante": -14}, "note": "Tu rapportes de précieux renseignements. Faute de cavalerie bien employée, l'armée française manquait d'informations.", "note_fail": "Repéré par une patrouille, tu reviens blessé."},
+				{"label": "Rester en arrière", "fx": {"energie": 6, "discipline": -4}, "note": "D'autres y vont à ta place."}
+			]},
+			{"text": "Nuit froide sans feu (interdit pour ne pas être repéré).", "needs": "couverture", "ok": {"fx": {"sante": -2}, "note": "Ta couverture te protège du froid."}, "ko": {"fx": {"sante": -12}, "note": "Tu grelottes jusqu'à l'aube."}}
+		]
+	},
+	"e06": {
+		"title": "Une semaine dans les tranchées",
+		"role": "Tu es Louis, 20 ans, soldat de 2e classe, en première ligne près de Verdun au printemps 1916. Ta compagnie restera quelques jours au front avant la relève.",
+		"pack_limit": 8,
+		"days": 5,
+		"outro": "Grâce à la « noria » de Pétain, ta compagnie est relevée. Comme près de 70 % des poilus, tu es passé par Verdun. Le quotidien des tranchées, c'est la boue, le froid, l'attente… et le courrier qui fait tenir.",
+		"items": [
+			{"id": "masque", "name": "Masque à gaz", "kg": 1, "desc": "Obligatoire depuis 1915 : les gaz de combat sont une menace constante."},
+			{"id": "pelle", "name": "Pelle-bêche", "kg": 1.5, "desc": "Pour creuser, réparer la tranchée après un bombardement."},
+			{"id": "chaussettes", "name": "Chaussettes sèches", "kg": 0.3, "desc": "Contre le terrible « pied de tranchée »."},
+			{"id": "couverture", "name": "Couverture", "kg": 2, "desc": "Les nuits sont glaciales dans les abris."},
+			{"id": "singe", "name": "Conserves de « singe »", "kg": 1.5, "desc": "Le corned-beef de l'armée française.", "daily": {"sante": 2}},
+			{"id": "lettres", "name": "Lettres et photos des proches", "kg": 0.2, "desc": "Le lien avec l'arrière.", "daily": {"moral": 4}},
+			{"id": "grenades", "name": "Grenades", "kg": 2, "desc": "Pour repousser un coup de main ennemi."},
+			{"id": "bidon", "name": "Bidon de « pinard »", "kg": 2, "desc": "Le vin, ration quotidienne du poilu.", "daily": {"moral": 2}}
+		],
+		"activities": [
+			{"name": "Écrire une lettre", "icon": "✉", "fx": {"moral": 14, "energie": -2}, "fact": "Environ 4 millions de lettres circulaient chaque jour entre le front et l'arrière pendant la guerre."},
+			{"name": "Corvée de soupe", "icon": "♨", "fx": {"sante": 8, "energie": -12, "discipline": 6}, "fact": "Les « hommes-soupe » allaient chercher les repas aux cuisines roulantes, à l'arrière, sous les obus : la soupe arrivait souvent froide."},
+			{"name": "Consolider la tranchée", "icon": "⚒", "fx": {"energie": -14, "discipline": 8, "sante": 4}, "fact": "Les poilus passaient plus de temps à creuser et réparer qu'à combattre."},
+			{"name": "Chasser les rats et les poux", "icon": "✖", "fx": {"sante": 10, "energie": -6, "moral": 2}, "fact": "Les poux, surnommés les « totos », et les rats envahissaient les tranchées."},
+			{"name": "Graver une douille d'obus", "icon": "✎", "fx": {"moral": 10, "energie": -4}, "fact": "L'« artisanat de tranchée » : briquets, bagues, vases gravés dans des douilles d'obus."},
+			{"name": "Lire un journal de tranchée", "icon": "✎", "fx": {"moral": 10}, "fact": "Des soldats publiaient leurs propres journaux, comme Le Crapouillot (1915), pleins d'humour et d'autodérision."},
+			{"name": "Faire le guet au créneau", "icon": "◉", "fx": {"discipline": 12, "energie": -10, "moral": -4}, "fact": "Les guetteurs observaient le no man's land à travers des créneaux ou des périscopes de tranchée."},
+			{"name": "Dormir dans la cagna", "icon": "☾", "fx": {"energie": 18, "sante": -2}, "fact": "La « cagna » est l'abri creusé dans la terre, humide et infesté de rats, où l'on dort quand on peut."}
+		],
+		"events": [
+			{"text": "Alerte aux gaz ! Les cloches et les klaxons retentissent.", "needs": "masque", "ok": {"fx": {"sante": -4, "moral": -4}, "note": "Tu enfiles ton masque en quelques secondes. Les soldats s'entraînaient sans cesse à ce geste."}, "ko": {"fx": {"sante": -28}, "note": "Sans masque, tu es intoxiqué et évacué. Le masque à gaz est devenu l'objet le plus vital du poilu."}},
+			{"text": "Un bombardement s'abat sur ton secteur pendant des heures.", "needs": "pelle", "ok": {"fx": {"sante": -6, "moral": -6, "energie": -6}, "note": "Avec ta pelle-bêche, tu dégages ton camarade enseveli et répares la tranchée. L'artillerie a causé la majorité des pertes de la guerre."}, "ko": {"fx": {"sante": -16, "moral": -10}, "note": "Sans outil, impossible de te protéger ou de dégager l'abri effondré."}},
+			{"text": "La pluie a transformé la tranchée en rivière de boue.", "needs": "chaussettes", "ok": {"fx": {"sante": -2}, "note": "Des pieds secs : le meilleur remède contre le « pied de tranchée », qui pouvait mener à l'amputation."}, "ko": {"fx": {"sante": -16}, "note": "Tes pieds gonflent et bleuissent : c'est le pied de tranchée."}},
+			{"text": "Le vaguemestre arrive avec le courrier !", "options": [
+				{"label": "Lire tes lettres", "fx": {"moral": 18}, "note": "Le vaguemestre, chargé du courrier, était l'homme le plus attendu du régiment."},
+				{"label": "Partager ton colis avec les copains", "fx": {"moral": 14, "sante": 6}, "note": "Les colis de la famille (chocolat, saucisson, tricots) étaient partagés dans l'escouade."}
+			]},
+			{"text": "Coup de main ennemi pendant la nuit !", "needs": "grenades", "ok": {"fx": {"discipline": 12, "sante": -4}, "note": "Vous repoussez l'attaque à la grenade. Les « coups de main » visaient souvent à faire des prisonniers pour obtenir des renseignements."}, "ko": {"fx": {"sante": -14, "discipline": -8}, "note": "Pris par surprise, tu es blessé."}},
+			{"text": "Nuit glaciale dans l'abri.", "needs": "couverture", "ok": {"fx": {"sante": -2}, "note": "Ta couverture te garde un peu au chaud."}, "ko": {"fx": {"sante": -12, "energie": -6}, "note": "Le froid t'empêche de dormir."}}
+		]
+	},
+	"e07": {
+		"title": "Une semaine au maquis",
+		"role": "Tu es Lucien, 19 ans, réfractaire au Service du travail obligatoire, caché dans un maquis du Vercors au printemps 1944.",
+		"pack_limit": 6,
+		"days": 5,
+		"outro": "Les maquis vivent cachés, dépendent des paysans et des parachutages alliés, et préparent la libération : sabotages des voies ferrées, renseignement, guérilla le moment venu.",
+		"items": [
+			{"id": "papiers", "name": "Faux papiers", "kg": 0.1, "desc": "Une fausse carte d'identité, indispensable en cas de contrôle."},
+			{"id": "lampe", "name": "Lampe de poche", "kg": 0.5, "desc": "Pour baliser un terrain de parachutage la nuit."},
+			{"id": "carte", "name": "Carte d'état-major", "kg": 0.2, "desc": "Pour se déplacer dans la montagne sans se perdre."},
+			{"id": "couverture", "name": "Couverture", "kg": 2, "desc": "Les nuits en montagne sont froides."},
+			{"id": "vivres", "name": "Pain et fromage", "kg": 1.5, "desc": "Donnés par une ferme voisine.", "daily": {"sante": 2}},
+			{"id": "carnet", "name": "Carnet et crayon", "kg": 0.2, "desc": "Pour coder les messages… et écrire un peu.", "daily": {"moral": 2}},
+			{"id": "gourde", "name": "Gourde", "kg": 1, "desc": "L'eau des sources de montagne."}
+		],
+		"activities": [
+			{"name": "Écouter Radio Londres", "icon": "☎", "fx": {"moral": 14}, "fact": "Sur la BBC, des « messages personnels » codés (« Les sanglots longs des violons… ») annoncent parachutages et actions."},
+			{"name": "Apprendre à manier la Sten", "icon": "⚔", "fx": {"discipline": 10, "energie": -6}, "fact": "La mitraillette britannique Sten, simple et bon marché, est parachutée en grand nombre aux maquis."},
+			{"name": "Aider les paysans aux champs", "icon": "♣", "fx": {"sante": 8, "moral": 6, "energie": -10}, "fact": "Les maquis dépendent des paysans pour se nourrir : leur soutien est vital."},
+			{"name": "Coder un message", "icon": "✎", "fx": {"discipline": 10, "moral": 2}, "fact": "Les radios de la Résistance chiffraient leurs messages, par exemple à partir de poèmes appris par cœur."},
+			{"name": "Monter la garde au camp", "icon": "◉", "fx": {"discipline": 10, "energie": -8}, "fact": "Les maquis changeaient souvent d'emplacement et surveillaient les routes pour éviter d'être surpris."},
+			{"name": "Marche d'entraînement en montagne", "icon": "⚑", "fx": {"energie": -14, "discipline": 8, "sante": 4}, "fact": "Le Vercors, plateau entouré de falaises, semblait une forteresse naturelle."},
+			{"name": "Faire la cuisine du camp", "icon": "♨", "fx": {"sante": 8, "moral": 6}, "fact": "La nourriture était rare : on vivait de ce que donnaient les fermes et des vivres parachutés."},
+			{"name": "Dormir sous les sapins", "icon": "☾", "fx": {"energie": 18}, "fact": "Les maquisards dormaient dans des fermes isolées, des cabanes ou des grottes."}
+		],
+		"events": [
+			{"text": "Contrôle d'identité sur la route du village.", "needs": "papiers", "ok": {"fx": {"moral": -2}, "note": "Tes faux papiers passent le contrôle. Des ateliers clandestins fabriquaient des milliers de faux documents."}, "ko": {"fx": {"discipline": -10, "moral": -12, "energie": -10}, "note": "Tu dois t'enfuir à travers champs et perdre une journée à te cacher."}},
+			{"text": "Message de la BBC : un parachutage cette nuit !", "needs": "lampe", "ok": {"fx": {"moral": 16, "energie": -6}, "note": "Tu balises le terrain avec ta lampe. Les containers contiennent armes, explosifs, postes radio… et parfois du chocolat."}, "ko": {"fx": {"moral": -10}, "note": "Sans lumière pour baliser, l'avion ne trouve pas le terrain et repart."}},
+			{"text": "Le maquis doit se déplacer de nuit vers un nouveau camp.", "needs": "carte", "ok": {"fx": {"energie": -6, "discipline": 8}, "note": "Grâce à ta carte, le groupe arrive sans encombre."}, "ko": {"fx": {"energie": -16, "moral": -6}, "note": "Vous vous perdez dans la forêt une bonne partie de la nuit."}},
+			{"text": "Une nuit glaciale tombe sur le plateau.", "needs": "couverture", "ok": {"fx": {"sante": -2}, "note": "Ta couverture te protège du froid de la montagne."}, "ko": {"fx": {"sante": -14}, "note": "Le froid de la nuit t'affaiblit."}},
+			{"text": "Un jeune du village veut rejoindre le maquis.", "options": [
+				{"label": "L'accueillir", "fx": {"moral": 10, "discipline": -4}, "note": "Avec le STO (1943), des milliers de jeunes réfractaires rejoignent les maquis."},
+				{"label": "Vérifier d'abord qui il est", "fx": {"discipline": 10}, "note": "La prudence était vitale : les maquis craignaient les infiltrations."}
+			]},
+			{"text": "Ordre de mission : préparer le sabotage d'une voie ferrée pour le jour J.", "options": [
+				{"label": "Repérer les lieux discrètement", "chance": 0.7, "fx": {"discipline": 12, "moral": 8}, "fx_fail": {"energie": -12, "moral": -6}, "note": "Le « plan vert » de la Résistance vise à paralyser les chemins de fer au moment du Débarquement.", "note_fail": "Une patrouille t'oblige à rebrousser chemin."},
+				{"label": "Attendre les ordres", "fx": {"energie": 6}, "note": "La Résistance coordonne ses actions avec les Alliés."}
+			]}
+		]
+	},
+	"e08": {
+		"title": "Une semaine de service militaire",
+		"role": "Tu es Patrick, 20 ans, appelé du contingent dans les Forces françaises en Allemagne en 1975. Plus que 100 jours avant « la quille » !",
+		"pack_limit": 6,
+		"days": 5,
+		"outro": "Pendant la guerre froide, des millions de jeunes Français ont fait leur service militaire. Pour beaucoup, c'était la première fois qu'ils quittaient leur région.",
+		"items": [
+			{"id": "masque", "name": "Masque à gaz NBC", "kg": 1, "desc": "Pour les exercices nucléaire, biologique, chimique."},
+			{"id": "gants", "name": "Gants chauds", "kg": 0.3, "desc": "L'hiver allemand est rude."},
+			{"id": "carte", "name": "Carte et boussole", "kg": 0.4, "desc": "Pour les exercices de navigation."},
+			{"id": "chaussettes", "name": "Chaussettes de rechange", "kg": 0.3, "desc": "Les marches et les manœuvres usent les pieds."},
+			{"id": "transistor", "name": "Poste transistor", "kg": 0.8, "desc": "Pour écouter la musique et les nouvelles.", "daily": {"moral": 3}},
+			{"id": "lettres", "name": "Lettres de la famille", "kg": 0.1, "desc": "Le lien avec la maison.", "daily": {"moral": 3}},
+			{"id": "ration", "name": "Ration de combat", "kg": 1.5, "desc": "Pour tenir pendant les manœuvres."}
+		],
+		"activities": [
+			{"name": "Démontage chronométré du fusil", "icon": "⚙", "fx": {"discipline": 10, "moral": 2}, "fact": "Les appelés apprenaient à démonter et remonter leur fusil MAS 49/56 les yeux presque fermés."},
+			{"name": "Corvée de pluches", "icon": "✂", "fx": {"discipline": 8, "moral": -4, "energie": -4}, "fact": "La « corvée de pluches » (éplucher des montagnes de pommes de terre) reste un souvenir commun à des générations d'appelés."},
+			{"name": "Parcours du combattant", "icon": "⚑", "fx": {"energie": -14, "sante": 6, "discipline": 6}, "fact": "Le parcours du combattant (murs, fossés, filets) fait partie de l'instruction de base."},
+			{"name": "Manœuvres avec les blindés", "icon": "⚔", "fx": {"energie": -12, "discipline": 10}, "fact": "Les Forces françaises en Allemagne comptaient environ 50 000 hommes, prêts à faire face au Pacte de Varsovie."},
+			{"name": "Fêter le « Père Cent »", "icon": "♫", "fx": {"moral": 16, "discipline": -6}, "fact": "Cent jours avant la fin du service, les appelés fêtent le « Père Cent ». Le dernier jour, c'est « la quille »."},
+			{"name": "Téléphoner à la famille", "icon": "☎", "fx": {"moral": 12}, "fact": "Les appelés faisaient la queue devant les cabines téléphoniques de la caserne, avec des pièces ou des jetons."},
+			{"name": "Garde au dépôt de munitions", "icon": "◉", "fx": {"discipline": 12, "energie": -10}, "fact": "Les tours de garde, de jour comme de nuit, rythmaient la vie à la caserne."},
+			{"name": "Repos en chambrée", "icon": "☾", "fx": {"energie": 18, "moral": 4}, "fact": "La chambrée regroupait des jeunes de toutes origines sociales : un brassage unique."}
+		],
+		"events": [
+			{"text": "Exercice d'alerte NBC (nucléaire, biologique, chimique) à 4 heures du matin !", "needs": "masque", "ok": {"fx": {"discipline": 10, "energie": -6}, "note": "Masque enfilé en moins de 9 secondes : exercice réussi. La menace chimique était prise très au sérieux pendant la guerre froide."}, "ko": {"fx": {"discipline": -16}, "note": "Sans masque, tu es « déclaré mort » par l'arbitre de l'exercice. Corvée garantie."}},
+			{"text": "Manœuvre de nuit dans la neige.", "needs": "gants", "ok": {"fx": {"sante": -2}, "note": "Tes gants te sauvent les doigts."}, "ko": {"fx": {"sante": -14}, "note": "Tes mains gèlent : tu peux à peine tenir ton arme."}},
+			{"text": "Exercice de navigation : rejoindre un point en forêt de nuit.", "needs": "carte", "ok": {"fx": {"discipline": 10, "moral": 6}, "note": "Carte et boussole : ton groupe arrive le premier."}, "ko": {"fx": {"energie": -14, "discipline": -8}, "note": "Perdu, tu arrives au petit matin."}},
+			{"text": "Inspection surprise : lit « au carré » exigé.", "options": [
+				{"label": "Faire un lit parfait", "fx": {"discipline": 10, "energie": -4}, "note": "Le lit au carré, au pli près : un rite de la vie de caserne."},
+				{"label": "Bâcler", "chance": 0.4, "fx": {"energie": 6}, "fx_fail": {"discipline": -14}, "note": "Le sergent ne voit rien.", "note_fail": "Le sergent défait ton lit : tu es consigné ce week-end."}
+			]},
+			{"text": "Une permission de 48 heures est accordée !", "options": [
+				{"label": "Rentrer voir ta famille", "fx": {"moral": 18, "energie": -6}, "note": "Les « perms » étaient attendues avec impatience, même pour un long trajet en train."},
+				{"label": "Rester et te reposer", "fx": {"energie": 16, "moral": 4}, "note": "Parfois, dormir est le meilleur des cadeaux."}
+			]},
+			{"text": "Longue marche de 25 km avec le sac.", "needs": "chaussettes", "ok": {"fx": {"energie": -8}, "note": "Des chaussettes sèches à mi-parcours : pas d'ampoules !"}, "ko": {"fx": {"energie": -12, "sante": -10}, "note": "Tes pieds sont couverts d'ampoules."}}
+		]
+	},
+	"e09": {
+		"title": "Une semaine au Vietnam",
+		"role": "Tu es Mike, 19 ans, soldat américain arrivé au Vietnam en 1968 pour un séjour de 12 mois. Chaleur, mousson et jungle t'attendent.",
+		"pack_limit": 7,
+		"days": 5,
+		"outro": "La plupart des soldats américains servaient 12 mois au Vietnam, puis rentraient chez eux. Ce système de rotation individuelle rendait la cohésion des unités difficile.",
+		"items": [
+			{"id": "poncho", "name": "Poncho", "kg": 1, "desc": "Contre les pluies de la mousson."},
+			{"id": "antipalu", "name": "Comprimés antipaludiques", "kg": 0.1, "desc": "Le paludisme est une menace constante."},
+			{"id": "chaussettes", "name": "Chaussettes sèches", "kg": 0.3, "desc": "Contre la « pourriture de la jungle » des pieds."},
+			{"id": "gourdes", "name": "Quatre gourdes d'eau", "kg": 4, "desc": "La chaleur et l'humidité épuisent."},
+			{"id": "repulsif", "name": "Répulsif anti-moustiques", "kg": 0.2, "desc": "Les moustiques et les sangsues sont partout."},
+			{"id": "lettres", "name": "Lettres de la maison", "kg": 0.1, "desc": "Le courrier, gratuit pour les soldats.", "daily": {"moral": 3}},
+			{"id": "cartes", "name": "Jeu de cartes", "kg": 0.1, "desc": "Pour les longues heures d'attente.", "daily": {"moral": 2}}
+		],
+		"activities": [
+			{"name": "Patrouille dans la jungle", "icon": "⚑", "fx": {"energie": -16, "discipline": 10, "sante": -2}, "fact": "Les patrouilles avançaient lentement dans une végétation dense, souvent à quelques mètres de visibilité."},
+			{"name": "Nettoyer son M16", "icon": "⚙", "fx": {"discipline": 10, "moral": 2}, "fact": "Au début, le M16 s'enrayait souvent : munitions mal adaptées et kits de nettoyage absents. L'entretien devient une obsession."},
+			{"name": "Héliportage", "icon": "✈", "fx": {"energie": -8, "discipline": 8, "moral": 4}, "fact": "L'hélicoptère UH-1 « Huey » déposait les soldats en pleine jungle en quelques minutes : la guerre de l'aéromobilité."},
+			{"name": "Remplir des sacs de sable", "icon": "⚒", "fx": {"energie": -12, "discipline": 6, "sante": 2}, "fact": "Les bases de feu étaient protégées par des milliers de sacs de sable."},
+			{"name": "Écouter la radio des forces armées", "icon": "☎", "fx": {"moral": 12}, "fact": "La radio militaire AFVN diffusait musique et nouvelles ; son « Good Morning, Vietnam! » est resté célèbre."},
+			{"name": "Écrire à sa famille", "icon": "✉", "fx": {"moral": 12}, "fact": "Les soldats pouvaient envoyer leurs lettres gratuitement : il suffisait d'écrire « Free » à la place du timbre."},
+			{"name": "Jouer aux cartes", "icon": "♣", "fx": {"moral": 10, "discipline": -4}, "fact": "Entre deux opérations, l'attente et l'ennui occupaient une grande partie du temps."},
+			{"name": "Dormir", "icon": "☾", "fx": {"energie": 18}, "fact": "La chaleur, les moustiques et les alertes rendaient le sommeil difficile."}
+		],
+		"events": [
+			{"text": "La mousson arrive : des pluies diluviennes pendant des heures.", "needs": "poncho", "ok": {"fx": {"sante": -2}, "note": "Ton poncho sert d'abri et de couverture."}, "ko": {"fx": {"sante": -12, "moral": -6}, "note": "Trempé en permanence, tu tombes malade."}},
+			{"text": "Fièvre dans ta section : le paludisme frappe.", "needs": "antipalu", "ok": {"fx": {"sante": -2}, "note": "Les comprimés quotidiens protégeaient du paludisme… à condition de ne pas les oublier."}, "ko": {"fx": {"sante": -22}, "note": "Tu es évacué par hélicoptère, terrassé par la fièvre."}},
+			{"text": "Trois jours de patrouille les pieds dans l'eau.", "needs": "chaussettes", "ok": {"fx": {"sante": -2}, "note": "Changer de chaussettes tous les jours évitait l'« immersion foot »."}, "ko": {"fx": {"sante": -14}, "note": "Tes pieds sont couverts de plaies."}},
+			{"text": "Chaleur écrasante : 38 °C et 90 % d'humidité.", "needs": "gourdes", "ok": {"fx": {"energie": -4}, "note": "Les soldats portaient souvent 4 à 6 gourdes : l'eau pèse lourd, mais la déshydratation tue."}, "ko": {"fx": {"sante": -12, "energie": -10}, "note": "Coup de chaleur : tu t'effondres pendant la marche."}},
+			{"text": "Tu obtiens une permission « R&R » (repos et récupération) !", "options": [
+				{"label": "Partir à Hawaï", "fx": {"moral": 20, "energie": 10}, "note": "Chaque soldat avait droit à environ une semaine de « R&R » à Hawaï, Bangkok, Sydney ou Tokyo."},
+				{"label": "Rester à la base", "fx": {"energie": 10, "discipline": 6}, "note": "Certains préféraient rester avec leur unité."}
+			]},
+			{"text": "La nuit, la jungle est pleine de moustiques et de sangsues.", "needs": "repulsif", "ok": {"fx": {"sante": -1}, "note": "Le répulsif était l'un des objets les plus demandés."}, "ko": {"fx": {"sante": -10, "moral": -6}, "note": "Tu passes la nuit à te gratter."}}
+		]
+	},
+	"e10": {
+		"title": "Une semaine en opération extérieure",
+		"role": "Tu es Inès, 23 ans, soldate de l'armée de Terre française, déployée dans une base au Sahel pour une mission de 4 mois.",
+		"pack_limit": 9,
+		"days": 5,
+		"outro": "Une « opex » dure en général 4 mois. Chaleur, poussière, longues patrouilles et liens avec la famille par téléphone : le quotidien moderne reste exigeant.",
+		"items": [
+			{"id": "eau", "name": "Réserve d'eau (3 L)", "kg": 3, "desc": "Par 45 °C, il faut boire énormément."},
+			{"id": "cheche", "name": "Chèche", "kg": 0.2, "desc": "Long foulard qui protège du soleil et du sable."},
+			{"id": "batteries", "name": "Batteries de rechange", "kg": 1, "desc": "Radio, optiques, GPS : tout fonctionne sur batterie."},
+			{"id": "jvn", "name": "Jumelles de vision nocturne", "kg": 1, "desc": "Pour voir la nuit."},
+			{"id": "trousse", "name": "Trousse de secours de combat", "kg": 0.5, "desc": "Garrot, pansement compressif : chaque soldat en porte une."},
+			{"id": "rations", "name": "Rations de combat", "kg": 1.5, "desc": "Des repas complets à réchauffer.", "daily": {"sante": 2}},
+			{"id": "telephone", "name": "Téléphone et photos", "kg": 0.2, "desc": "Pour garder le lien avec les proches.", "daily": {"moral": 3}},
+			{"id": "liseuse", "name": "Livres", "kg": 0.5, "desc": "Pour les moments calmes.", "daily": {"moral": 2}}
+		],
+		"activities": [
+			{"name": "Patrouille motorisée", "icon": "⚑", "fx": {"energie": -14, "discipline": 10}, "fact": "Les patrouilles parcourent des centaines de kilomètres de pistes en véhicules blindés."},
+			{"name": "Entretenir son arme dans le sable", "icon": "⚙", "fx": {"discipline": 10, "moral": 2}, "fact": "Sable et poussière s'infiltrent partout : l'arme doit être nettoyée tous les jours."},
+			{"name": "Formation au sauvetage au combat", "icon": "✚", "fx": {"discipline": 8, "moral": 4, "energie": -4}, "fact": "Chaque soldat apprend à poser un garrot et à soigner un camarade : le « sauvetage au combat » sauve de nombreuses vies."},
+			{"name": "Séance de sport", "icon": "♥", "fx": {"sante": 8, "energie": -8, "moral": 6}, "fact": "Le sport reste quotidien en opération : la condition physique est vitale."},
+			{"name": "Appeler sa famille", "icon": "☎", "fx": {"moral": 14}, "fact": "Dans les bases, des connexions Internet permettent d'appeler la famille, un énorme changement par rapport aux guerres passées."},
+			{"name": "Aide médicale à la population", "icon": "✚", "fx": {"moral": 10, "energie": -6}, "fact": "Les médecins militaires soignent aussi les habitants lors d'actions civilo-militaires."},
+			{"name": "Briefing de mission", "icon": "✎", "fx": {"discipline": 10}, "fact": "Images de drones, cartes satellites, renseignement : chaque mission est préparée en détail."},
+			{"name": "Repos climatisé", "icon": "☾", "fx": {"energie": 18, "moral": 4}, "fact": "Dans la chaleur du Sahel, quelques heures au frais sont un vrai luxe."}
+		],
+		"events": [
+			{"text": "Une tempête de sable se lève pendant la patrouille.", "needs": "cheche", "ok": {"fx": {"sante": -2}, "note": "Le chèche protège le visage, la bouche et le nez : un équipement adopté de tous."}, "ko": {"fx": {"sante": -12, "energie": -6}, "note": "Le sable te brûle les yeux et la gorge."}},
+			{"text": "Chaleur extrême : 47 °C dans le véhicule.", "needs": "eau", "ok": {"fx": {"energie": -4}, "note": "En opération au Sahel, un soldat peut boire plus de 10 litres d'eau par jour."}, "ko": {"fx": {"sante": -16, "energie": -8}, "note": "Déshydratation : tu dois être soignée."}},
+			{"text": "Ta radio s'éteint en pleine mission : batterie vide.", "needs": "batteries", "ok": {"fx": {"discipline": 8}, "note": "La gestion de l'énergie est devenue un enjeu majeur pour le soldat moderne."}, "ko": {"fx": {"discipline": -12, "moral": -6}, "note": "Coupée du reste du groupe, tu dois attendre en position."}},
+			{"text": "Mission d'observation de nuit.", "needs": "jvn", "ok": {"fx": {"discipline": 10, "moral": 4}, "note": "Grâce à la vision nocturne, ton groupe repère tout ce qui bouge."}, "ko": {"fx": {"discipline": -8, "energie": -8}, "note": "Tu ne vois presque rien dans l'obscurité."}},
+			{"text": "Accident de véhicule : un camarade saigne abondamment.", "needs": "trousse", "ok": {"fx": {"moral": 10, "discipline": 10}, "note": "Tu poses un garrot en quelques secondes. Le sauvetage au combat est enseigné à tous les soldats."}, "ko": {"fx": {"moral": -14}, "note": "Il faut attendre l'infirmier, chaque seconde compte."}},
+			{"text": "Un colis de la famille arrive par avion militaire.", "options": [
+				{"label": "Le partager avec ton groupe", "fx": {"moral": 16, "sante": 4}, "note": "Les colis restent, comme en 14-18, un immense réconfort."},
+				{"label": "Le garder pour les jours difficiles", "fx": {"moral": 10}, "note": "Une réserve de chocolat pour plus tard…"}
+			]}
+		]
+	}
+}

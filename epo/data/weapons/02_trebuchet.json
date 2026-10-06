@@ -1,0 +1,74 @@
+{
+	"id": "trebuchet",
+	"era": "e02",
+	"name": "Trébuchet",
+	"full_name": "Trébuchet à contrepoids",
+	"type": "Machine de siège",
+	"country": "Europe et Proche-Orient",
+	"year": "XIIe – XVe siècle",
+	"designer": "Ingénieurs (« engeigneurs ») médiévaux",
+	"camera": {"size": 11.0, "center": [0, 4.0, 0]},
+	"story": "[b]Le roi des sièges.[/b] Le trébuchet à contrepoids apparaît au XIIe siècle et devient au XIIIe siècle l'arme de siège la plus puissante avant le canon. Il utilise la gravité : un énorme contrepoids, en tombant, fait basculer une longue verge (le bras) qui lance un boulet grâce à une fronde.\n\n[b]Précision et puissance.[/b] Comme le contrepoids tombe toujours de la même hauteur, le trébuchet frappe avec une grande régularité, coup après coup au même endroit, ce qui permet d'ouvrir une brèche dans une muraille. Les plus grands lancent des pierres de plus de 100 kg à plusieurs centaines de mètres.\n\n[b]Un chantier.[/b] Il faut des semaines pour en construire un, souvent sur place avec le bois des environs, et des dizaines d'hommes pour le faire fonctionner. Le métier d'« engeigneur » (ingénieur) vient de ces « engins ».\n\nAu XVe siècle, les canons de bronze le remplacent : ils sont plus faciles à transporter et brisent mieux les murs.",
+	"facts": [
+		"En 1304, au siège de Stirling, le roi d'Angleterre Édouard Ier fait construire un trébuchet géant surnommé « Warwolf » (le loup de guerre). Il refuse la reddition de la garnison avant de l'avoir essayé !",
+		"Le mot « ingénieur » vient d'« engeigneur », le constructeur d'engins de siège."
+	],
+	"specs": [["Hauteur", "jusqu'à 15 m pour les plus grands"], ["Contrepoids", "plusieurs tonnes de pierres ou de terre"], ["Projectile", "pierres de 50 à plus de 100 kg"], ["Portée", "jusqu'à environ 300 m"], ["Cadence", "quelques tirs par heure"]],
+	"parts": [
+		{"id": "base", "name": "Châssis", "desc": "Grandes poutres posées au sol, qui supportent tout l'engin et répartissent son poids.", "pos": [0, 0, 0], "explode": [0, -1.2, 0], "shapes": [
+			{"t": "box", "s": [7.0, 0.35, 0.35], "p": [0, 0.17, 1.2], "m": "wood"},
+			{"t": "box", "s": [7.0, 0.35, 0.35], "p": [0, 0.17, -1.2], "m": "wood"},
+			{"t": "box", "s": [0.35, 0.35, 2.8], "p": [-3.2, 0.17, 0], "m": "wood"},
+			{"t": "box", "s": [0.35, 0.35, 2.8], "p": [3.2, 0.17, 0], "m": "wood"},
+			{"t": "box", "s": [0.35, 0.35, 2.8], "p": [0, 0.17, 0], "m": "wood"}
+		]},
+		{"id": "montants", "name": "Montants", "desc": "Deux chevalets en A qui portent l'axe de rotation à plus de 4 mètres de haut.", "pos": [0, 0, 0], "explode": [0, 0, 2.2], "shapes": [
+			{"t": "box", "s": [0.3, 4.9, 0.3], "p": [-1.1, 2.3, 1.2], "r": [0, 0, -15], "m": "wood"},
+			{"t": "box", "s": [0.3, 4.9, 0.3], "p": [1.1, 2.3, 1.2], "r": [0, 0, 15], "m": "wood"},
+			{"t": "box", "s": [0.3, 4.9, 0.3], "p": [-1.1, 2.3, -1.2], "r": [0, 0, -15], "m": "wood"},
+			{"t": "box", "s": [0.3, 4.9, 0.3], "p": [1.1, 2.3, -1.2], "r": [0, 0, 15], "m": "wood"}
+		]},
+		{"id": "axe", "name": "Axe", "desc": "Gros axe de bois dur ou de fer autour duquel pivote la verge.", "pos": [0, 4.5, 0], "explode": [0, 0.6, 3.2], "shapes": [
+			{"t": "cyl", "rad": 0.14, "h": 2.9, "p": [0, 0, 0], "r": [90, 0, 0], "m": "metal"}
+		]},
+		{"id": "verge", "name": "Verge et contrepoids", "desc": "La verge (le bras) mesure souvent 10 mètres et plus. Le côté court porte une caisse remplie de pierres : le contrepoids, qui peut peser plusieurs tonnes.", "pos": [0, 4.5, 0], "rot": [0, 0, -35], "explode": [0, 2.0, 0], "shapes": [
+			{"t": "box", "s": [9.0, 0.32, 0.32], "p": [2.5, 0, 0], "m": "wood"},
+			{"t": "box", "s": [1.3, 1.5, 1.4], "p": [-2.0, -0.95, 0], "r": [0, 0, 35], "m": "wood", "c": "#5a4030"},
+			{"t": "box", "s": [1.2, 0.4, 1.3], "p": [-2.0, -0.35, 0], "r": [0, 0, 35], "m": "stone"},
+			{"t": "torus", "rad": 0.08, "rad2": 0.14, "p": [7.0, 0, 0], "m": "metal"}
+		]},
+		{"id": "fronde", "name": "Fronde", "desc": "Une poche de cuir au bout de deux cordes. Elle allonge le bras de lancement et augmente beaucoup la vitesse du projectile.", "pos": [5.7, 0.55, 0], "explode": [1.5, 0, 0], "shapes": [
+			{"t": "box", "s": [1.6, 0.04, 0.04], "p": [-0.8, 0.05, 0], "m": "rope"},
+			{"t": "box", "s": [0.45, 0.12, 0.4], "p": [-1.6, 0, 0], "m": "leather"}
+		]},
+		{"id": "boulet", "name": "Boulet de pierre", "desc": "Pierre taillée en boule. Des boulets de même masse permettent de toucher plusieurs fois le même point du mur.", "pos": [4.1, 0.75, 0], "explode": [1.5, 0, -1.5], "shapes": [
+			{"t": "sphere", "rad": 0.32, "p": [0, 0, 0], "m": "stone"}
+		]},
+		{"id": "treuil", "name": "Treuil", "desc": "Des hommes actionnent un treuil (parfois des roues à écureuil) pour ramener la verge et remonter le contrepoids après chaque tir.", "pos": [2.6, 0.6, 0], "explode": [2.0, -0.8, 2.0], "shapes": [
+			{"t": "cyl", "rad": 0.18, "h": 2.6, "p": [0, 0, 0], "r": [90, 0, 0], "m": "wood"},
+			{"t": "box", "s": [0.08, 0.9, 0.08], "p": [0, 0, 1.35], "m": "wood"},
+			{"t": "box", "s": [0.08, 0.9, 0.08], "p": [0, 0, -1.35], "m": "wood"}
+		]}
+	],
+	"cycle": {
+		"note": "Le tir est montré au ralenti. En réalité, le boulet part à plusieurs centaines de mètres !",
+		"duration": 7.0,
+		"sound": "cannon",
+		"hide": [],
+		"rotations": {
+			"verge": [[0, 0, 0, 0], [0.12, 0, 0, 0], [0.3, 0, 0, 120], [0.36, 0, 0, 155], [0.5, 0, 0, 140], [0.95, 0, 0, 0], [1, 0, 0, 0]]
+		},
+		"moves": {
+			"boulet": [[0, 0, 0, 0], [0.12, 0, 0, 0], [0.2, 2.0, 2.6, 0], [0.27, 1.0, 7.0, 0], [0.32, -6.5, 9.2, 0], [0.45, -18, 10.5, 0], [0.62, -40, 2.0, 0], [0.63, 0, -20, 0], [0.97, 0, -20, 0], [0.98, 0, 0, 0], [1, 0, 0, 0]],
+			"fronde": [[0, 0, 0, 0], [0.12, 0, 0, 0], [0.2, 0.5, 2.2, 0], [0.3, -3.8, 9.0, 0], [0.4, -7.5, 6.5, 0], [0.55, -6.0, 3.5, 0], [0.95, 0, 0, 0], [1, 0, 0, 0]]
+		},
+		"objects": [],
+		"steps": [
+			[0.0, "1. Armement : le treuil a ramené la verge vers le bas ; le contrepoids est en haut et le boulet est posé dans la fronde."],
+			[0.12, "2. Déclenchement : on libère le crochet. Le contrepoids, très lourd, tombe."],
+			[0.2, "3. La longue verge bascule à toute vitesse ; la fronde, en tournant, accélère encore le boulet."],
+			[0.3, "4. Au bon moment, une boucle de la fronde se décroche : le boulet est lancé vers la muraille."],
+			[0.5, "5. Il faut ensuite de longues minutes pour remonter le contrepoids au treuil : quelques tirs par heure seulement."]
+		]
+	}
+}

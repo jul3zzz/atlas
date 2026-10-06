@@ -1,0 +1,54 @@
+{
+	"chapters": [
+		{
+			"title": "1991 : la guerre du Golfe",
+			"text": "En août 1990, l'Irak de Saddam Hussein envahit le Koweït. Une coalition de plus de 30 pays, autorisée par l'ONU et menée par les États-Unis, intervient en janvier 1991 : c'est l'opération [b]Tempête du désert[/b]. La France y participe avec l'opération Daguet.\n\nLe monde découvre une nouvelle manière de faire la guerre : avions [b]furtifs[/b] F-117 presque invisibles aux radars, [b]munitions guidées[/b] par laser, navigation par satellite [b]GPS[/b], missiles de croisière. Pendant cinq semaines, les frappes aériennes paralysent l'armée irakienne.\n\nL'offensive terrestre ne dure ensuite qu'environ 100 heures. L'armée irakienne, pourtant l'une des plus nombreuses du monde, est battue par une coalition qui voit, communique et frappe beaucoup plus vite qu'elle.",
+			"fact": "Le GPS, conçu par l'armée américaine, n'était pas encore complet en 1991. Les soldats achetaient parfois des récepteurs civils, et des familles en envoyaient par colis !"
+		},
+		{
+			"title": "Les opérations extérieures françaises",
+			"text": "Depuis la fin de la guerre froide, l'armée française est souvent engagée loin de ses frontières : Bosnie et Kosovo dans les années 1990, Afghanistan (2001-2014), Côte d'Ivoire, Libye (2011)…\n\nEn janvier 2013, des groupes armés foncent vers Bamako, la capitale du [b]Mali[/b]. À la demande du gouvernement malien, la France lance l'opération [b]Serval[/b]. En quelques jours, des avions, des hélicoptères et des blindés sont déployés à des milliers de kilomètres : une prouesse [b]logistique[/b]. L'opération Barkhane lui succède jusqu'en 2022 dans tout le Sahel.\n\nEn 1996, le président Jacques Chirac annonce la professionnalisation des armées : le service militaire obligatoire est suspendu en 1997. Les armées françaises sont désormais composées de soldats professionnels et de réservistes volontaires.",
+			"fact": "La Journée défense et citoyenneté (JDC), que tous les jeunes Français font aujourd'hui, est l'héritière du service militaire suspendu en 1997."
+		},
+		{
+			"title": "Drones, satellites et cyber",
+			"text": "Au XXIe siècle, l'[b]information[/b] devient l'arme principale. Des [b]satellites[/b] observent, écoutent et guident les armes. Des [b]drones[/b] de reconnaissance comme le Reaper surveillent une zone pendant plus de 20 heures, pilotés à distance.\n\nDepuis quelques années, de petits drones bon marché bouleversent les champs de bataille. Les drones [b]FPV[/b] (« vue à la première personne »), dérivés de drones de course, coûtent quelques centaines d'euros et peuvent menacer des blindés de plusieurs millions. On les contre par le brouillage, les filets, ou d'autres drones.\n\nLa guerre se joue aussi dans le [b]cyberespace[/b] : en 2010, le virus Stuxnet sabote des centrifugeuses nucléaires iraniennes. Les armées créent des commandements cyber (en France, le COMCYBER en 2017) et un commandement de l'espace (2019).",
+			"fact": "Le drone français Patroller et le drone européen Eurodrone illustrent l'effort de l'Europe pour ne pas dépendre entièrement des drones américains."
+		},
+		{
+			"title": "Le retour de la guerre de haute intensité",
+			"text": "Pendant longtemps, on a cru que les guerres entre États, avec des chars et de l'artillerie en masse, appartenaient au passé. Les conflits des années 2020 montrent le contraire.\n\nOn redécouvre l'importance de la [b]masse[/b] (nombre de soldats, de chars, d'obus), de l'[b]industrie[/b] capable de produire vite, et de la [b]logistique[/b]. Certaines batailles consomment des milliers d'obus par jour : les pays européens relancent leurs usines, on reparle d'« économie de guerre ».\n\nLes tranchées, les mines et l'artillerie, qui rappellent 1914-1918, côtoient les drones, les satellites et la guerre électronique. Comme à toutes les époques, la [b]logistique[/b], la [b]formation[/b] des soldats, leur [b]moral[/b] et le soutien de la [b]population[/b] restent décisifs.",
+			"fact": "Un char Leclerc consomme plusieurs centaines de litres de carburant aux 100 km : sans un ravitaillement bien organisé, même l'armée la plus moderne s'arrête."
+		},
+		{
+			"title": "Guerre hybride et information",
+			"text": "Aujourd'hui, la frontière entre guerre et paix devient floue. On parle de [b]guerre hybride[/b] : un État combine pressions militaires, cyberattaques, sabotages, chantage énergétique, utilisation de groupes armés « non officiels » et campagnes de [b]désinformation[/b] sur les réseaux sociaux.\n\nLa bataille de l'[b]opinion[/b] est permanente : fausses vidéos, faux comptes, rumeurs. En France, le service Viginum (2021) détecte les ingérences numériques étrangères. Savoir vérifier une information devient une compétence de défense !\n\nLe [b]droit international[/b] encadre les conflits : la Charte des Nations unies interdit le recours à la force sauf légitime défense ou décision du Conseil de sécurité. Les armées modernes forment leurs soldats à ces règles, et des juristes conseillent les chefs militaires. Depuis Sun Tzu et Clausewitz, une idée demeure : la guerre reste toujours au service d'un but politique.",
+			"fact": "Pour repérer une fausse image, les spécialistes utilisent la « recherche d'image inversée », qui permet de retrouver la première publication d'une photo sur Internet."
+		}
+	],
+	"book": {
+		"title": "Sous le feu : la mort comme hypothèse de travail",
+		"author": "Michel Goya",
+		"year": "2014",
+		"summary": "Ancien colonel des troupes de marine et historien, Michel Goya étudie ce que vivent réellement les soldats au combat, de 1914 à l'Afghanistan : la peur, le stress, le rôle du petit groupe, l'entraînement qui permet d'agir malgré tout. Il s'appuie sur des témoignages, des études scientifiques et sa propre expérience.",
+		"why": "Un livre moderne et accessible pour comprendre que, malgré toutes les technologies, la guerre reste une expérience humaine où le moral et la cohésion sont décisifs."
+	},
+	"more_books": [
+		{"title": "La Guerre hors limites", "author": "Qiao Liang et Wang Xiangsui", "note": "Deux officiers chinois imaginaient dès 1999 une guerre utilisant la finance, l'informatique et les médias."},
+		{"title": "L'Art de la guerre", "author": "Sun Tzu", "note": "À relire : beaucoup de ses principes (renseignement, ruse, gagner sans combattre) sont plus actuels que jamais."},
+		{"title": "De la guerre", "author": "Carl von Clausewitz", "note": "La guerre comme « caméléon » : elle change de forme mais garde sa nature politique."}
+	],
+	"quiz": [
+		{"q": "Quelle opération libère le Koweït en 1991 ?", "a": ["Overlord", "Tempête du désert", "Serval", "Barbarossa"], "ok": 1, "why": "Une coalition de plus de 30 pays, autorisée par l'ONU."},
+		{"q": "Combien de temps dure l'offensive terrestre de 1991 ?", "a": ["Environ 100 heures", "100 jours", "1 an", "10 ans"], "ok": 0, "why": "Après cinq semaines de frappes aériennes."},
+		{"q": "Qu'est-ce qu'un avion « furtif » ?", "a": ["Un avion sans pilote", "Un avion très difficile à détecter au radar", "Un avion très rapide", "Un avion de transport"], "ok": 1, "why": "Comme le F-117, grâce à sa forme et à ses matériaux."},
+		{"q": "Quelle opération française stoppe en 2013 l'offensive vers Bamako ?", "a": ["Barkhane", "Serval", "Daguet", "Sangaris"], "ok": 1, "why": "Barkhane lui succède ensuite au Sahel jusqu'en 2022."},
+		{"q": "Quand le service militaire obligatoire est-il suspendu en France ?", "a": ["1945", "1962", "1997", "2015"], "ok": 2, "why": "Annoncée en 1996, la professionnalisation des armées est votée en 1997."},
+		{"q": "Que signifie « FPV » pour un drone ?", "a": ["Force de protection volante", "Vue à la première personne", "Fusée petite vitesse", "Fréquence par vidéo"], "ok": 1, "why": "Le pilote voit à travers la caméra du drone, comme s'il était à bord."},
+		{"q": "Quel virus sabote des centrifugeuses nucléaires iraniennes en 2010 ?", "a": ["WannaCry", "Stuxnet", "ILOVEYOU", "Conficker"], "ok": 1, "why": "L'un des premiers exemples connus de cyberarme visant des installations physiques."},
+		{"q": "Que crée la France en 2017 pour la cyberdéfense ?", "a": ["Le COMCYBER", "La DGSE", "Le CNES", "L'OTAN"], "ok": 0, "why": "Le Commandement de la cyberdéfense ; un commandement de l'espace suit en 2019."},
+		{"q": "Qu'est-ce que la « guerre hybride » ?", "a": ["Une guerre avec des voitures électriques", "Un mélange de pressions militaires, cyber, économiques et de désinformation", "Une guerre entre deux alliances", "Une guerre en mer"], "ok": 1, "why": "La frontière entre guerre et paix devient floue."},
+		{"q": "Que redécouvrent les armées avec les guerres de haute intensité ?", "a": ["Qu'elles n'ont plus besoin d'industrie", "L'importance de la masse, de l'industrie et de la logistique", "Que les chars sont inutiles", "Que les drones sont interdits"], "ok": 1, "why": "Certaines batailles consomment des milliers d'obus par jour."},
+		{"q": "Quel service français détecte les ingérences numériques étrangères ?", "a": ["Viginum", "Vigipirate", "Interpol", "Europol"], "ok": 0, "why": "Créé en 2021 pour protéger le débat public contre la désinformation venue de l'étranger."}
+	]
+}

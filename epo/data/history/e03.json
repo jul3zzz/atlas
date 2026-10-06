@@ -1,0 +1,56 @@
+{
+	"chapters": [
+		{
+			"title": "Les guerres d'Italie et Marignan",
+			"text": "En 1494, le roi de France Charles VIII envahit l'Italie avec une armée moderne : artillerie de bronze montée sur roues, cavalerie lourde, mercenaires suisses. Les forteresses italiennes tombent en quelques jours. Commencent alors les [b]guerres d'Italie[/b] (1494-1559), où la France, l'Espagne et l'Empire se disputent la péninsule.\n\nEn 1515, le jeune [b]François Ier[/b] affronte les piquiers suisses à [b]Marignan[/b], près de Milan. La bataille dure deux jours. L'artillerie française, les charges répétées des gendarmes (cavalerie lourde) et l'arrivée des alliés vénitiens forcent les Suisses à la retraite.\n\nMais la guerre change de visage : dix ans plus tard, à [b]Pavie[/b] (1525), les arquebusiers espagnols déciment la cavalerie française et François Ier est fait prisonnier.",
+			"fact": "Après Pavie, François Ier aurait écrit à sa mère : « De toutes choses ne m'est demeuré que l'honneur et la vie qui est sauve ». La formule est souvent résumée en « Tout est perdu, fors l'honneur »."
+		},
+		{
+			"title": "Piques et arquebuses",
+			"text": "Au XVIe siècle, l'infanterie redevient la reine des batailles. Les [b]carrés de piquiers[/b] suisses, puis les lansquenets allemands, hérissés de piques de 5 mètres, arrêtent les charges de cavalerie.\n\nÀ côté d'eux apparaissent les [b]arquebusiers[/b]. L'arquebuse, puis le mousquet plus lourd, sont lents à recharger et imprécis, mais ils percent les armures, et un paysan apprend à tirer en quelques semaines, contre des années pour un archer.\n\nLes Espagnols combinent les deux dans leurs [b]tercios[/b] : un bloc de piquiers entouré de tireurs. Pendant plus d'un siècle, les tercios dominent les champs de bataille d'Europe, jusqu'à leur défaite à Rocroi (1643).",
+			"fact": "Pour tirer en continu, les Hollandais de Maurice de Nassau inventent vers 1594 le « contremarche » : chaque rang tire puis passe derrière pour recharger. C'est l'ancêtre du feu de salve."
+		},
+		{
+			"title": "La révolution militaire",
+			"text": "Les historiens parlent de « [b]révolution militaire[/b] » pour la période 1500-1700. Les armées grandissent énormément : quelques dizaines de milliers d'hommes au XVIe siècle, plusieurs centaines de milliers sous Louis XIV.\n\nPour les payer, nourrir, équiper et loger, les États doivent créer des [b]impôts[/b], des administrations, des arsenaux, des manufactures. On dit souvent que « la guerre a fait l'État et l'État a fait la guerre ».\n\nPour résister aux canons, les forteresses changent de forme : murs bas et épais, fossés larges, et surtout [b]bastions[/b] en forme de pointe de flèche, qui permettent de couvrir chaque mur par des tirs croisés. C'est le « tracé à l'italienne ».",
+			"fact": "La guerre de Trente Ans (1618-1648) ravage l'Europe centrale : certaines régions d'Allemagne perdent un tiers de leur population, surtout à cause des épidémies et des famines."
+		},
+		{
+			"title": "Louis XIV, Louvois et Vauban",
+			"text": "Sous [b]Louis XIV[/b] (1643-1715), la France devient la première puissance militaire d'Europe. Le ministre [b]Louvois[/b] organise une armée moderne : uniformes, grades réglementés, inspections, magasins de vivres le long des frontières, hôtel des Invalides pour les soldats blessés ou âgés (1670).\n\nL'ingénieur [b]Vauban[/b] (1633-1707) est le génie des fortifications. Il construit ou modernise environ 150 places fortes et invente une méthode d'attaque des forteresses par tranchées successives (les « parallèles ») qui permet d'approcher à l'abri.\n\nVers 1700, la [b]baïonnette à douille[/b], fixée autour du canon, permet de tirer avec la lame en place : la pique disparaît, tout fantassin devient fusilier.",
+			"fact": "Douze fortifications de Vauban (Besançon, Briançon, Neuf-Brisach, Saint-Martin-de-Ré…) sont inscrites au patrimoine mondial de l'UNESCO depuis 2008."
+		},
+		{
+			"title": "Machiavel et la pensée de la guerre",
+			"text": "À Florence, [b]Nicolas Machiavel[/b] (1469-1527), haut fonctionnaire chargé des affaires militaires, observe les guerres d'Italie. Il est convaincu que les mercenaires, qui ne se battent que pour l'argent, sont la ruine des États.\n\nDans [i]Le Prince[/i] (écrit en 1513, publié en 1532), il explique comment un chef conquiert et garde le pouvoir. Il y affirme qu'un prince doit d'abord s'occuper de l'art de la guerre et s'appuyer sur ses propres troupes, des citoyens soldats. Dans [i]L'Art de la guerre[/i] (1521), il propose de s'inspirer des légions romaines.\n\nSon réalisme choque : il décrit la politique telle qu'elle est, pas telle qu'elle devrait être. Le mot « machiavélique » en vient, mais ses lecteurs y voient surtout la naissance de la science politique moderne.",
+			"fact": "Machiavel a lui-même organisé une milice florentine de citoyens en 1506. Elle sera battue par les Espagnols à Prato en 1512, ce qui entraîne la chute de la République florentine… et sa disgrâce."
+		}
+	],
+	"book": {
+		"title": "Le Prince",
+		"author": "Nicolas Machiavel",
+		"year": "écrit en 1513, publié en 1532",
+		"summary": "Un court traité dédié à Laurent de Médicis : comment conquérir un État, le conserver, choisir ses alliés, se faire obéir. Machiavel consacre plusieurs chapitres à l'armée : les mercenaires et les troupes auxiliaires sont dangereux, seules des « armes propres » (une armée à soi) rendent un État sûr. Il pose aussi la célèbre question : vaut-il mieux être aimé ou craint ?",
+		"quote": "Il est beaucoup plus sûr d'être craint que d'être aimé, quand on doit renoncer à l'un des deux.",
+		"quote_ref": "Le Prince, chapitre XVII",
+		"why": "Un des livres politiques les plus lus de tous les temps. Il montre que la guerre et la politique sont inséparables, une idée que Clausewitz reprendra trois siècles plus tard."
+	},
+	"more_books": [
+		{"title": "L'Art de la guerre", "author": "Nicolas Machiavel", "note": "Un dialogue sur l'organisation idéale d'une armée de citoyens (1521)."},
+		{"title": "Les Trois Mousquetaires", "author": "Alexandre Dumas", "note": "Le grand roman d'aventure sous Louis XIII, avec le siège de La Rochelle (1627-1628)."},
+		{"title": "Commentaires", "author": "Blaise de Monluc", "note": "Les souvenirs d'un capitaine gascon des guerres d'Italie et des guerres de Religion, surnommés « la Bible du soldat » par Henri IV."}
+	],
+	"quiz": [
+		{"q": "Quelle bataille François Ier remporte-t-il en 1515 ?", "a": ["Pavie", "Marignan", "Rocroi", "Fontenoy"], "ok": 1, "why": "Marignan, près de Milan, contre les piquiers suisses, après deux jours de combat."},
+		{"q": "Que se passe-t-il pour François Ier à Pavie en 1525 ?", "a": ["Il est fait prisonnier", "Il devient empereur", "Il conquiert Naples", "Il signe la paix"], "ok": 0, "why": "Les arquebusiers espagnols déciment la cavalerie française ; le roi est capturé."},
+		{"q": "Quel est l'avantage principal de l'arquebuse sur l'arc ?", "a": ["Elle tire plus vite", "Elle s'apprend vite et perce les armures", "Elle est plus précise", "Elle ne fait pas de bruit"], "ok": 1, "why": "Lente et imprécise, l'arquebuse s'apprend en quelques semaines et perce les cuirasses."},
+		{"q": "Qu'est-ce qu'un tercio ?", "a": ["Une forteresse", "Une unité espagnole mêlant piquiers et tireurs", "Un canon", "Un impôt"], "ok": 1, "why": "Les tercios dominent les champs de bataille européens pendant plus d'un siècle."},
+		{"q": "Pourquoi les forteresses adoptent-elles des bastions ?", "a": ["Pour la décoration", "Pour croiser les tirs et résister aux canons", "Pour loger les chevaux", "Pour stocker du blé"], "ok": 1, "why": "Le tracé « à l'italienne » couvre chaque mur par des tirs croisés."},
+		{"q": "Quel ministre de Louis XIV organise l'armée (magasins, uniformes, Invalides) ?", "a": ["Colbert", "Louvois", "Richelieu", "Mazarin"], "ok": 1, "why": "Louvois est secrétaire d'État à la Guerre de Louis XIV."},
+		{"q": "Pour quoi Vauban est-il célèbre ?", "a": ["Ses poèmes", "Ses fortifications et sa méthode de siège", "Ses navires", "Ses peintures"], "ok": 1, "why": "Il construit ou modernise environ 150 places fortes et invente l'attaque par « parallèles »."},
+		{"q": "Quelle invention fait disparaître la pique vers 1700 ?", "a": ["La baïonnette à douille", "Le canon rayé", "La mitrailleuse", "Le char"], "ok": 0, "why": "On peut tirer avec la lame fixée autour du canon : tout fantassin devient fusilier."},
+		{"q": "Selon Machiavel, sur quoi un prince doit-il s'appuyer ?", "a": ["Des mercenaires", "Ses propres troupes", "La chance", "Les astrologues"], "ok": 1, "why": "Pour Machiavel, les mercenaires sont dangereux : seule une armée « à soi » rend l'État sûr."},
+		{"q": "En quelle année Le Prince est-il publié ?", "a": ["1453", "1515", "1532", "1648"], "ok": 2, "why": "Écrit en 1513, il est publié en 1532, après la mort de Machiavel."},
+		{"q": "Quelle guerre ravage l'Europe centrale de 1618 à 1648 ?", "a": ["La guerre de Cent Ans", "La guerre de Trente Ans", "La guerre de Sept Ans", "Les guerres d'Italie"], "ok": 1, "why": "Elle se termine par les traités de Westphalie (1648)."}
+	]
+}

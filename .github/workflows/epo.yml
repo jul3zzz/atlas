@@ -1,0 +1,75 @@
+name: EPO (jeu Godot)
+
+# Vérifie le jeu EPO (dossier epo/) puis fabrique la version Windows.
+# Le bot Discord à la racine du dépôt n'est pas concerné.
+on:
+  push:
+    paths:
+      - "epo/**"
+      - ".github/workflows/epo.yml"
+  pull_request:
+    paths:
+      - "epo/**"
+  workflow_dispatch:
+
+env:
+  GODOT_VERSION: "4.7.2"
+
+jobs:
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer Godot ${{ env.GODOT_VERSION }}
+        run: |
+          curl -sSL -o godot.zip "https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q godot.zip
+          sudo mv "Godot_v${GODOT_VERSION}-stable_linux.x86_64" /usr/local/bin/godot
+
+      - name: Importer le projet
+        run: godot --headless --path epo --import || true
+
+      - name: Vérifier tous les scripts
+        run: GODOT=godot bash epo/tools/check_scripts.sh
+
+      - name: Ouvrir tous les écrans
+        run: |
+          godot --headless --fixed-fps 60 --path epo res://tests/runner.tscn -- smoke 2>&1 | tee smoke.log
+          grep -q "SMOKE DONE errors=0" smoke.log
+
+  windows:
+    name: Version Windows
+    needs: tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Installer Godot et le modèle d'export Windows
+        run: |
+          curl -sSL -o godot.zip "https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
+          unzip -q godot.zip
+          sudo mv "Godot_v${GODOT_VERSION}-stable_linux.x86_64" /usr/local/bin/godot
+          T="$HOME/.local/share/godot/export_templates/${GODOT_VERSION}.stable"
+          mkdir -p "$T"
+          curl -sSL -o templates.tpz "https://github.com/godotengine/godot-builds/releases/download/${GODOT_VERSION}-stable/Godot_v${GODOT_VERSION}-stable_export_templates.tpz"
+          unzip -q -j templates.tpz templates/windows_release_x86_64.exe templates/windows_debug_x86_64.exe templates/version.txt -d "$T"
+          rm templates.tpz
+
+      - name: Exporter EPO.exe
+        run: |
+          godot --headless --path epo --import || true
+          mkdir -p epo/build/windows
+          godot --headless --path epo --export-release "Windows" build/windows/EPO.exe
+          test -s epo/build/windows/EPO.exe
+          cp epo/assets/fonts/LICENCES.txt epo/build/windows/LICENCES-polices.txt
+
+      - name: Publier l'artefact
+        uses: actions/upload-artifact@v4
+        with:
+          name: EPO-windows
+          path: epo/build/windows/
+          retention-days: 30
