@@ -1,0 +1,149 @@
+{
+	"lines": {
+		"armement": {"name": "Armement", "icon": "⚙", "effect": "+ matériel", "lesson": "Sans armes ni munitions, les soldats ne servent à rien. Mais le matériel s'use et se consomme à chaque tour."},
+		"recrutement": {"name": "Recrutement", "icon": "♞", "effect": "+ soldats", "lesson": "Chaque recrue quitte les champs ou l'usine : l'économie rapporte un peu moins au tour suivant."},
+		"logistique": {"name": "Logistique", "icon": "⛟", "effect": "+ ravitaillement", "lesson": "Vivres, munitions, transports : une armée mal ravitaillée perd une grande partie de sa force. Le ravitaillement s'épuise vite si on ne l'entretient pas."},
+		"moral": {"name": "Moral du pays", "icon": "♥", "effect": "+ moral", "lesson": "Une guerre longue épuise la population. Si le moral tombe à zéro, le pays s'effondre de l'intérieur."},
+		"diplomatie": {"name": "Diplomatie", "icon": "✉", "effect": "+ alliés", "lesson": "Au-delà de 60, les alliés envoient de l'aide à chaque tour. En dessous de 20, l'ennemi en profite."},
+		"recherche": {"name": "Recherche", "icon": "✦", "effect": "+ technologie", "lesson": "Lent à rapporter, mais chaque progrès rend toute l'armée plus efficace jusqu'à la fin de la guerre."}
+	},
+	"taxes": {
+		"faible": {"name": "Impôts faibles", "revenue": 50, "moral": 3},
+		"normal": {"name": "Impôts normaux", "revenue": 70, "moral": -2},
+		"lourd": {"name": "Impôts lourds", "revenue": 95, "moral": -8}
+	},
+	"events": [
+		{"title": "Mauvaise récolte", "text": "La moisson est catastrophique. Le pain devient cher et les greniers de l'armée se vident.", "a": {"label": "Acheter du blé à l'étranger", "fx": {"tresor": -25, "moral": 3}}, "b": {"label": "Réquisitionner les paysans", "fx": {"ravit": 10, "moral": -10}}, "note": "Une armée et un peuple qui ont faim ne tiennent pas longtemps : la question des vivres est au cœur de toutes les guerres."},
+		{"title": "Victoire locale", "text": "Tes troupes ont remporté un beau succès sur une partie du front.", "a": {"label": "Célébrer la victoire", "fx": {"moral": 8, "tresor": -10}}, "b": {"label": "Exploiter la percée", "fx": {"front": 8, "ravit": -12}}, "note": "Une victoire ne vaut que si l'on peut l'exploiter : il faut des réserves et du ravitaillement pour avancer."},
+		{"title": "Grève dans les ateliers", "text": "Les ouvriers des ateliers d'armement cessent le travail : ils réclament de meilleurs salaires.", "a": {"label": "Augmenter les salaires", "fx": {"tresor": -25, "materiel": 5, "moral": 4}}, "b": {"label": "Refuser", "fx": {"materiel": -12, "moral": -6}}, "note": "En guerre, l'arrière est un deuxième front : sans ouvriers, pas d'armes."},
+		{"title": "Épidémie dans les camps", "text": "Une maladie se répand parmi les soldats entassés dans les camps.", "a": {"label": "Envoyer des médecins", "fx": {"tresor": -20, "soldats": 4}}, "b": {"label": "Attendre que ça passe", "fx": {"soldats": -15}}, "note": "Pendant des siècles, les maladies ont tué plus de soldats que les combats eux-mêmes."},
+		{"title": "Un espion démasqué", "text": "Ton contre-espionnage a découvert un espion ennemi.", "a": {"label": "Le « retourner »", "fx": {"enemy": -10}}, "b": {"label": "Le livrer à la justice", "fx": {"moral": 3}}, "note": "Un agent double peut transmettre de fausses informations à l'ennemi : c'est souvent plus utile que de l'arrêter."},
+		{"title": "Un allié hésite", "text": "Un pays allié se demande s'il ne devrait pas rester neutre.", "a": {"label": "Envoyer un ambassadeur", "fx": {"tresor": -20, "allies": 12}}, "b": {"label": "Le laisser décider", "fx": {"allies": -12}}, "note": "Les alliances se gagnent et s'entretiennent : la diplomatie est une arme à part entière."},
+		{"title": "Inventeur de génie", "text": "Un ingénieur présente une invention prometteuse, mais il lui faut de l'argent.", "a": {"label": "Financer ses travaux", "fx": {"tresor": -20, "tech": 10}}, "b": {"label": "Refuser", "fx": {}}, "note": "Beaucoup d'innovations militaires sont nées d'inventeurs que l'État a choisi de soutenir… ou d'ignorer."}
+	],
+	"eras": {
+		"e01": {
+			"title": "Rome contre Hannibal",
+			"intro": "Tu gouvernes la République romaine pendant la deuxième guerre punique. Hannibal est en Italie. Rome doit tenir des années, payer des légions sans cesse renouvelées et garder la fidélité de ses alliés.",
+			"enemy": "Carthage",
+			"turns": ["218 av. J.-C.", "216 av. J.-C.", "214 av. J.-C.", "212 av. J.-C.", "210 av. J.-C.", "208 av. J.-C.", "206 av. J.-C.", "204 av. J.-C."],
+			"names": {"armement": "Forges et chantiers navals", "recrutement": "Levée des légions", "logistique": "Blé et routes", "moral": "Cultes et jeux", "diplomatie": "Alliés italiens", "recherche": "Ingénieurs"},
+			"events": [
+				{"title": "Le désastre de Cannes", "text": "Hannibal vient d'écraser huit légions. Certains parlent de demander la paix.", "a": {"label": "Ne jamais négocier", "fx": {"soldats": -12, "allies": 6, "moral": 4}}, "b": {"label": "Proposer la paix", "fx": {"allies": -18, "front": -10}}, "note": "Après Cannes, Rome refuse toute négociation et lève de nouvelles légions. Cette ténacité impressionne ses alliés, dont la plupart restent fidèles."},
+				{"title": "L'or des sénateurs", "text": "Le trésor est vide. Un sénateur propose que les plus riches donnent eux-mêmes leur or et leur argent.", "a": {"label": "Montrer l'exemple", "fx": {"tresor": 50, "moral": 5}}, "b": {"label": "Taxer le peuple", "fx": {"tresor": 50, "moral": -10}}, "note": "En 210 av. J.-C., les sénateurs apportent leur or et leur argent au trésor ; les chevaliers puis le peuple suivent leur exemple."}
+			],
+			"outro": "Rome l'emporte finalement à Zama (202 av. J.-C.). Sa force : des réserves d'hommes immenses grâce à ses alliés, et un État capable de tenir pendant 17 ans."
+		},
+		"e02": {
+			"title": "Le royaume de Charles V",
+			"intro": "Tu es au conseil du roi Charles V, pendant la guerre de Cent Ans. Avec le connétable Du Guesclin, le royaume veut reprendre les terres perdues… sans risquer une grande bataille rangée.",
+			"enemy": "L'Angleterre",
+			"turns": ["1369", "1370", "1371", "1372", "1373", "1374", "1375", "1376"],
+			"names": {"armement": "Armuriers et arbalétriers", "recrutement": "Hommes d'armes", "logistique": "Vivres et chariots", "moral": "Prêches et fêtes", "diplomatie": "Alliances (Castille, Écosse)", "recherche": "Maîtres de l'artillerie"},
+			"events": [
+				{"title": "Un impôt permanent ?", "text": "Pour payer la guerre, les conseillers proposent de lever chaque année les « aides » et le « fouage ».", "a": {"label": "Lever l'impôt chaque année", "fx": {"tresor": 45, "moral": -6}}, "b": {"label": "Seulement en cas d'urgence", "fx": {"tresor": 15, "moral": 2}}, "note": "Pour payer la rançon du roi Jean le Bon puis la guerre, la monarchie lève des impôts réguliers : c'est un pas vers l'État moderne."},
+				{"title": "Les Grandes Compagnies", "text": "Des bandes de soldats sans emploi pillent les campagnes. Que faire d'eux ?", "a": {"label": "Les envoyer combattre au loin", "fx": {"tresor": -20, "moral": 8, "allies": 6}}, "b": {"label": "Fermer les yeux", "fx": {"moral": -12, "ravit": -8}}, "note": "En 1366, Du Guesclin emmène les Grandes Compagnies combattre en Castille : le royaume en est débarrassé et gagne un allié."}
+			],
+			"outro": "Charles V et Du Guesclin reprennent la plus grande partie du royaume en évitant les grandes batailles : sièges, coups de main et une administration fiscale solide."
+		},
+		"e03": {
+			"title": "François Ier contre Charles Quint",
+			"intro": "Tu es au service de François Ier. Les guerres d'Italie coûtent une fortune : mercenaires suisses et allemands, artillerie, forteresses. Face à toi, l'immense empire de Charles Quint.",
+			"enemy": "Charles Quint",
+			"turns": ["1521", "1522", "1523", "1524", "1525", "1526", "1527", "1528"],
+			"names": {"armement": "Fonderies de canons", "recrutement": "Mercenaires et compagnies", "logistique": "Vivres et convois", "moral": "Fêtes de la cour", "diplomatie": "Ambassadeurs", "recherche": "Ingénieurs des fortifications"},
+			"events": [
+				{"title": "Vendre des charges", "text": "Un conseiller propose de vendre des fonctions d'État (juges, receveurs…) à ceux qui peuvent payer.", "a": {"label": "Vendre des offices", "fx": {"tresor": 55, "moral": -4}}, "b": {"label": "Refuser", "fx": {}}, "note": "François Ier développe la vente des « offices » : l'acheteur obtient une fonction et un statut, le roi de l'argent tout de suite."},
+				{"title": "Une alliance surprenante", "text": "Le sultan ottoman Soliman propose une alliance contre l'empereur.", "a": {"label": "Accepter", "fx": {"allies": 16, "moral": -5, "enemy": -6}}, "b": {"label": "Refuser", "fx": {"moral": 2}}, "note": "En 1536, François Ier s'allie à Soliman le Magnifique contre Charles Quint, ce qui scandalise une partie de l'Europe chrétienne."}
+			],
+			"outro": "Les guerres d'Italie montrent que la guerre devient une affaire d'argent : celui qui paie le plus longtemps ses soldats et ses canons a l'avantage."
+		},
+		"e04": {
+			"title": "La patrie en danger",
+			"intro": "Tu es membre du Comité de salut public en 1793. La France révolutionnaire affronte presque toute l'Europe. Il faut armer, nourrir et payer des centaines de milliers de citoyens-soldats.",
+			"enemy": "La coalition",
+			"turns": ["1793", "1794", "1795", "1796", "1797", "1798", "1799", "1800"],
+			"names": {"armement": "Manufactures d'armes", "recrutement": "Levée en masse", "logistique": "Vivres et chevaux", "moral": "Fêtes civiques et journaux", "diplomatie": "Diplomatie", "recherche": "Savants (Monge, Chappe)"},
+			"events": [
+				{"title": "La planche à assignats", "text": "Le trésor est vide. On peut imprimer encore plus d'assignats, le papier-monnaie de la Révolution.", "a": {"label": "Imprimer", "fx": {"tresor": 70, "moral": -12}}, "b": {"label": "Réquisitionner plutôt", "fx": {"materiel": 18, "moral": -6}}, "note": "Imprimés en masse, les assignats perdent presque toute leur valeur : les prix flambent et la population souffre."},
+				{"title": "La poudre manque", "text": "Il n'y a plus assez de salpêtre pour fabriquer la poudre des armées.", "a": {"label": "Mobiliser les citoyens", "fx": {"materiel": 16, "moral": 3}}, "b": {"label": "En acheter à l'étranger", "fx": {"tresor": -30, "materiel": 12}}, "note": "En 1794, des milliers de citoyens grattent les murs des caves pour récolter le salpêtre ; des savants comme Monge enseignent à fabriquer poudre et canons."}
+			],
+			"outro": "La levée en masse et l'« amalgame » donnent à la France des armées immenses. Mais l'économie s'épuise : la guerre finit par nourrir la guerre, et un général, Bonaparte, prend le pouvoir en 1799."
+		},
+		"e05": {
+			"title": "L'Union dans la guerre de Sécession",
+			"intro": "Tu conseilles le président Lincoln. Le Nord est plus peuplé et beaucoup plus industrialisé que le Sud, mais il faut transformer cette richesse en armées, en chemins de fer et en navires.",
+			"enemy": "La Confédération",
+			"turns": ["Été 1861", "Hiver 1861", "Été 1862", "Hiver 1862", "Été 1863", "Hiver 1863", "Été 1864", "Hiver 1864"],
+			"names": {"armement": "Arsenaux et usines", "recrutement": "Volontaires et conscription", "logistique": "Chemins de fer et télégraphe", "moral": "Presse et discours", "diplomatie": "Diplomatie (Europe)", "recherche": "Inventeurs"},
+			"events": [
+				{"title": "Le plan Anaconda", "text": "Le général Scott propose de bloquer tous les ports du Sud avec la marine, comme un serpent qui étouffe sa proie.", "a": {"label": "Financer le blocus", "fx": {"tresor": -30, "enemy": -8, "front": 4}}, "b": {"label": "Tout miser sur l'armée de terre", "fx": {"soldats": 8}}, "note": "Privé de ses ports, le Sud ne peut plus vendre son coton ni acheter facilement des armes en Europe."},
+				{"title": "Des billets verts", "text": "La guerre coûte trop cher. Faut-il créer un papier-monnaie fédéral et un impôt sur le revenu ?", "a": {"label": "Créer les « greenbacks »", "fx": {"tresor": 60, "moral": -4}}, "b": {"label": "Emprunter aux banques", "fx": {"tresor": 50, "dette": 50}}, "note": "En 1861-1862, l'Union crée un impôt sur le revenu et des billets fédéraux, les « greenbacks »."}
+			],
+			"outro": "La puissance industrielle, les chemins de fer et le blocus font la différence : le Sud capitule en 1865. C'est l'une des premières guerres « industrielles »."
+		},
+		"e06": {
+			"title": "La France dans la Grande Guerre",
+			"intro": "Tu es au gouvernement français. La guerre devait être courte, elle s'enlise dans les tranchées. Il faut des millions d'obus, des soldats, des trains… et garder le moral du pays.",
+			"enemy": "L'Empire allemand",
+			"turns": ["Fin 1914", "Début 1915", "Fin 1915", "Début 1916", "Fin 1916", "Début 1917", "Fin 1917", "1918"],
+			"names": {"armement": "Usines d'armement", "recrutement": "Mobilisation", "logistique": "Trains, camions, Voie sacrée", "moral": "Permissions et courrier", "diplomatie": "Alliés", "recherche": "Inventions (chars, avions)"},
+			"events": [
+				{"title": "La crise des obus", "text": "L'armée tire chaque jour bien plus d'obus que les usines n'en produisent. Il manque des ouvriers qualifiés.", "a": {"label": "Rappeler des ouvriers du front", "fx": {"soldats": -14, "materiel": 30}}, "b": {"label": "Garder tous les soldats au front", "fx": {"materiel": -14}}, "note": "Dès 1915, des centaines de milliers d'ouvriers sont renvoyés du front vers les usines ; des femmes, les « munitionnettes », y travaillent aussi."},
+				{"title": "L'emprunt de la Défense nationale", "text": "L'État peut demander aux Français de lui prêter leurs économies.", "a": {"label": "Lancer l'emprunt", "fx": {"tresor": 70, "dette": 70, "moral": 3}}, "b": {"label": "Augmenter les impôts", "fx": {"tresor": 40, "moral": -8}}, "note": "Affiches, souscriptions, appels au patriotisme : la Grande Guerre est surtout financée à crédit."}
+			],
+			"outro": "La France tient grâce à l'effort de tout le pays : usines, femmes au travail, colonies, alliés britanniques puis américains. Mais elle sort de la guerre épuisée et lourdement endettée."
+		},
+		"e07": {
+			"title": "Le Royaume-Uni tient bon",
+			"intro": "Tu es au cabinet de guerre de Winston Churchill. Après la défaite de la France en 1940, le Royaume-Uni est seul face à l'Allemagne nazie. Il dépend de ses convois pour se nourrir et s'armer.",
+			"enemy": "L'Allemagne nazie",
+			"turns": ["Été 1940", "Hiver 1940", "1941", "Fin 1941", "1942", "Fin 1942", "1943", "1944"],
+			"names": {"armement": "Usines (avions, chars)", "recrutement": "Conscription", "logistique": "Convois de l'Atlantique", "moral": "Radio et cinéma", "diplomatie": "Alliés", "recherche": "Radar et décryptage"},
+			"events": [
+				{"title": "Le prêt-bail", "text": "Les États-Unis, encore neutres, proposent de prêter des armes, des navires et de la nourriture.", "a": {"label": "Accepter l'aide américaine", "fx": {"materiel": 28, "allies": 10, "dette": 20}}, "b": {"label": "Rester indépendant", "fx": {"moral": 2}}, "note": "Avec la loi « prêt-bail » de mars 1941, les États-Unis deviennent « l'arsenal de la démocratie »."},
+				{"title": "Le rationnement", "text": "Les sous-marins allemands coulent les convois. Faut-il rationner la nourriture et l'essence ?", "a": {"label": "Rationner", "fx": {"ravit": 15, "moral": -4}}, "b": {"label": "Ne pas rationner", "fx": {"ravit": -15}}, "note": "Tickets de rationnement, potagers « Dig for Victory » : toute l'économie britannique est tournée vers la guerre."}
+			],
+			"outro": "Le Royaume-Uni tient, puis la guerre devient mondiale : l'industrie américaine et l'Armée rouge font basculer le rapport de forces. La production de masse décide de la victoire."
+		},
+		"e08": {
+			"title": "La course aux armements",
+			"intro": "Tu conseilles le gouvernement français pendant la guerre froide. Pas de bataille directe : il faut reconstruire le pays, équiper l'armée, choisir ses alliances et décider si la France aura sa propre dissuasion.",
+			"enemy": "Le bloc adverse",
+			"front": "Influence internationale",
+			"turns": ["1950", "1955", "1960", "1965", "1970", "1975", "1980", "1985"],
+			"names": {"armement": "Industrie de défense", "recrutement": "Service militaire", "logistique": "Bases et transports", "moral": "Information et culture", "diplomatie": "Alliances (OTAN)", "recherche": "Recherche (nucléaire, espace)"},
+			"events": [
+				{"title": "Le plan Marshall", "text": "Les États-Unis proposent une aide massive pour reconstruire l'Europe de l'Ouest.", "a": {"label": "Accepter l'aide", "fx": {"tresor": 50, "allies": 10}}, "b": {"label": "Refuser", "fx": {"allies": -6, "moral": 2}}, "note": "De 1948 à 1952, le plan Marshall apporte environ 13 milliards de dollars à l'Europe de l'Ouest."},
+				{"title": "Une dissuasion nationale ?", "text": "Faut-il construire une force nucléaire française indépendante ?", "a": {"label": "Oui, la « force de frappe »", "fx": {"tresor": -50, "tech": 18, "front": 8, "allies": -5}}, "b": {"label": "Compter sur les Américains", "fx": {"allies": 8}}, "note": "La France fait exploser sa première bombe en 1960 et quitte le commandement intégré de l'OTAN en 1966 : plus d'indépendance, pour un coût énorme."}
+			],
+			"outro": "La guerre froide se gagne sans grande bataille : l'URSS s'épuise dans la course aux armements et disparaît en 1991. L'économie est devenue une arme décisive."
+		},
+		"e09": {
+			"title": "La guerre d'Indochine",
+			"intro": "Tu es au gouvernement français entre 1947 et 1954. La guerre est lointaine, coûteuse et impopulaire. Le Viêt-minh, soutenu par la Chine, refuse la bataille rangée et mise sur le temps.",
+			"enemy": "Le Viêt-minh",
+			"front": "Contrôle du territoire",
+			"turns": ["1947", "1948", "1949", "1950", "1951", "1952", "1953", "1954"],
+			"names": {"armement": "Matériel", "recrutement": "Engagés volontaires", "logistique": "Ponts aériens et convois", "moral": "Information du public", "diplomatie": "Diplomatie", "recherche": "Renseignement"},
+			"events": [
+				{"title": "Envoyer des appelés ?", "text": "L'état-major manque d'hommes. Faut-il envoyer en Indochine les jeunes du service militaire ?", "a": {"label": "Envoyer des appelés", "fx": {"soldats": 20, "moral": -22}}, "b": {"label": "Garder une armée de métier", "fx": {"tresor": -15}}, "note": "La France n'a envoyé en Indochine que des soldats de métier, des légionnaires et des troupes coloniales : envoyer des appelés aurait été très impopulaire."},
+				{"title": "L'aide américaine", "text": "Avec la guerre de Corée, les États-Unis proposent de financer la guerre contre le Viêt-minh.", "a": {"label": "Accepter", "fx": {"tresor": 40, "materiel": 20, "allies": 5}}, "b": {"label": "Refuser", "fx": {"moral": 2}}, "note": "À partir de 1950, les États-Unis financent une part croissante de la guerre d'Indochine, près de 80 % à la fin."}
+			],
+			"outro": "Même avec plus de moyens, la France perd à Diên Biên Phu en 1954 : dans ce type de guerre, l'opinion publique et le soutien de la population pèsent autant que les armes."
+		},
+		"e10": {
+			"title": "Économie de guerre au XXIe siècle",
+			"intro": "Ton pays (imaginaire) est attaqué par un voisin. Les stocks d'obus fondent en quelques semaines, les drones changent le combat, les cyberattaques visent l'arrière. Il faut tenir dans la durée.",
+			"enemy": "L'agresseur",
+			"turns": ["Trimestre 1", "Trimestre 2", "Trimestre 3", "Trimestre 4", "Trimestre 5", "Trimestre 6", "Trimestre 7", "Trimestre 8"],
+			"names": {"armement": "Obus, missiles et drones", "recrutement": "Recrutement et réserves", "logistique": "Logistique et carburant", "moral": "Information et résilience", "diplomatie": "Alliés et sanctions", "recherche": "Innovation et cyber"},
+			"events": [
+				{"title": "Pénurie d'obus", "text": "L'artillerie tire plus d'obus en un mois que les usines n'en fabriquent en un an.", "a": {"label": "Passer en « économie de guerre »", "fx": {"tresor": -40, "materiel": 32}}, "b": {"label": "Demander aux alliés", "fx": {"allies": -6, "materiel": 15}}, "note": "Dans les années 2020, l'Europe découvre qu'il faut des années pour relancer une production massive de munitions."},
+				{"title": "Cyberattaque", "text": "Des pirates informatiques paralysent les trains et une partie du réseau électrique.", "a": {"label": "Investir dans la cyberdéfense", "fx": {"tresor": -20, "tech": 8}}, "b": {"label": "Réparer au cas par cas", "fx": {"ravit": -18, "moral": -5}}, "note": "La défense commence aussi dans les ordinateurs : réseaux électriques, hôpitaux et transports sont des cibles."},
+				{"title": "Des drones bon marché", "text": "Une jeune entreprise propose de produire des milliers de petits drones de reconnaissance à bas coût.", "a": {"label": "Commander en masse", "fx": {"tresor": -25, "tech": 6, "enemy": -6}}, "b": {"label": "Rester sur les armes classiques", "fx": {}}, "note": "Les conflits récents montrent l'importance de la masse et de l'innovation rapide : un petit drone peut rendre visible tout le champ de bataille."}
+			],
+			"outro": "Les guerres de haute intensité rappellent une vieille leçon : la victoire dépend de l'industrie, de la logistique, des alliances et de la capacité d'un pays à tenir dans la durée."
+		}
+	}
+}

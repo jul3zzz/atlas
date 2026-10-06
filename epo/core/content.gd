@@ -13,6 +13,7 @@ var weapons: Dictionary = {}
 var weapon_order: Array = []
 var state_decks: Dictionary = {}
 var daily: Dictionary = {}
+var economy: Dictionary = {}
 var videos: Array = []
 var customization: Dictionary = {}
 var briefs: Array = []
@@ -52,6 +53,7 @@ func reload() -> void:
 					weapon_order.append(w.id)
 	state_decks = _load("res://data/state.json", {})
 	daily = _load("res://data/daily.json", {})
+	economy = _load("res://data/economy.json", {})
 	videos = _load("res://data/videos.json", [])
 	customization = _load("res://data/customization.json", {})
 	var design: Dictionary = _load("res://data/briefs.json", {})

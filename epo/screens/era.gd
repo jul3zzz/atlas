@@ -64,7 +64,7 @@ func _ready() -> void:
 		["history", "✎", "Histoire et livres", "%d chapitres, des anecdotes et le livre de l'époque : %s." % [hist.get("chapters", []).size(), book.get("title", "—")], "history"],
 		["workshop", "⚙", "Atelier d'armes", "Démonte, observe et comprends : %s." % (", ".join(weapons.map(func(w): return w.name)) if weapons.size() else "bureau d'études"), "workshop_menu"],
 		["battle", "⚔", "Bataille 3D", "%s. Place tes troupes et regarde la bataille se jouer." % (", ".join(battles.map(func(b): return b.name)) if battles.size() else "Bac à sable de l'époque"), "battle_menu"],
-		["state", "♜", "L'État en guerre", "Finances, opinion, armée, alliés : tiens ton pays debout pendant la guerre.", "state"],
+		["state", "♜", "L'État en guerre", "Conseil de guerre (cartes) ou économie de guerre (tableau de bord) : tiens ton pays debout.", "state"],
 		["daily", "✚", "Quotidien du soldat", "Une semaine dans la peau d'un soldat de l'époque : moral, santé, corvées, imprévus.", "daily"],
 		["quiz", "✔", "Quiz final", "Teste ce que tu as appris. 3 étoiles = 9 bonnes réponses sur 10.", "quiz"],
 	]
@@ -118,6 +118,49 @@ func _tile(tile: Array, col: Color) -> Control:
 	v.add_child(s)
 	b.pressed.connect(func():
 		Sfx.play("click")
-		Nav.goto(tile[4], {"era": era_id}))
+		if step == "state":
+			_state_choice()
+		else:
+			Nav.goto(tile[4], {"era": era_id}))
 	b.mouse_entered.connect(func(): Sfx.play("hover", -14.0))
 	return b
+
+
+## L'État en guerre se joue de deux façons : cartes de décision ou tableau de bord économique.
+func _state_choice() -> void:
+	var v := UI.vbox(14)
+	v.add_child(UI.title("L'État en guerre", 34))
+	v.add_child(UI.wrap_label("Comment veux-tu gouverner ton pays pendant la guerre ?", 19, UI.MUTED))
+	var shade: Control
+	var modes := [
+		["♜  Conseil de guerre", "Des conseillers te soumettent des décisions : glisse la carte à gauche ou à droite et garde 4 jauges en équilibre.", "state"],
+		["◉  Économie de guerre", "Un tableau de bord : impôts, emprunts, budget de l'armée, logistique, alliés. Fais avancer le front sans ruiner le pays.", "economy"],
+	]
+	for md in modes:
+		var b := UI.button("", func():
+			shade.queue_free()
+			Nav.goto(md[2], {"era": era_id}), 18)
+		b.custom_minimum_size = Vector2(600, 116)
+		var bv := UI.vbox(2)
+		bv.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		var bm := UI.margin(bv, 16, 10, 16, 10)
+		bm.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+		bm.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		b.add_child(bm)
+		var t := UI.label(md[0], 22, UI.GOLD, UI.font_ui_bold)
+		t.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bv.add_child(t)
+		var d := UI.wrap_label(md[1], 16, UI.MUTED)
+		d.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		bv.add_child(d)
+		v.add_child(b)
+	var row := UI.hbox()
+	row.alignment = BoxContainer.ALIGNMENT_END
+	v.add_child(row)
+	row.add_child(UI.button("Annuler", func(): shade.queue_free(), 17))
+	shade = UI.modal(self, v, 660)
+
+
+func test_action(a: String) -> void:
+	if a == "state":
+		_state_choice()

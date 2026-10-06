@@ -21,6 +21,7 @@ const SCREENS := {
 	"settings": "res://screens/settings.gd",
 	"codex": "res://screens/codex.gd",
 	"design": "res://workshop/design_office.gd",
+	"economy": "res://screens/economy.gd",
 }
 
 var params: Dictionary = {}
