@@ -364,6 +364,10 @@ func _end_turn() -> void:
 	enemy_mod = 0.0
 	_report.text = UI.nbsp("[b]Bilan — %s[/b]\n%s" % [_turn_name(turn), "\n".join(rep)])
 	Sfx.play("stamp")
+	# Le budget est dépensé : on affiche tout de suite la nouvelle situation.
+	for k in LINES:
+		alloc[k] = 0
+	_refresh()
 	if _check_end():
 		return
 	var ev = events_left[turn] if turn < events_left.size() else null
@@ -425,6 +429,11 @@ func _show_event(ev: Dictionary) -> void:
 			_apply_event(ev, opt)
 		var btn := UI.primary_button(String(opt.get("label", "")), cb, 18) if key == "a" else UI.button(String(opt.get("label", "")), cb, 18)
 		btn.tooltip_text = _fx_text(opt.get("fx", {}))
+		# Un choix qui coûte plus que le trésor disponible est impossible.
+		var cost := -float(opt.get("fx", {}).get("tresor", 0))
+		if cost > 0.0 and cost > float(s.tresor):
+			btn.disabled = true
+			btn.text += " (trésor insuffisant)"
 		row.add_child(btn)
 
 
@@ -518,11 +527,13 @@ func _end_modal(heading: String, body: String) -> void:
 ## Tests : « auto » joue une partie équilibrée (budget réparti, emprunts aux tours 1, 3 et 5)
 ## en choisissant toujours la première option des événements.
 func test_action(a: String) -> void:
-	if a == "budget":
+	if a == "budget" or a == "turn":
 		_change("armement", 40)
 		_change("recrutement", 40)
 		_change("logistique", 20)
 		_change("moral", 10)
+		if a == "turn":
+			_end_turn()
 		return
 	if a != "auto":
 		return
