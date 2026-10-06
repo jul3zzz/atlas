@@ -15,7 +15,6 @@ var state_decks: Dictionary = {}
 var daily: Dictionary = {}
 var economy: Dictionary = {}
 var videos: Array = []
-var customization: Dictionary = {}
 var briefs: Array = []
 var design_catalog: Dictionary = {}
 var design_stats: Array = []
@@ -55,7 +54,6 @@ func reload() -> void:
 	daily = _load("res://data/daily.json", {})
 	economy = _load("res://data/economy.json", {})
 	videos = _load("res://data/videos.json", [])
-	customization = _load("res://data/customization.json", {})
 	var design: Dictionary = _load("res://data/briefs.json", {})
 	briefs = design.get("briefs", [])
 	design_catalog = design.get("catalog", {})
